@@ -1,0 +1,5 @@
+import { updatePasswordAction } from "@/app/admin/actions";
+import { AdminShell } from "@/components/admin/admin-shell";
+import { requireEditor } from "@/lib/admin";
+
+export default async function SetPasswordPage({searchParams}:{searchParams:Promise<{erro?:string}>}) { const [{profile},query]=await Promise.all([requireEditor(),searchParams]); return <AdminShell profile={profile}><section className="detail-panel" style={{maxWidth:520,margin:"2rem auto"}}><span className="eyebrow">Primeiro acesso</span><h1 className="product-name" style={{fontSize:"2rem"}}>Defina sua senha</h1><p className="product-description">Use ao menos 10 caracteres. Depois disso, seu acesso ao painel estará pronto.</p>{query.erro&&<p style={{color:"#ff8d82"}}>{query.erro}</p>}<form action={updatePasswordAction} style={{display:"grid",gap:16}}><label className="form-label">Nova senha<input className="field" name="password" type="password" minLength={10} required/></label><button className="gold-button">Salvar senha</button></form></section></AdminShell>; }

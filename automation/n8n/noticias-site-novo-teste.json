@@ -1,0 +1,629 @@
+{
+  "name": "NOTICIAS BLOG - SITE NOVO (TESTE)",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "LINKS NOVOS",
+              "cssSelector": "a.text-escuro",
+              "returnValue": "attribute",
+              "attribute": "href",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        -1040,
+        320
+      ],
+      "id": "bf983e73-36eb-4d70-99fa-ff6a19995f65",
+      "name": "HTML"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "LINKS NOVOS",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -816,
+        320
+      ],
+      "id": "696b3679-e951-42a2-9330-e32db5c7e9d2",
+      "name": "Split Out"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -256,
+        128
+      ],
+      "id": "5ad07d97-fa74-4a0c-a2c3-11fcc77ab856",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "15d0c4df-3520-4db4-ad07-6c9dfaffdf6d",
+      "name": "No Operation, do nothing"
+    },
+    {
+      "parameters": {
+        "url": "={{ $json[\"LINKS NOVOS\"] }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        0,
+        240
+      ],
+      "id": "e82dcf29-6865-40ed-b5e8-451b7b7e42c7",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "model": "deepseek-v4-pro",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatDeepSeek",
+      "typeVersion": 1,
+      "position": [
+        448,
+        416
+      ],
+      "id": "178518d4-e1de-48e7-94ef-89258725d321",
+      "name": "DeepSeek Chat Model",
+      "credentials": {
+        "deepSeekApi": {
+          "id": "dr9d4XITrc65r6f3",
+          "name": "DeepSeek account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "title",
+              "cssSelector": "#noticia h1"
+            },
+            {
+              "key": "content",
+              "cssSelector": ".txt-noticia.mt-3"
+            },
+            {
+              "key": "image",
+              "cssSelector": "meta[property=\"og:image\"]",
+              "returnValue": "attribute",
+              "attribute": "content"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        240,
+        240
+      ],
+      "id": "777fa7d3-00b2-43d0-9a5b-7e5a05470915",
+      "name": "Extrair Info da Notícia"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForEachItem",
+        "jsCode": "let raw = String($json.output ?? \"\");\nconst match = raw.match(/```json\\s*([\\s\\S]*?)\\s*```/);\nif (match) raw = match[1];\n\nconst obj = JSON.parse(raw);\nconst extracted = $(\"Extrair Info da Notícia\").item.json;\nconst source = $(\"Loop Over Items\").item.json;\n\nreturn {\n  json: {\n    title: obj.title,\n    slug: obj.slug,\n    content: obj.content,\n    image: extracted.image || \"/images/bgnews.webp\",\n    sourceUrl: source[\"LINKS NOVOS\"],\n  },\n};"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        784,
+        240
+      ],
+      "id": "82a67a69-fc61-4d12-8167-8b9a61df4574",
+      "name": "Estruturar a Notícia"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1_N7vlh08FZT-BvGgFRlzQYfBiXQulIj1vSfYflLO1hY",
+          "mode": "list",
+          "cachedResultName": "Noticias Cppem",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1_N7vlh08FZT-BvGgFRlzQYfBiXQulIj1vSfYflLO1hY/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Página1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1_N7vlh08FZT-BvGgFRlzQYfBiXQulIj1vSfYflLO1hY/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "LINK ORIGINAL": "={{ $('Loop Over Items').item.json[\"LINKS NOVOS\"] }}",
+            "LINK DO CPPEM": "=https://cppem.com.br/noticias/{{ $node[\"Estruturar a Notícia\"].json[\"slug\"] }}",
+            "TITULO": "={{ $json.titulo }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "LINK ORIGINAL",
+              "displayName": "LINK ORIGINAL",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "TITULO",
+              "displayName": "TITULO",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "PORTAL DE ORIGEM",
+              "displayName": "PORTAL DE ORIGEM",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "LINK DO CPPEM",
+              "displayName": "LINK DO CPPEM",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "DESCRIÇÃO",
+              "displayName": "DESCRIÇÃO",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "DICAS DE EVERTON?",
+              "displayName": "DICAS DE EVERTON?",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "LINK DE EVERTON",
+              "displayName": "LINK DE EVERTON",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        1296,
+        240
+      ],
+      "id": "3f8dcc43-80b2-47b7-a758-bdc77809c91c",
+      "name": "Add a Notícia no Sheets",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Dd9ShnGkXYmaIKPF",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "advanced": true,
+        "mergeByFields": {
+          "values": [
+            {
+              "field1": "LINK ORIGINAL",
+              "field2": "LINKS NOVOS"
+            }
+          ]
+        },
+        "joinMode": "keepNonMatches",
+        "outputDataFrom": "input2",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.1,
+      "position": [
+        -496,
+        128
+      ],
+      "id": "9b4ee409-c9fd-41cf-8680-f3103adece71",
+      "name": "Espera 01"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1_N7vlh08FZT-BvGgFRlzQYfBiXQulIj1vSfYflLO1hY",
+          "mode": "list",
+          "cachedResultName": "Noticias Cppem",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1_N7vlh08FZT-BvGgFRlzQYfBiXQulIj1vSfYflLO1hY/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "=gid=0",
+          "mode": "id"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        -1280,
+        112
+      ],
+      "id": "c1aca073-f946-4871-9c66-0a17ed812fac",
+      "name": "Puxar Notícias",
+      "retryOnFail": true,
+      "maxTries": 5,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "Dd9ShnGkXYmaIKPF",
+          "name": "Google Sheets account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "3ad25b0d-afa2-4c27-a4f2-02c116ba5515",
+              "name": "LINK ORIGINAL",
+              "value": "={{ $json[\"LINK ORIGINAL\"] }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1040,
+        112
+      ],
+      "id": "b7d441fd-efc4-4c3b-a120-9bc9a01595e6",
+      "name": "Campo: Link Original"
+    },
+    {
+      "parameters": {
+        "url": "https://www.estoupreparado.com.br/noticias",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1280,
+        320
+      ],
+      "id": "341d0dfa-a09b-4836-8874-f98c1f7b06d6",
+      "name": "Estou Preparado"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 20
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -1664,
+        208
+      ],
+      "id": "ef84907e-e5ac-417a-8e63-ac198d016a6b",
+      "name": "Ativador"
+    },
+    {
+      "parameters": {
+        "tableId": "noticias",
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "titulo",
+              "fieldValue": "={{ $json.title }}"
+            },
+            {
+              "fieldId": "slug",
+              "fieldValue": "={{ $json.slug }}"
+            },
+            {
+              "fieldId": "imagem",
+              "fieldValue": "={{ $json.image }}"
+            },
+            {
+              "fieldId": "link",
+              "fieldValue": "={{ $json.sourceUrl }}"
+            },
+            {
+              "fieldId": "is_external",
+              "fieldValue": "false"
+            },
+            {
+              "fieldId": "corpo",
+              "fieldValue": "={{ $json.content }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1040,
+        240
+      ],
+      "id": "4ddeaa3d-dc58-4c93-a95b-8a75cfcc4bb2",
+      "name": "Create a row",
+      "credentials": {
+        "supabaseApi": {
+          "id": "6NhSUAyt1zZIWOJC",
+          "name": "Supabase account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=Você é um especialista em SEO e produção de conteúdo jornalístico para o Blog de Noticiais.\nReceba o HTML de uma notícia, filtre e gere uma nova postagem pronta para WordPress, otimizada para SEO, estruturada em texto e usando \\n para quebra de linhas e sem links promocionais indesejados.\n\nData Atual: {{ $now.format('dd/MM/yyyy')}}\n\nSiga as instruções abaixo:\n\nMantenha apenas o conteúdo jornalístico (título, subtítulos, corpo dos parágrafos e links oficiais como inscrição, edital ou documentos públicos).\n\nRemova quaisquer links ou referências a cursos, produtos, promoções ou parceiros comerciais, exemplo: Estou Preparado, Gran Concursos, etc.\n\nNUNCA crie, suponha ou infira datas, anos ou prazos que não estejam explícitos no texto original.\n\nEstruture o texto com introdução (~120 palavras), até 4-5 capítulos com subtítulos, mantendo lógica e fluidez, e uma conclusão (~120 palavras).\n\nAprofunde o conteúdo, evite repetições e superficialidade, conecte todos os capítulos entre si.\n\nNão use \"Capítulo 1\" etc. nos títulos, só o nome do tópico.\n\nO título deve ser curto (≤60 caracteres), chamativo e otimizado para SEO.\n\nO slug deve ser a versão do título em minúsculas, sem acentos e com hífens.\n\nEm hipótese alguma, adicione raciocínio, justificativa ou qualquer conteúdo fora do JSON de saída.\n\nApenas retorne o JSON abaixo, sem qualquer explicação, comentário, análise ou texto extra:\n\njson\nCopiar\n{\n  \"title\":   \"[Seu título SEO aqui]\",\n  \"slug\":    \"[seu-titulo-seo-aqui]\",\n  \"content\": \"[content-seo-da-noticia-aqui]\"\n}\nIMPORTANTE:\n\nNão invente datas, anos ou prazos. Só use o que está explicitamente no texto.\n\nNão traga reasoning, comentários, etapas, logs ou explicações: apenas o JSON final, já pronto para o blog.",
+        "options": {
+          "systemMessage": "={{ $json.title }} - {{ $json.content }}"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.8,
+      "position": [
+        448,
+        240
+      ],
+      "id": "36cf03d9-cb6d-42db-9999-9c641eeaeb4a",
+      "name": "Agente de Notícia"
+    }
+  ],
+  "connections": {
+    "HTML": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Espera 01",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [
+          {
+            "node": "No Operation, do nothing",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Extrair Info da Notícia",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DeepSeek Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Agente de Notícia",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extrair Info da Notícia": {
+      "main": [
+        [
+          {
+            "node": "Agente de Notícia",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Estruturar a Notícia": {
+      "main": [
+        [
+          {
+            "node": "Create a row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Espera 01": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Puxar Notícias": {
+      "main": [
+        [
+          {
+            "node": "Campo: Link Original",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Campo: Link Original": {
+      "main": [
+        [
+          {
+            "node": "Espera 01",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Estou Preparado": {
+      "main": [
+        [
+          {
+            "node": "HTML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Add a Notícia no Sheets": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ativador": {
+      "main": [
+        [
+          {
+            "node": "Puxar Notícias",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Estou Preparado",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Create a row": {
+      "main": [
+        [
+          {
+            "node": "Add a Notícia no Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Agente de Notícia": {
+      "main": [
+        [
+          {
+            "node": "Estruturar a Notícia",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": true
+  },
+  "tags": []
+}

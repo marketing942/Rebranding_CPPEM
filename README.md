@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CPPEM — novo site institucional
 
-## Getting Started
+Aplicação Next.js 16, TypeScript e Tailwind CSS para a nova identidade do CPPEM. Inclui Homepage, mapa interativo de concursos, biblioteca filtrável, páginas SEO por concurso e CMS interno com Supabase.
 
-First, run the development server:
+## Desenvolvimento
 
 ```bash
+npm install
+Copy-Item .env.example .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Sem as variáveis do Supabase, as páginas públicas usam dados de demonstração de `lib/mock-data.ts`. O painel informa que o backend ainda precisa ser configurado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Supabase
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Crie ou selecione um projeto Supabase.
+2. Aplique `supabase/migrations/0001_initial_cms.sql`.
+3. Configure `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` e `SUPABASE_SERVICE_ROLE_KEY`.
+4. Crie o primeiro usuário no Supabase Auth.
+5. Promova manualmente esse primeiro perfil:
 
-## Learn More
+```sql
+update public.profiles set role = 'admin' where id = '<uuid-do-usuario>';
+```
 
-To learn more about Next.js, take a look at the following resources:
+Depois disso, o administrador pode convidar usuários e alterná-los entre `admin` e `editor` em `/admin/usuarios`. A service role é usada somente no servidor para o envio desses convites.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O bucket público `site-media`, suas políticas, as tabelas, os gatilhos de auditoria e o histórico de slugs são criados pela migration.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Verificação
 
-## Deploy on Vercel
+```bash
+npm test
+npm run lint
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Antes da troca de domínio, configure `NEXT_PUBLIC_SITE_URL` com a URL final e confirme sitemap, canonical, Open Graph e redirecionamentos.
