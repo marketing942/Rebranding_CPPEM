@@ -1,13 +1,22 @@
 import Link from "next/link";
 import { AdminShell } from "@/components/admin/admin-shell";
 import { requireEditor } from "@/lib/admin";
-import { statusLabels } from "@/lib/constants";
+import { getContests } from "@/lib/data";
 
-const adminStatusLabel = (status:string) => statusLabels[status as keyof typeof statusLabels] ?? status;
+const contestsDatabaseUrl = "https://app.notion.com/p/677e142c8bd649d7a201fa1680f9b79c";
 
-export default async function AdminContestsPage({searchParams}:{searchParams:Promise<{erro?:string;salvo?:string}>}) {
-  const [{supabase,profile,configured},query]=await Promise.all([requireEditor(),searchParams]);
-  if(!configured||!supabase) return <AdminShell profile={null}><h1>Configure o Supabase para gerenciar concursos.</h1></AdminShell>;
-  const {data}=await supabase.from("contests").select("id,title,acronym,status,published,last_verified_at").order("updated_at",{ascending:false});
-  return <AdminShell profile={profile}><div style={{display:"flex",justifyContent:"space-between",alignItems:"end",gap:16}}><div><span className="eyebrow">Catálogo</span><h1 className="display-title" style={{fontSize:"2.5rem"}}>Concursos</h1></div><Link className="gold-button" href="/admin/concursos/novo">Novo concurso</Link></div>{query.erro&&<p style={{color:"#ff8d82"}}>Erro: {query.erro}</p>}{query.salvo&&<p style={{color:"#8ee59e"}}>Concurso salvo e páginas revalidadas.</p>}<table className="admin-table"><thead><tr><th>Concurso</th><th>Status</th><th>Verificação</th><th>Publicação</th><th></th></tr></thead><tbody>{data?.map((row)=><tr key={row.id}><td><strong>{row.acronym}</strong> — {row.title}</td><td>{adminStatusLabel(row.status)}</td><td>{row.last_verified_at}</td><td>{row.published?"Publicado":"Rascunho"}</td><td><Link className="ghost-button" href={`/admin/concursos/${row.id}`}>Editar</Link></td></tr>)}</tbody></table></AdminShell>;
+export default async function AdminContestsPage() {
+  const [{ profile }, contests] = await Promise.all([requireEditor(), getContests()]);
+
+  return <AdminShell profile={profile}>
+    <span className="eyebrow">Fonte editorial</span>
+    <h1 className="display-title" style={{ fontSize: "2.5rem" }}>Concursos no Notion</h1>
+    <p className="section-copy">A equipe cadastra e revisa os concursos diretamente no Sis. Site. O novo site exibe somente registros marcados como publicados e com data de verificação.</p>
+    <div className="admin-grid">
+      <div className="admin-card"><span className="map-hint">Publicados no site</span><strong>{contests.length}</strong></div>
+      <div className="admin-card"><span className="map-hint">Fonte de verdade</span><strong>Notion</strong></div>
+      <div className="admin-card"><span className="map-hint">Vínculo com cursos</span><strong>Por sigla</strong></div>
+    </div>
+    <Link className="gold-button" href={contestsDatabaseUrl} target="_blank" rel="noreferrer">Abrir Concursos CPPEM no Notion</Link>
+  </AdminShell>;
 }

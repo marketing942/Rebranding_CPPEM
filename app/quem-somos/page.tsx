@@ -51,7 +51,7 @@ export default function AboutPage() {
                 <span className="about-word-track">
                   <span>Mentalidade</span>
                   <span>Disciplina</span>
-                  <span>Técnica</span>
+                  <span>Tecnica</span>
                   <span>Mentalidade</span>
                 </span>
               </span>

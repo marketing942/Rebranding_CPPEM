@@ -46,6 +46,11 @@ export type CourseProduct = Product & {
   examBoard: string;
   titleExam: CourseAnswer;
   contestDescription: string;
+  studyTopics: string[];
+  courseAudience: string;
+  courseHighlights: string[];
+  workload: string;
+  accessDuration: string;
   relatedProducts: Product[];
 };
 
@@ -72,6 +77,7 @@ export type Contest = {
   lastVerifiedAt: string;
   publishedAt: string;
   product?: Product | null;
+  products?: Product[];
 };
 
 export type CampaignBanner = {

@@ -11,10 +11,8 @@ const seeds = [
   { name: "Mentoria individual", description: "Estratégia individual para rotina, método e concurso.", href: "https://individual.cppem.com.br", category: "Mentoria", icon: "Alvo", featured: true, order: 1 },
   { name: "Faculdade EAD", description: "Formação superior a distância para avançar na carreira.", href: "https://contato.unicive.cppem.com.br", category: "Formação", icon: "Graduação", featured: true, order: 2 },
   { name: "Supletivo", description: "Conclusão da escolaridade para liberar o próximo passo.", href: "https://supletivo.cppem.com.br", category: "Formação", icon: "Diploma", featured: true, order: 3 },
-  { name: "Presencial em Caruaru", description: "Aulas, acompanhamento e rotina dentro da sala.", href: "/presencial", category: "Preparação", icon: "Local", featured: false, order: 4 },
-  { name: "Plano de Combate", description: "Método, cronograma e acompanhamento na preparação online.", href: "/plano-de-combate", category: "Preparação", icon: "Escudo", featured: false, order: 5 },
-  { name: "Loja CPPEM", description: "Materiais e ferramentas para fortalecer sua preparação.", href: "https://cppem.lojaintegrada.com.br", category: "Materiais", icon: "Loja", featured: false, order: 6 },
 ];
+const disabledItems = new Set(["Presencial em Caruaru", "Plano de Combate", "Loja CPPEM"]);
 
 async function findExistingDatabase() {
   if (process.env.NOTION_ECOSYSTEM_DATABASE_ID) {
@@ -38,7 +36,7 @@ if (!database) {
     parent: { type: "page_id", page_id: parentPageId },
     title: [{ type: "text", text: { content: databaseTitle } }],
     description: [{ type: "text", text: { content: "Itens exibidos no mega menu Ecossistema CPPEM do novo site." } }],
-    is_inline: true,
+    is_inline: false,
     initial_data_source: {
       properties: {
         Nome: { title: {} },
@@ -68,6 +66,11 @@ if (!database) {
   console.log(`Banco existente: ${database.id}`);
 }
 
+if (database.is_inline) {
+  database = await notion.databases.update({ database_id: database.id, is_inline: false });
+  console.log("Banco convertido para página completa.");
+}
+
 const dataSourceId = database.data_sources?.[0]?.id;
 if (!dataSourceId) throw new Error("O banco não possui uma fonte de dados.");
 
@@ -77,6 +80,18 @@ const existingNames = new Set(existing.results.map((page) => {
   const title = page.properties.Nome;
   return title?.type === "title" ? title.title.map((part) => part.plain_text).join("") : "";
 }));
+
+for (const page of existing.results) {
+  if (page.object !== "page" || !("properties" in page)) continue;
+  const title = page.properties.Nome;
+  const name = title?.type === "title" ? title.title.map((part) => part.plain_text).join("") : "";
+  if (!disabledItems.has(name)) continue;
+  const active = page.properties.Ativo;
+  if (active?.type === "checkbox" && active.checkbox) {
+    await notion.pages.update({ page_id: page.id, properties: { Ativo: { checkbox: false } } });
+    console.log(`Item desativado: ${name}`);
+  }
+}
 
 for (const item of seeds) {
   if (existingNames.has(item.name)) continue;

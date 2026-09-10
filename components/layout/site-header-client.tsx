@@ -34,10 +34,10 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
   const featuredMaterial = featuredMaterials[featuredMaterialIndex];
 
   useEffect(() => {
-    if (!coursesOpen || featuredCourses.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if ((!coursesOpen && !ecosystemOpen) || featuredCourses.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     const timeout = window.setTimeout(() => setFeaturedIndex((index) => (index + 1) % featuredCourses.length), 5500);
     return () => window.clearTimeout(timeout);
-  }, [coursesOpen, featuredCourses.length, featuredIndex]);
+  }, [coursesOpen, ecosystemOpen, featuredCourses.length, featuredIndex]);
 
   useEffect(() => {
     if (!freeOpen || featuredMaterials.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -67,6 +67,7 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
   const openEcosystem = () => {
     setCoursesOpen(false);
     setFreeOpen(false);
+    if (!ecosystemOpen) setFeaturedIndex(0);
     setEcosystemOpen(true);
   };
   const showPrevious = () => setFeaturedIndex((index) => (index - 1 + featuredCourses.length) % featuredCourses.length);
@@ -118,12 +119,12 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
 
     <div className="courses-mega ecosystem-mega" id="ecosystem-mega-menu" data-open={ecosystemOpen} aria-hidden={!ecosystemOpen}>
       <div className="container ecosystem-mega-grid">
-        <div className="ecosystem-mega-intro">
-          <Image src="/brand/emblema-leao.webp" alt="" width={96} height={96} />
-          <span className="eyebrow">Ecossistema CPPEM</span>
-          <h2>Uma estrutura.<br/><span className="gold">Vários caminhos.</span></h2>
-          <p>Preparação, formação e acompanhamento conectados à sua próxima conquista.</p>
-          <small>{ecosystemItems.length.toString().padStart(2, "0")} soluções disponíveis</small>
+        <div className="courses-mega-feature">
+          {featured ? <Link href={featured.href} className="courses-feature-card" tabIndex={ecosystemOpen ? undefined : -1} onClick={() => setEcosystemOpen(false)}>
+            <img src={featured.menuImageUrl || featured.imageUrl} alt="" /><span className="courses-feature-overlay" />
+            <span className="courses-feature-copy"><small>Preparação em destaque</small><strong>{featured.name}</strong><span>Conhecer agora <ArrowRight size={15} /></span></span>
+          </Link> : <Link href="/cursos" className="courses-feature-empty" tabIndex={ecosystemOpen ? undefined : -1} onClick={() => setEcosystemOpen(false)}><Image src="/brand/emblema-leao.webp" alt="" width={112} height={112} /><strong>Encontre sua próxima preparação</strong><span>Ver todos os cursos <ArrowRight size={15} /></span></Link>}
+          {featuredCourses.length > 1 && <div className="courses-feature-controls"><button type="button" onClick={showPrevious} aria-label="Destaque anterior" tabIndex={ecosystemOpen ? undefined : -1}><ChevronLeft size={16} /></button><span>{featuredIndex + 1} / {featuredCourses.length}</span><button type="button" onClick={showNext} aria-label="Próximo destaque" tabIndex={ecosystemOpen ? undefined : -1}><ChevronRight size={16} /></button></div>}
         </div>
         <div className="ecosystem-mega-content">
           <div className="ecosystem-mega-heading"><span>Escolha seu próximo passo</span><strong>Do estudo à carreira.</strong></div>

@@ -14,8 +14,12 @@ import {
   FilePenLine,
   GraduationCap,
   Landmark,
+  ListChecks,
   ReceiptText,
   SearchX,
+  Sparkles,
+  Timer,
+  UserRoundCheck,
   X,
 } from "lucide-react";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
@@ -98,16 +102,19 @@ export function CourseCatalog({ products, activeSlug }: { products: CourseProduc
     });
   };
 
-  const details = selected ? [
+  const primaryDetails = selected ? [
     { label: "Nº de vagas", value: selected.openings, Icon: BriefcaseBusiness },
     { label: "Salário", value: selected.salary, Icon: Banknote },
+    { label: "Banca", value: selected.examBoard, Icon: Landmark },
+    { label: "Data da prova", value: selected.examDate, Icon: CalendarDays },
+  ] : [];
+
+  const secondaryDetails = selected ? [
     { label: "Data de inscrição", value: selected.registrationDate, Icon: CalendarDays },
     { label: "Taxa de inscrição", value: selected.registrationFee, Icon: ReceiptText },
     { label: "Escolaridade", value: selected.education, Icon: GraduationCap },
-    { label: "Data da prova", value: selected.examDate, Icon: CalendarDays },
     { label: "TAF", value: selected.taf, Icon: Dumbbell, answer: true },
     { label: "Redação discursiva", value: selected.discursiveEssay, Icon: FilePenLine, answer: true },
-    { label: "Banca", value: selected.examBoard, Icon: Landmark },
     { label: "Prova de títulos", value: selected.titleExam, Icon: Award, answer: true },
   ] : [];
 
@@ -157,15 +164,36 @@ export function CourseCatalog({ products, activeSlug }: { products: CourseProduc
             <span className="course-contest-status">{selected.contestStatus}</span>
           </div>
 
-          <div className="course-detail-facts">{details.map(({ label, value, Icon, answer: isAnswer }) => <div className="course-detail-fact" key={label}>
+          <div className="course-detail-facts course-detail-facts-primary">{primaryDetails.map(({ label, value, Icon }) => <div className="course-detail-fact" key={label}>
             <span><Icon size={17} />{label}</span>
-            {isAnswer ? <AnswerBadge value={value as CourseAnswer} /> : <strong>{value}</strong>}
+            <strong>{value}</strong>
           </div>)}</div>
 
-          {(selected.contestDescription || selected.description) && <div className="course-detail-description"><BookOpenCheck size={20} /><div><h3>Sobre esta preparação</h3><p>{selected.contestDescription || selected.description}</p></div></div>}
+          <details className="course-contest-more">
+            <summary>Ver detalhes do edital <ChevronDown size={17} /></summary>
+            <div className="course-detail-facts">{secondaryDetails.map(({ label, value, Icon, answer: isAnswer }) => <div className="course-detail-fact" key={label}>
+              <span><Icon size={17} />{label}</span>
+              {isAnswer ? <AnswerBadge value={value as CourseAnswer} /> : <strong>{value}</strong>}
+            </div>)}</div>
+            {selected.contestDescription && <div className="course-contest-summary"><BookOpenCheck size={18} /><div><strong>Sobre o concurso</strong><p>{selected.contestDescription}</p></div></div>}
+          </details>
+
+          <div className="course-training-section">
+            <div className="course-training-heading"><span className="eyebrow">Conteúdo da preparação</span><h3>O que você irá estudar</h3></div>
+            {selected.studyTopics.length ? <ul className="course-study-topics">{selected.studyTopics.map((topic) => <li key={topic}><BookOpenCheck size={15} />{topic}</li>)}</ul> : <p className="course-training-empty">A grade desta preparação será publicada em breve.</p>}
+
+            {(selected.workload || selected.accessDuration) && <div className="course-training-meta">
+              {selected.workload && <div><Timer size={18} /><span><small>Carga horária</small><strong>{selected.workload}</strong></span></div>}
+              {selected.accessDuration && <div><CalendarDays size={18} /><span><small>Tempo de acesso</small><strong>{selected.accessDuration}</strong></span></div>}
+            </div>}
+
+            {selected.courseAudience && <div className="course-detail-description"><UserRoundCheck size={20} /><div><h3>Para quem é</h3><p>{selected.courseAudience}</p></div></div>}
+            {selected.courseHighlights.length > 0 && <div className="course-highlights"><span><Sparkles size={18} /> Diferenciais do curso</span><ul>{selected.courseHighlights.map((highlight) => <li key={highlight}><ListChecks size={15} />{highlight}</li>)}</ul></div>}
+            {selected.description && <div className="course-detail-description"><BookOpenCheck size={20} /><div><h3>Sobre esta preparação</h3><p>{selected.description}</p></div></div>}
+          </div>
 
           <div className="course-related-section">
-            <div><span className="eyebrow">Materiais complementares</span><h3>Preparações para este concurso</h3></div>
+            <div><span className="eyebrow">Materiais complementares</span><h3>Reforce sua preparação</h3></div>
             {selected.relatedProducts.length ? <div className="course-related-grid">{selected.relatedProducts.map((product) => <Link href={product.href} className="course-related-card" key={product.id}>
               <img src={product.imageUrl} alt="" /><span><small>{product.category}</small><strong>{product.name}</strong>{product.price && <b>{product.price}</b>}</span><ArrowRight size={17} />
             </Link>)}</div> : <p className="course-related-empty">Nenhum material complementar vinculado no momento.</p>}

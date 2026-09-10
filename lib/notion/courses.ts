@@ -8,6 +8,15 @@ function answer(value: string): CourseAnswer {
   return value === "Sim" || value === "Não" ? value : "A confirmar";
 }
 
+function multiSelect(value: unknown): string[] {
+  const options = (value as { multi_select?: Array<{ name?: string }> } | undefined)?.multi_select;
+  return Array.isArray(options) ? options.map((option) => option.name?.trim()).filter((name): name is string => Boolean(name)) : [];
+}
+
+function lines(value: string): string[] {
+  return value.split(/\r?\n|;/).map((item) => item.trim()).filter(Boolean);
+}
+
 export async function getNotionCourses(): Promise<CourseProduct[] | null> {
   const databaseId = process.env.NOTION_COURSES_DATABASE_ID;
   if (!notion || !databaseId) return null;
@@ -59,6 +68,11 @@ export async function getNotionCourses(): Promise<CourseProduct[] | null> {
         examBoard: plainText((properties.Banca as { rich_text?: unknown })?.rich_text) || "A definir",
         titleExam: answer(readSelect(properties["Prova de títulos"])),
         contestDescription: plainText((properties["Descrição do concurso"] as { rich_text?: unknown })?.rich_text),
+        studyTopics: multiSelect(properties["O que você irá estudar"]),
+        courseAudience: plainText((properties["Para quem é"] as { rich_text?: unknown })?.rich_text),
+        courseHighlights: lines(plainText((properties["Diferenciais do curso"] as { rich_text?: unknown })?.rich_text)),
+        workload: plainText((properties["Carga horária"] as { rich_text?: unknown })?.rich_text),
+        accessDuration: plainText((properties["Tempo de acesso"] as { rich_text?: unknown })?.rich_text),
         relatedProducts: relatedProducts.filter((product) => relatedIds.has(product.id)),
       });
     }

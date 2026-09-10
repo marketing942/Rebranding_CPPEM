@@ -5,23 +5,13 @@ import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { BrazilMap, type StateFeature } from "@/components/contests/brazil-map";
 import { stateNames, statusLabels } from "@/lib/constants";
-import { normalizeSearch } from "@/lib/utils";
-import type { Contest, Product } from "@/types/content";
+import type { Contest } from "@/types/content";
 
-export function HomeContestExplorer({ contests, products, features }: { contests: Contest[]; products: Product[]; features: StateFeature[] }) {
+export function HomeContestExplorer({ contests, features }: { contests: Contest[]; features: StateFeature[] }) {
   const [selected, setSelected] = useState("PE");
   const [open, setOpen] = useState(false);
   const stateContests = contests.filter((contest) => contest.states.includes(selected));
-  const contestAcronyms = stateContests.map((contest) => normalizeSearch(contest.acronym));
-  const stateName = normalizeSearch(stateNames[selected]);
-  const stateCourseCodes = new Set([`PM${selected}`, `PC${selected}`, `PP${selected}`, `CBM${selected}`]);
-  const relatedProducts = products.filter((product) => {
-    const searchable = normalizeSearch([product.name, product.category, product.description].join(" "));
-    const tokens = product.name.toUpperCase().split(/[^A-Z0-9]+/).filter(Boolean);
-    return searchable.includes(stateName)
-      || contestAcronyms.some((acronym) => acronym && searchable.includes(acronym))
-      || tokens.some((token) => stateCourseCodes.has(token));
-  }).slice(0, 3);
+  const relatedProducts = Array.from(new Map(stateContests.flatMap((contest) => contest.products ?? (contest.product ? [contest.product] : [])).map((product) => [product.id, product])).values()).slice(0, 3);
 
   const selectState = (state: string) => {
     setSelected(state);
