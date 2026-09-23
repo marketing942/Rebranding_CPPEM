@@ -127,7 +127,7 @@ export default function PlanoDeCombatePage() {
     </div></section>
 
     <section className="combat-mentor-section"><div className="container combat-mentor-layout">
-      <div className="combat-mentor-portrait"><Image src="/images/plano-combate/everton-mentor.jpg" alt="Everton Mota, mentor do Plano de Combate" width={1000} height={1250} sizes="(max-width: 980px) 90vw, 440px"/><span>Direito Penal · Redação · Estratégia</span></div>
+      <div className="combat-mentor-portrait"><Image src="/images/plano-combate/everton-mentor.jpg" alt="Everton Mota, mentor do Plano de Combate" width={1000} height={1250} sizes="(max-width: 980px) 90vw, 440px"/></div>
       <div className="combat-mentor-copy"><span className="eyebrow">Comando da preparação</span><h2 className="display-title">Método criado por quem conhece <span className="gold">o campo de prova.</span></h2><h3>Everton Mota <small>Mentor CPPEM</small></h3><p>A metodologia transforma experiência em direção prática: um cronograma possível de cumprir, acompanhamento para corrigir desvios e uma equipe que mantém o aluno em movimento até a prova.</p><div className="combat-mentor-points"><span><Medal size={19}/> Estratégia aplicada à rotina</span><span><ShieldCheck size={19}/> Acompanhamento contínuo</span><span><PlayCircle size={19}/> Conteúdo conectado à missão</span></div><a className="gold-button" href="#planos">Quero ser acompanhado <ArrowRight size={17}/></a></div>
     </div></section>
 

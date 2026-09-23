@@ -57,6 +57,8 @@ const whatsappHref = "https://api.whatsapp.com/send/?phone=558173105354&text=Gos
 export default function PresencialPage() {
   return <div className="page-shell presencial-page"><SiteHeader /><main>
     <section className="presencial-hero" id="inscricao">
+      <Image className="presencial-hero-image" src="/images/bannerpresencial.png" alt="" width={1916} height={821} priority sizes="100vw" />
+      <div className="presencial-hero-overlay" aria-hidden="true" />
       <div className="presencial-grid" aria-hidden="true"><span /><span /><span /><span /><span /></div>
       <div className="container presencial-hero-layout">
         <div className="presencial-hero-copy">
@@ -64,8 +66,8 @@ export default function PresencialPage() {
           <h1>Estude presencial em <span>Caruaru</span> e vista a farda</h1>
           <p>Professor na sua frente, turma ao seu lado e uma rotina construída para levar sua preparação até a prova.</p>
           <ul>
-            <li><ShieldCheck size={18} /> Aulas presenciais e acesso às gravações</li>
-            <li><CalendarCheck2 size={18} /> Cronograma organizado desde o início</li>
+            <li><ShieldCheck size={18} /> Aulas presenciais</li>
+            <li><CalendarCheck2 size={18} /> Cronograma organizado</li>
             <li><Users size={18} /> Monitores, professores e turma na mesma missão</li>
           </ul>
           <a className="presencial-location" href="https://www.google.com/maps/search/?api=1&query=CPPEM+Caruaru+PE" target="_blank" rel="noreferrer"><MapPin size={18} /> Unidade em Caruaru–PE <ArrowRight size={15} /></a>
@@ -88,7 +90,7 @@ export default function PresencialPage() {
       <div className="container presencial-stats">
         <AnimatedStat prefix="+" start={1000} end={14000} label="alunos aprovados" />
         <article className="about-stat"><strong>Caruaru–PE</strong><span>unidade presencial</span></article>
-        <AnimatedStat start={1} end={10} suffix="+" label="anos preparando tropa" duration={1500} />
+        <AnimatedStat start={1} end={7} suffix="+" label="anos Guiando Futuros" duration={1500} />
       </div>
     </section>
 

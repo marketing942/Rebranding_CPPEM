@@ -23,7 +23,7 @@ export default async function PartnersPage() {
       <div className="partners-radar" aria-hidden="true"><span className="partners-radar-ring ring-one" /><span className="partners-radar-ring ring-two" /><span className="partners-radar-ring ring-three" /><span className="partners-radar-core"><Handshake size={54} /></span></div>
     </div></section>
 
-    <section className="partners-directory-section" id="rede"><div className="container"><div className="partners-section-heading"><div><span className="eyebrow">Conexões selecionadas</span><h2 className="display-title">Encontre o benefício <span className="gold">certo.</span></h2></div><p>Passe o mouse, toque ou use o teclado para revelar as condições oferecidas por cada parceiro.</p></div><PartnerDirectory partners={partners} categories={partnerCategories} /></div></section>
+    <section className="partners-directory-section" id="rede"><div className="container"><div className="partners-section-heading"><div><span className="eyebrow">Conexões selecionadas</span><h2 className="display-title">Encontre o benefício <span className="gold">certo.</span></h2></div><p></p></div><PartnerDirectory partners={partners} categories={partnerCategories} /></div></section>
 
     <section className="partners-form-section" id="seja-parceiro"><div className="container partners-form-layout">
       <div className="partners-form-intro"><span className="eyebrow">Faça parte da rede</span><h2 className="display-title">Sua empresa, perto de uma comunidade que <span className="gold">avança.</span></h2><p>Envie sua proposta uma única vez. Ela entra na triagem do CPPEM e nossa equipe avalia o encaixe antes da publicação.</p><div className="partners-process">

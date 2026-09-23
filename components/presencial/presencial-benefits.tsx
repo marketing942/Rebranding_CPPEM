@@ -17,7 +17,7 @@ const benefits: Benefit[] = [
   { icon: GraduationCap, title: "Professores especialistas", description: "Equipe especialista em concursos, formada também por servidores públicos." },
   { icon: University, title: "Estrutura em Caruaru", description: "Salas amplas e climatizadas, preparadas para sua rotina de estudos." },
   { icon: ClipboardCheck, title: "Simulados presenciais", description: "Treino no clima da prova real, com tempo e pressão de verdade." },
-  { icon: Compass, title: "Mentorias de método", description: "Estratégias para estudar certo e evoluir com mais clareza." },
+  { icon: Compass, title: "Métodos EXCLUSIVOS", description: "Estratégias para estudar certo e evoluir com mais clareza." },
   { icon: Mic, title: "Palestras com convidados", description: "Encontros com quem já percorreu o caminho e conhece a carreira." },
 ];
 

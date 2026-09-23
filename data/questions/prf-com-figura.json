@@ -1,0 +1,1215 @@
+[
+  {
+    "id": "prf-2013-018",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Raciocínio Lógico-Matemático",
+    "number": 18,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Gráfico para os itens de 18 a 22 número de acidentes nas estradas brasileiras no período de 2005 a 2011 (em milhares) 183 189 159 129 141 110 111 2005 2006 2007 2008 2009 2010 2011 Considerando os dados apresentados no gráfico, julgue os itens seguintes.",
+    "statement": "A média do número de acidentes ocorridos no período de 2007 a 2010 é inferior à mediana da sequência de dados apresentada no gráfico.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2013-fig-01.png"
+    ]
+  },
+  {
+    "id": "prf-2013-019",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Raciocínio Lógico-Matemático",
+    "number": 19,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Gráfico para os itens de 18 a 22 número de acidentes nas estradas brasileiras no período de 2005 a 2011 (em milhares) 183 189 159 129 141 110 111 2005 2006 2007 2008 2009 2010 2011 Considerando os dados apresentados no gráfico, julgue os itens seguintes.",
+    "statement": "Os valores associados aos anos de 2008, 2009 e 2010 estão em progressão aritmética.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2013-fig-01.png"
+    ]
+  },
+  {
+    "id": "prf-2013-020",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Raciocínio Lógico-Matemático",
+    "number": 20,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Gráfico para os itens de 18 a 22 número de acidentes nas estradas brasileiras no período de 2005 a 2011 (em milhares) 183 189 159 129 141 110 111 2005 2006 2007 2008 2009 2010 2011 Considerando os dados apresentados no gráfico, julgue os itens seguintes.",
+    "statement": "O número de acidentes ocorridos em 2008 foi, pelo menos, 26% maior que o número de acidentes ocorridos em 2005.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2013-fig-01.png"
+    ]
+  },
+  {
+    "id": "prf-2013-021",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Raciocínio Lógico-Matemático",
+    "number": 21,
+    "question_type": "true_false",
+    "support_text": "Considere que, em 2009, tenha sido construído um modelo linear para a previsão de valores futuros do número de acidentes ocorridos nas estradas brasileiras. Nesse sentido, suponha que o número de acidentes no ano t seja representado pela função F(t) = At + B, tal que F(2007) = 129.000 e F(2009) =159.000.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Considere que, em 2009, tenha sido construído um modelo linear"
+      },
+      {
+        "n": null,
+        "text": "para a previsão de valores futuros do número de acidentes ocorridos"
+      },
+      {
+        "n": null,
+        "text": "nas estradas brasileiras. Nesse sentido, suponha que o número de"
+      },
+      {
+        "n": null,
+        "text": "acidentes no ano t seja representado pela função F(t) = At + B, tal"
+      },
+      {
+        "n": null,
+        "text": "que F(2007) = 129.000 e F(2009) =159.000. Com base nessas"
+      }
+    ],
+    "instruction": "Com base nessas informações e no gráfico apresentado, julgue os itens a seguir.",
+    "statement": "A diferença entre a previsão para o número de acidentes em 2011 feita pelo referido modelo linear e o número de acidentes ocorridos em 2011 dado no gráfico é superior a 8.000.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2013-fig-01.png"
+    ]
+  },
+  {
+    "id": "prf-2013-022",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Raciocínio Lógico-Matemático",
+    "number": 22,
+    "question_type": "true_false",
+    "support_text": "Considere que, em 2009, tenha sido construído um modelo linear para a previsão de valores futuros do número de acidentes ocorridos nas estradas brasileiras. Nesse sentido, suponha que o número de acidentes no ano t seja representado pela função F(t) = At + B, tal que F(2007) = 129.000 e F(2009) =159.000.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Considere que, em 2009, tenha sido construído um modelo linear"
+      },
+      {
+        "n": null,
+        "text": "para a previsão de valores futuros do número de acidentes ocorridos"
+      },
+      {
+        "n": null,
+        "text": "nas estradas brasileiras. Nesse sentido, suponha que o número de"
+      },
+      {
+        "n": null,
+        "text": "acidentes no ano t seja representado pela função F(t) = At + B, tal"
+      },
+      {
+        "n": null,
+        "text": "que F(2007) = 129.000 e F(2009) =159.000. Com base nessas"
+      }
+    ],
+    "instruction": "Com base nessas informações e no gráfico apresentado, julgue os itens a seguir.",
+    "statement": "O valor da constante A em F(t) é superior a 14.500.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2013-fig-01.png"
+    ]
+  },
+  {
+    "id": "prf-2013-023",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Raciocínio Lógico-Matemático",
+    "number": 23,
+    "question_type": "true_false",
+    "support_text": "g\\L 3 concentração de álcool no sangue (g/L) 2 1 t₀ t₁ t₂ t Considere que o nível de concentração de álcool na corrente sanguínea, em g/L, de uma pessoa, em função do tempo t, em horas, seja expresso por N = −0,008(t² – 35t + 34). Considere, ainda, que essa pessoa tenha começado a ingerir bebida alcoólica a partir de t = t₀ (N(t₀ ) = 0), partindo de um estado de sobriedade, e que tenha parado de ingerir bebida alcoólica em t = t₁ , voltando a ficar sóbria em t = t₂ . Considere, por fim, a figura acima, que apresenta o gráfico da função N(t) para t 0 [t₀ , t₂ ].",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "g\\L"
+      },
+      {
+        "n": null,
+        "text": "3 concentração de álcool no sangue (g/L)"
+      },
+      {
+        "n": null,
+        "text": "2"
+      },
+      {
+        "n": null,
+        "text": "1"
+      },
+      {
+        "n": null,
+        "text": "t₀ t₁ t₂ t"
+      },
+      {
+        "n": null,
+        "text": "Considere que o nível de concentração de álcool na corrente"
+      },
+      {
+        "n": null,
+        "text": "sanguínea, em g/L, de uma pessoa, em função do tempo t, em horas,"
+      },
+      {
+        "n": null,
+        "text": "seja expresso por N = −0,008(t² – 35t + 34). Considere, ainda, que"
+      },
+      {
+        "n": null,
+        "text": "essa pessoa tenha começado a ingerir bebida alcoólica a partir de"
+      },
+      {
+        "n": null,
+        "text": "t = t₀ (N(t₀ ) = 0), partindo de um estado de sobriedade, e que tenha"
+      },
+      {
+        "n": null,
+        "text": "parado de ingerir bebida alcoólica em t = t₁ , voltando a ficar sóbria"
+      },
+      {
+        "n": null,
+        "text": "em t = t₂ . Considere, por fim, a figura acima, que apresenta o"
+      },
+      {
+        "n": null,
+        "text": "gráfico da função N(t) para t 0 [t₀ , t₂ ]. Com base nessas informações"
+      }
+    ],
+    "instruction": "Com base nessas informações e tomando 24,3 como valor aproximado de 589 , julgue os itens que se seguem.",
+    "statement": "O nível de concentração mais alto de álcool na corrente sanguínea da referida pessoa ocorreu em t = t₁ com t₁ > 18 horas.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2013-fig-02.png"
+    ]
+  },
+  {
+    "id": "prf-2013-046",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Informática",
+    "number": 46,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Tendo como referência a figura acima, que ilustra uma janela do BrOffice.org Writer com um texto em edição, julgue os itens a seguir.",
+    "statement": "Na situação da janela apresentada, para se criar um novo documento, em branco, é suficiente clicar, com o botão esquerdo do mouse, o botão , que está localizado logo abaixo do menu .",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2013-fig-03.png"
+    ]
+  },
+  {
+    "id": "prf-2013-047",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Informática",
+    "number": 47,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Tendo como referência a figura acima, que ilustra uma janela do BrOffice.org Writer com um texto em edição, julgue os itens a seguir.",
+    "statement": "Na situação mostrada na figura, para se aplicar negrito à palavra “valores”, é suficiente aplicar, com o botão esquerdo do mouse, um clique duplo sobre a palavra, pressionar e manter pressionada a tecla Ctrl e teclar B.",
+    "answer": null,
+    "annulled": true,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2013-fig-03.png"
+    ]
+  },
+  {
+    "id": "prf-2013-048",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Informática",
+    "number": 48,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Considerando a figura acima, que ilustra uma janela do Broffice.org Calc com uma planilha em edição, julgue o item abaixo.",
+    "statement": "Na planilha em questão, as células E3 e F4 serão preenchidas com os valores 7 e 17, respectivamente, após a execução da seguinte sequência de ações: clicar a célula E3 ; digitar =B2+C3 e, em seguida, teclar Enter; clicar novamente a célula E3; clicar o botão Copiar; clicar a célula F4; e clicar o botão Colar.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2013-fig-04.png"
+    ]
+  },
+  {
+    "id": "prf-2013-049",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Informática",
+    "number": 49,
+    "question_type": "true_false",
+    "support_text": "Tendo como referência a figura acima, que mostra uma janela do Google computadores e segurança da informação.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Tendo como referência a figura acima, que mostra uma janela do Google"
+      },
+      {
+        "n": null,
+        "text": "computadores e segurança da informação."
+      }
+    ],
+    "instruction": null,
+    "statement": "Ao contrário de um vírus de computador, que é capaz de se autorreplicar um worm não pode se replicar automaticamente e necessita de um",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2013-fig-05.png"
+    ]
+  },
+  {
+    "id": "prf-2013-050",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Informática",
+    "number": 50,
+    "question_type": "true_false",
+    "support_text": "Tendo como referência a figura acima, que mostra uma janela do Google computadores e segurança da informação.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Tendo como referência a figura acima, que mostra uma janela do Google"
+      },
+      {
+        "n": null,
+        "text": "computadores e segurança da informação."
+      }
+    ],
+    "instruction": null,
+    "statement": "Na situação mostrada na figura, ao se clicar o botão , todos do Windows serão armazenados em nuvem (cloud storage).",
+    "answer": null,
+    "annulled": true,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2013-fig-05.png"
+    ]
+  },
+  {
+    "id": "prf-2013-117",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Física",
+    "number": 117,
+    "question_type": "true_false",
+    "support_text": "v h Uma bala de revólver de massa igual a 10 g foi disparada, com velocidade v, na direção de um bloco de massa igual a 4 kg, suspenso por um fio, conforme ilustrado na figura acima. A bala ficou encravada no bloco e o conjunto subiu até uma altura h igual a 30 cm.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "v h"
+      },
+      {
+        "n": null,
+        "text": "Uma bala de revólver de massa igual a 10 g foi disparada,"
+      },
+      {
+        "n": null,
+        "text": "com velocidade v, na direção de um bloco de massa igual a 4 kg,"
+      },
+      {
+        "n": null,
+        "text": "suspenso por um fio, conforme ilustrado na figura acima. A bala"
+      },
+      {
+        "n": null,
+        "text": "ficou encravada no bloco e o conjunto subiu até uma altura h igual"
+      },
+      {
+        "n": null,
+        "text": "a 30 cm."
+      }
+    ],
+    "instruction": "Considerando essas informações e assumindo que a aceleração da gravidade seja igual a 10 m/s² , julgue o item abaixo.",
+    "statement": "Se toda a energia cinética que o conjunto adquiriu imediatamente após a colisão fosse transformada em energia potencial, a velocidade do conjunto após a colisão e a velocidade com que a bala foi disparada seriam, respectivamente, superiores a 2,0 m/s e a 960 m/s.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2013-fig-06.png"
+    ]
+  },
+  {
+    "id": "prf-2019-024",
+    "exam_slug": "prf-2019",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CESPE | CEBRASPE",
+    "year": 2019,
+    "applied_at": "2019-02-03",
+    "booklet": "440_PRF_001_00",
+    "block": "Bloco I",
+    "subject": "Raciocínio Lógico-Matemático",
+    "number": 24,
+    "question_type": "true_false",
+    "support_text": "As figuras seguintes ilustram a vista frontal e a vista da esquerda de um sólido que foi formado empilhando-se cubos de mesmo tamanho.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "As figuras seguintes ilustram a vista frontal e a vista da"
+      },
+      {
+        "n": null,
+        "text": "esquerda de um sólido que foi formado empilhando-se cubos de"
+      },
+      {
+        "n": null,
+        "text": "mesmo tamanho."
+      }
+    ],
+    "instruction": "A partir das figuras precedentes, julgue os itens a seguir, com relação à possibilidade de a figura representar uma vista superior do referido sólido.",
+    "statement": null,
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/440_PRF_001_00_PAG_9.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/GAB_DEFINITIVO_MATRIZ_440_PRF_001_00_PAG_9.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2019-fig-01.png",
+      "/questoes/figuras/prf-2019-fig-02.png",
+      "/questoes/figuras/prf-2019-fig-03.png",
+      "/questoes/figuras/prf-2019-fig-04.png"
+    ]
+  },
+  {
+    "id": "prf-2019-025",
+    "exam_slug": "prf-2019",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CESPE | CEBRASPE",
+    "year": 2019,
+    "applied_at": "2019-02-03",
+    "booklet": "440_PRF_001_00",
+    "block": "Bloco I",
+    "subject": "Raciocínio Lógico-Matemático",
+    "number": 25,
+    "question_type": "true_false",
+    "support_text": "As figuras seguintes ilustram a vista frontal e a vista da esquerda de um sólido que foi formado empilhando-se cubos de mesmo tamanho.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "As figuras seguintes ilustram a vista frontal e a vista da"
+      },
+      {
+        "n": null,
+        "text": "esquerda de um sólido que foi formado empilhando-se cubos de"
+      },
+      {
+        "n": null,
+        "text": "mesmo tamanho."
+      }
+    ],
+    "instruction": "A partir das figuras precedentes, julgue os itens a seguir, com relação à possibilidade de a figura representar uma vista superior do referido sólido.",
+    "statement": null,
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/440_PRF_001_00_PAG_9.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/GAB_DEFINITIVO_MATRIZ_440_PRF_001_00_PAG_9.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2019-fig-01.png",
+      "/questoes/figuras/prf-2019-fig-02.png",
+      "/questoes/figuras/prf-2019-fig-03.png",
+      "/questoes/figuras/prf-2019-fig-04.png"
+    ]
+  },
+  {
+    "id": "prf-2019-026",
+    "exam_slug": "prf-2019",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CESPE | CEBRASPE",
+    "year": 2019,
+    "applied_at": "2019-02-03",
+    "booklet": "440_PRF_001_00",
+    "block": "Bloco I",
+    "subject": "Raciocínio Lógico-Matemático",
+    "number": 26,
+    "question_type": "true_false",
+    "support_text": "As figuras seguintes ilustram a vista frontal e a vista da esquerda de um sólido que foi formado empilhando-se cubos de mesmo tamanho.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "As figuras seguintes ilustram a vista frontal e a vista da"
+      },
+      {
+        "n": null,
+        "text": "esquerda de um sólido que foi formado empilhando-se cubos de"
+      },
+      {
+        "n": null,
+        "text": "mesmo tamanho."
+      }
+    ],
+    "instruction": "A partir das figuras precedentes, julgue os itens a seguir, com relação à possibilidade de a figura representar uma vista superior do referido sólido.",
+    "statement": null,
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/440_PRF_001_00_PAG_9.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/GAB_DEFINITIVO_MATRIZ_440_PRF_001_00_PAG_9.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2019-fig-01.png",
+      "/questoes/figuras/prf-2019-fig-02.png",
+      "/questoes/figuras/prf-2019-fig-03.png",
+      "/questoes/figuras/prf-2019-fig-04.png"
+    ]
+  },
+  {
+    "id": "prf-2019-035",
+    "exam_slug": "prf-2019",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CESPE | CEBRASPE",
+    "year": 2019,
+    "applied_at": "2019-02-03",
+    "booklet": "440_PRF_001_00",
+    "block": "Bloco I",
+    "subject": "Física",
+    "number": 35,
+    "question_type": "true_false",
+    "support_text": "A figura seguinte ilustra uma prova de tiro ao alvo com arma de fogo: o alvo é um círculo de 20 cm de diâmetro e está localizado a 50 m da extremidade do cano da arma. O cano da arma e o centro do alvo estão à altura de 1,5 m do solo. Nessa situação, um projétil de massa igual a 15 g sai do cano da arma paralelamente ao solo, com velocidade horizontal inicial de 720 km/h.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "A figura seguinte ilustra uma prova de tiro ao alvo com"
+      },
+      {
+        "n": null,
+        "text": "arma de fogo: o alvo é um círculo de 20 cm de diâmetro e está"
+      },
+      {
+        "n": null,
+        "text": "localizado a 50 m da extremidade do cano da arma. O cano da"
+      },
+      {
+        "n": null,
+        "text": "arma e o centro do alvo estão à altura de 1,5 m do solo."
+      },
+      {
+        "n": null,
+        "text": "Nessa situação, um projétil de massa igual a 15 g sai do"
+      },
+      {
+        "n": null,
+        "text": "cano da arma paralelamente ao solo, com velocidade horizontal"
+      },
+      {
+        "n": null,
+        "text": "inicial de 720 km/h."
+      }
+    ],
+    "instruction": "Tendo como referência a situação apresentada, julgue os itens a seguir, 9,8 m/s₂ considerando e desprezando que o atrito a aceleração do ar sobre da o projétil. gravidade seja de",
+    "statement": "O deslocamento do projétil na direção horizontal ocorre de acordo com uma função quadrática do tempo.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/440_PRF_001_00_PAG_9.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/GAB_DEFINITIVO_MATRIZ_440_PRF_001_00_PAG_9.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2019-fig-05.png"
+    ]
+  },
+  {
+    "id": "prf-2019-036",
+    "exam_slug": "prf-2019",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CESPE | CEBRASPE",
+    "year": 2019,
+    "applied_at": "2019-02-03",
+    "booklet": "440_PRF_001_00",
+    "block": "Bloco I",
+    "subject": "Física",
+    "number": 36,
+    "question_type": "true_false",
+    "support_text": "A figura seguinte ilustra uma prova de tiro ao alvo com arma de fogo: o alvo é um círculo de 20 cm de diâmetro e está localizado a 50 m da extremidade do cano da arma. O cano da arma e o centro do alvo estão à altura de 1,5 m do solo. Nessa situação, um projétil de massa igual a 15 g sai do cano da arma paralelamente ao solo, com velocidade horizontal inicial de 720 km/h.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "A figura seguinte ilustra uma prova de tiro ao alvo com"
+      },
+      {
+        "n": null,
+        "text": "arma de fogo: o alvo é um círculo de 20 cm de diâmetro e está"
+      },
+      {
+        "n": null,
+        "text": "localizado a 50 m da extremidade do cano da arma. O cano da"
+      },
+      {
+        "n": null,
+        "text": "arma e o centro do alvo estão à altura de 1,5 m do solo."
+      },
+      {
+        "n": null,
+        "text": "Nessa situação, um projétil de massa igual a 15 g sai do"
+      },
+      {
+        "n": null,
+        "text": "cano da arma paralelamente ao solo, com velocidade horizontal"
+      },
+      {
+        "n": null,
+        "text": "inicial de 720 km/h."
+      }
+    ],
+    "instruction": "Tendo como referência a situação apresentada, julgue os itens a seguir, 9,8 m/s₂ considerando e desprezando que o atrito a aceleração do ar sobre da o projétil. gravidade seja de",
+    "statement": "Na situação em tela, o projétil atingirá o alvo circular.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/440_PRF_001_00_PAG_9.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/GAB_DEFINITIVO_MATRIZ_440_PRF_001_00_PAG_9.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2019-fig-05.png"
+    ]
+  },
+  {
+    "id": "prf-2019-037",
+    "exam_slug": "prf-2019",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CESPE | CEBRASPE",
+    "year": 2019,
+    "applied_at": "2019-02-03",
+    "booklet": "440_PRF_001_00",
+    "block": "Bloco I",
+    "subject": "Física",
+    "number": 37,
+    "question_type": "true_false",
+    "support_text": "A figura seguinte ilustra uma prova de tiro ao alvo com arma de fogo: o alvo é um círculo de 20 cm de diâmetro e está localizado a 50 m da extremidade do cano da arma. O cano da arma e o centro do alvo estão à altura de 1,5 m do solo. Nessa situação, um projétil de massa igual a 15 g sai do cano da arma paralelamente ao solo, com velocidade horizontal inicial de 720 km/h.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "A figura seguinte ilustra uma prova de tiro ao alvo com"
+      },
+      {
+        "n": null,
+        "text": "arma de fogo: o alvo é um círculo de 20 cm de diâmetro e está"
+      },
+      {
+        "n": null,
+        "text": "localizado a 50 m da extremidade do cano da arma. O cano da"
+      },
+      {
+        "n": null,
+        "text": "arma e o centro do alvo estão à altura de 1,5 m do solo."
+      },
+      {
+        "n": null,
+        "text": "Nessa situação, um projétil de massa igual a 15 g sai do"
+      },
+      {
+        "n": null,
+        "text": "cano da arma paralelamente ao solo, com velocidade horizontal"
+      },
+      {
+        "n": null,
+        "text": "inicial de 720 km/h."
+      }
+    ],
+    "instruction": "Tendo como referência a situação apresentada, julgue os itens a seguir, 9,8 m/s₂ considerando e desprezando que o atrito a aceleração do ar sobre da o projétil. gravidade seja de",
+    "statement": "Se o alvo fosse retirado da direção do projétil, então o trabalho realizado pela força gravitacional para levar o projétil até o solo seria superior a 0,10 J.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/440_PRF_001_00_PAG_9.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/GAB_DEFINITIVO_MATRIZ_440_PRF_001_00_PAG_9.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2019-fig-05.png"
+    ]
+  },
+  {
+    "id": "prf-2019-045",
+    "exam_slug": "prf-2019",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CESPE | CEBRASPE",
+    "year": 2019,
+    "applied_at": "2019-02-03",
+    "booklet": "440_PRF_001_00",
+    "block": "Bloco I",
+    "subject": "Geopolítica",
+    "number": 45,
+    "question_type": "true_false",
+    "support_text": "Figura Mapa rodoviário 2016. Ministério dos Transportes. O Brasil é o país com a maior concentração rodoviária de transporte de cargas e passageiros entre as principais economias mundiais. Segundo dados do Banco Mundial, referentes a 2013, 58% do transporte no país é feito por rodovias — contra 53% da Austrália, 50% da China, 43% da Rússia e 8% do Canadá. Internet: <www.bbc.com> (com adaptações).",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Figura"
+      },
+      {
+        "n": null,
+        "text": "Mapa rodoviário 2016. Ministério dos Transportes."
+      },
+      {
+        "n": null,
+        "text": "O Brasil é o país com a maior concentração rodoviária de"
+      },
+      {
+        "n": null,
+        "text": "transporte de cargas e passageiros entre as principais economias"
+      },
+      {
+        "n": null,
+        "text": "mundiais. Segundo dados do Banco Mundial, referentes a 2013,"
+      },
+      {
+        "n": null,
+        "text": "58% do transporte no país é feito por rodovias — contra 53% da"
+      },
+      {
+        "n": null,
+        "text": "Austrália, 50% da China, 43% da Rússia e 8% do Canadá."
+      },
+      {
+        "n": null,
+        "text": "Internet: <www.bbc.com> (com adaptações)."
+      }
+    ],
+    "instruction": "Considerando o texto apresentado, que destaca o papel do modal rodoviário de cargas e passageiros no Brasil, e a figura precedente, que ilustra como a rede rodoviária integra as diversas regiões que compõem o território nacional, julgue os itens a seguir.",
+    "statement": "O custo do frete e as grandes distâncias a serem percorridas entre as regiões produtoras e os centros urbanos consumidores e os portos de exportação são fatores que impactam diretamente no preço dos produtos agropecuários e industriais brasileiros e em sua competividade nos mercados nacional e internacional.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/440_PRF_001_00_PAG_9.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/GAB_DEFINITIVO_MATRIZ_440_PRF_001_00_PAG_9.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2019-fig-06.png"
+    ]
+  },
+  {
+    "id": "prf-2019-046",
+    "exam_slug": "prf-2019",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CESPE | CEBRASPE",
+    "year": 2019,
+    "applied_at": "2019-02-03",
+    "booklet": "440_PRF_001_00",
+    "block": "Bloco I",
+    "subject": "Geopolítica",
+    "number": 46,
+    "question_type": "true_false",
+    "support_text": "Figura Mapa rodoviário 2016. Ministério dos Transportes. O Brasil é o país com a maior concentração rodoviária de transporte de cargas e passageiros entre as principais economias mundiais. Segundo dados do Banco Mundial, referentes a 2013, 58% do transporte no país é feito por rodovias — contra 53% da Austrália, 50% da China, 43% da Rússia e 8% do Canadá. Internet: <www.bbc.com> (com adaptações).",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Figura"
+      },
+      {
+        "n": null,
+        "text": "Mapa rodoviário 2016. Ministério dos Transportes."
+      },
+      {
+        "n": null,
+        "text": "O Brasil é o país com a maior concentração rodoviária de"
+      },
+      {
+        "n": null,
+        "text": "transporte de cargas e passageiros entre as principais economias"
+      },
+      {
+        "n": null,
+        "text": "mundiais. Segundo dados do Banco Mundial, referentes a 2013,"
+      },
+      {
+        "n": null,
+        "text": "58% do transporte no país é feito por rodovias — contra 53% da"
+      },
+      {
+        "n": null,
+        "text": "Austrália, 50% da China, 43% da Rússia e 8% do Canadá."
+      },
+      {
+        "n": null,
+        "text": "Internet: <www.bbc.com> (com adaptações)."
+      }
+    ],
+    "instruction": "Considerando o texto apresentado, que destaca o papel do modal rodoviário de cargas e passageiros no Brasil, e a figura precedente, que ilustra como a rede rodoviária integra as diversas regiões que compõem o território nacional, julgue os itens a seguir.",
+    "statement": "A rede de transporte rodoviário integra todo o território brasileiro, com rodovias conectando em rede todos os municípios das cinco macrorregiões do território nacional, e a predominância desse modal de transporte é fator de vulnerabilidade em relação aos países desenvolvidos, os quais também dependem desse modal de transporte.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/440_PRF_001_00_PAG_9.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/GAB_DEFINITIVO_MATRIZ_440_PRF_001_00_PAG_9.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2019-fig-06.png"
+    ]
+  },
+  {
+    "id": "prf-2019-082",
+    "exam_slug": "prf-2019",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CESPE | CEBRASPE",
+    "year": 2019,
+    "applied_at": "2019-02-03",
+    "booklet": "440_PRF_001_00",
+    "block": "Bloco II",
+    "subject": "Legislação de Trânsito",
+    "number": 82,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com relação aos requisitos mínimos previstos nas resoluções do CONTRAN acerca de segurança para amarração de cargas transportadas em veículos de carga, julgue os itens subsequentes.",
+    "statement": "Nos veículos com carroceria aberta, os dispositivos de amarração devem ser tensionados pelo lado externo das guardas laterais, independentemente do espaço interno ocupado pela carga na carroceria, como mostram as figuras a seguir.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/440_PRF_001_00_PAG_9.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/GAB_DEFINITIVO_MATRIZ_440_PRF_001_00_PAG_9.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2019-fig-07.png",
+      "/questoes/figuras/prf-2019-fig-08.png"
+    ]
+  },
+  {
+    "id": "prf-2019-083",
+    "exam_slug": "prf-2019",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CESPE | CEBRASPE",
+    "year": 2019,
+    "applied_at": "2019-02-03",
+    "booklet": "440_PRF_001_00",
+    "block": "Bloco II",
+    "subject": "Legislação de Trânsito",
+    "number": 83,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com relação aos requisitos mínimos previstos nas resoluções do CONTRAN acerca de segurança para amarração de cargas transportadas em veículos de carga, julgue os itens subsequentes.",
+    "statement": "No caso de transporte de tubos apoiados sobre a carroceria e na posição horizontal, apesar de a carga ultrapassar a altura do painel frontal da carroceria, é permitida a circulação do veículo ante a impossibilidade de deslizamento longitudinal da carga, como ilustra a figura a seguir.",
+    "answer": null,
+    "annulled": true,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/440_PRF_001_00_PAG_9.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/GAB_DEFINITIVO_MATRIZ_440_PRF_001_00_PAG_9.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2019-fig-07.png",
+      "/questoes/figuras/prf-2019-fig-08.png"
+    ]
+  },
+  {
+    "id": "prf-2019-084",
+    "exam_slug": "prf-2019",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CESPE | CEBRASPE",
+    "year": 2019,
+    "applied_at": "2019-02-03",
+    "booklet": "440_PRF_001_00",
+    "block": "Bloco II",
+    "subject": "Legislação de Trânsito",
+    "number": 84,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com relação aos requisitos mínimos previstos nas resoluções do CONTRAN acerca de segurança para amarração de cargas transportadas em veículos de carga, julgue os itens subsequentes.",
+    "statement": "Tanto em veículos do tipo baú frigorífico (como o da figura 1A9-I a seguir) como em veículos do tipo baú lonado (como o da figura 1A9-II a seguir), é opcional a existência de pontos de amarração internos para a carga transportada.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/440_PRF_001_00_PAG_9.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/GAB_DEFINITIVO_MATRIZ_440_PRF_001_00_PAG_9.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2019-fig-07.png",
+      "/questoes/figuras/prf-2019-fig-08.png",
+      "/questoes/figuras/prf-2019-fig-09.png",
+      "/questoes/figuras/prf-2019-fig-10.png",
+      "/questoes/figuras/prf-2019-fig-11.png"
+    ]
+  },
+  {
+    "id": "prf-2019-085",
+    "exam_slug": "prf-2019",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CESPE | CEBRASPE",
+    "year": 2019,
+    "applied_at": "2019-02-03",
+    "booklet": "440_PRF_001_00",
+    "block": "Bloco II",
+    "subject": "Legislação de Trânsito",
+    "number": 85,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Figura 1A9-I Figura 1A9-II À luz das disposições do CTB e das resoluções do CONTRAN acerca das regras de circulação de motocicletas, motonetas, ciclomotores, triciclos e quadriciclos motorizados, julgue os itens seguintes.",
+    "statement": "Entre as três situações ilustradas a seguir, apenas o dispositivo utilizado na figura 1A9-V é permitido para o transporte de galões de água mineral com capacidade de até 20 litros.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/440_PRF_001_00_PAG_9.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/GAB_DEFINITIVO_MATRIZ_440_PRF_001_00_PAG_9.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2019-fig-09.png",
+      "/questoes/figuras/prf-2019-fig-10.png",
+      "/questoes/figuras/prf-2019-fig-11.png"
+    ]
+  },
+  {
+    "id": "prf-2019-086",
+    "exam_slug": "prf-2019",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CESPE | CEBRASPE",
+    "year": 2019,
+    "applied_at": "2019-02-03",
+    "booklet": "440_PRF_001_00",
+    "block": "Bloco II",
+    "subject": "Legislação de Trânsito",
+    "number": 86,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Figura 1A9-I Figura 1A9-II À luz das disposições do CTB e das resoluções do CONTRAN acerca das regras de circulação de motocicletas, motonetas, ciclomotores, triciclos e quadriciclos motorizados, julgue os itens seguintes.",
+    "statement": "É permitido que motociclista levante a viseira do capacete enquanto o veículo conduzido estiver parado, aguardando a travessia de pedestres diante de semáforo.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/440_PRF_001_00_PAG_9.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/GAB_DEFINITIVO_MATRIZ_440_PRF_001_00_PAG_9.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2019-fig-09.png",
+      "/questoes/figuras/prf-2019-fig-10.png",
+      "/questoes/figuras/prf-2019-fig-11.png"
+    ]
+  },
+  {
+    "id": "prf-2019-087",
+    "exam_slug": "prf-2019",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CESPE | CEBRASPE",
+    "year": 2019,
+    "applied_at": "2019-02-03",
+    "booklet": "440_PRF_001_00",
+    "block": "Bloco II",
+    "subject": "Legislação de Trânsito",
+    "number": 87,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Figura 1A9-I Figura 1A9-II À luz das disposições do CTB e das resoluções do CONTRAN acerca das regras de circulação de motocicletas, motonetas, ciclomotores, triciclos e quadriciclos motorizados, julgue os itens seguintes.",
+    "statement": "Situação hipotética: Em operação de fiscalização em uma rodovia federal, a equipe da PRF verificou que o condutor de um quadriciclo não fazia uso do capacete. O policial que abordou o condutor o liberou, considerando que o uso de capacete pelo condutor desse tipo de veículo se restringe à condução em vias urbanas pavimentadas. Assertiva: Nessa situação, foram adequadas as condutas do policial e do condutor.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/440_PRF_001_00_PAG_9.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_18/arquivos/GAB_DEFINITIVO_MATRIZ_440_PRF_001_00_PAG_9.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2019-fig-09.png",
+      "/questoes/figuras/prf-2019-fig-10.png",
+      "/questoes/figuras/prf-2019-fig-11.png"
+    ]
+  },
+  {
+    "id": "prf-2021-043",
+    "exam_slug": "prf-2021",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CEBRASPE",
+    "year": 2021,
+    "applied_at": "2021-05-09",
+    "booklet": "578_PRF_001_01",
+    "block": "Bloco I",
+    "subject": "Física",
+    "number": 43,
+    "question_type": "true_false",
+    "support_text": "Um projétil, de massa m e velocidade v, colidiu frontalmente com um bloco de madeira de massa M que estava em repouso em uma superfície horizontal sem atrito, preso a uma mola ideal de constante elástica k. Após a colisão, o projétil e o na mola, uma compressão máxima igual a x, conforme mostra a figura a seguir.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Um projétil, de massa m e velocidade v, colidiu"
+      },
+      {
+        "n": null,
+        "text": "frontalmente com um bloco de madeira de massa M que estava"
+      },
+      {
+        "n": null,
+        "text": "em repouso em uma superfície horizontal sem atrito, preso a uma"
+      },
+      {
+        "n": null,
+        "text": "mola ideal de constante elástica k. Após a colisão, o projétil e o"
+      },
+      {
+        "n": null,
+        "text": "na mola, uma compressão máxima igual a x, conforme mostra a"
+      },
+      {
+        "n": null,
+        "text": "figura a seguir."
+      }
+    ],
+    "instruction": "Com referência a essa situação hipotética, à mecânica clássica e a áreas a ela correlatas, julgue os itens que se seguem.",
+    "statement": "Na posição de compressão máxima, a energia potencial elástica armazenada na mola tem valor menor que o da energia cinética do projétil antes da colisão.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/578_PRF_001_01.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/GAB_DEFINITIVO_578_PRF_001_01.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2021-fig-01.png"
+    ]
+  },
+  {
+    "id": "prf-2021-044",
+    "exam_slug": "prf-2021",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CEBRASPE",
+    "year": 2021,
+    "applied_at": "2021-05-09",
+    "booklet": "578_PRF_001_01",
+    "block": "Bloco I",
+    "subject": "Física",
+    "number": 44,
+    "question_type": "true_false",
+    "support_text": "Um projétil, de massa m e velocidade v, colidiu frontalmente com um bloco de madeira de massa M que estava em repouso em uma superfície horizontal sem atrito, preso a uma mola ideal de constante elástica k. Após a colisão, o projétil e o na mola, uma compressão máxima igual a x, conforme mostra a figura a seguir.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Um projétil, de massa m e velocidade v, colidiu"
+      },
+      {
+        "n": null,
+        "text": "frontalmente com um bloco de madeira de massa M que estava"
+      },
+      {
+        "n": null,
+        "text": "em repouso em uma superfície horizontal sem atrito, preso a uma"
+      },
+      {
+        "n": null,
+        "text": "mola ideal de constante elástica k. Após a colisão, o projétil e o"
+      },
+      {
+        "n": null,
+        "text": "na mola, uma compressão máxima igual a x, conforme mostra a"
+      },
+      {
+        "n": null,
+        "text": "figura a seguir."
+      }
+    ],
+    "instruction": "Com referência a essa situação hipotética, à mecânica clássica e a áreas a ela correlatas, julgue os itens que se seguem.",
+    "statement": "Como não há atrito entre o bloco de madeira e a mesa horizontal, a conservação da energia mecânica garante que o valor da energia cinética do sistema imediatamente antes da colisão seja igual ao valor da energia cinética do sistema imediatamente após a colisão.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": true,
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/578_PRF_001_01.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/prf_21/arquivos/GAB_DEFINITIVO_578_PRF_001_01.PDF",
+    "figures": [
+      "/questoes/figuras/prf-2021-fig-01.png"
+    ]
+  }
+]

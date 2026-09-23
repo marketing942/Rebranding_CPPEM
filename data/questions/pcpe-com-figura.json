@@ -1,0 +1,278 @@
+[
+  {
+    "id": "pcpe-2024-agente-037",
+    "exam_slug": "pcpe-2024-agente",
+    "organization": "Polícia Civil de Pernambuco",
+    "organization_acronym": "PCPE",
+    "position": "Agente de Polícia",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CEBRASPE",
+    "year": 2024,
+    "applied_at": "2024-02-25",
+    "booklet": "MATRIZ_954PC_PE001_00_COM_JUSTIFICATIVA",
+    "block": "Conhecimentos Específicos",
+    "subject": "Informática",
+    "topic": null,
+    "number": 37,
+    "question_type": "multiple_choice",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": null,
+    "statement": "No Excel, para que um usuário obtenha a planilha 2 a partir da planilha 1, ele deverá selecionar as células de A1 a B7 e, então,",
+    "options": {
+      "A": "clicar na aba Dados e selecionar o comando Classificar de A a Z (do menor para o maior) .",
+      "B": "copiar o conteúdo dessas células e, ao colá-lo em outra célula, selecionar a opção Transpor Linhas e Colunas .",
+      "C": "inserir tabela com o comando Ctrl + Alt + T.",
+      "D": "clicar, nesta ordem, na aba Página Inicial , em Estilos de Célula , em Formato do Número e, por fim, em Vírgula .",
+      "E": "clicar na aba Página Inicial e, em seguida, em Mesclar e Centralizar ."
+    },
+    "answer": "B",
+    "annulled": false,
+    "explanations": {
+      "A": "Selecionar as células de A1 até B7 > Dados > Classificar em ordem crescente Planilha1",
+      "B": "Selecionar as células de A1 até B7 > Copiar o conteúdo das células > Colar > Transpor Linhas e Colunas Planilha 1",
+      "C": "Selecionar as células de A1 até B7 > Inserir tabela Planilha1",
+      "D": "Selecionar as células de A1 até B7 > Início > Estilo de Células > Vírgula Planilha1",
+      "E": "Selecionar as células de A1 até B7 > Início > Mesclar e Centralizar Planilha1"
+    },
+    "needs_figure": true,
+    "figures": [
+      "/questoes/figuras/pcpe-2024-agente-037.png"
+    ],
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/pc_pe_23/arquivos/MATRIZ_954PC_PE001_00_COM_JUSTIFICATIVA.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/pc_pe_23/arquivos/GAB_DEFINITIVO_MATRIZ_954PC_PE001_00.PDF"
+  },
+  {
+    "id": "pcpe-2024-agente-054",
+    "exam_slug": "pcpe-2024-agente",
+    "organization": "Polícia Civil de Pernambuco",
+    "organization_acronym": "PCPE",
+    "position": "Agente de Polícia",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CEBRASPE",
+    "year": 2024,
+    "applied_at": "2024-02-25",
+    "booklet": "MATRIZ_954PC_PE001_00_COM_JUSTIFICATIVA",
+    "block": "Conhecimentos Específicos",
+    "subject": "Estatística",
+    "topic": "Estatística descritiva e análise exploratória de dados: gráficos, diagramas, tabelas, medidas descritivas (posição, dispersão, assimetria e curtose)",
+    "number": 54,
+    "question_type": "multiple_choice",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": null,
+    "statement": "A tabela precedente apresenta uma amostra de X ocorrências de furtos em comércios locais registradas em dez dias e selecionadas aleatoriamente. Se Me denota a média amostral e Md representa a mediana amostral de X, sabe-se que a diferença D = Me − Md se relaciona com uma medida de assimetria. Para esse conjunto de dados, o valor D é igual a",
+    "options": {
+      "A": "−2.",
+      "B": "–1.",
+      "C": "0.",
+      "D": "+1.",
+      "E": "+2."
+    },
+    "answer": null,
+    "annulled": true,
+    "explanations": {},
+    "needs_figure": true,
+    "figures": [
+      "/questoes/figuras/pcpe-2024-agente-054.png"
+    ],
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/pc_pe_23/arquivos/MATRIZ_954PC_PE001_00_COM_JUSTIFICATIVA.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/pc_pe_23/arquivos/GAB_DEFINITIVO_MATRIZ_954PC_PE001_00.PDF"
+  },
+  {
+    "id": "pcpe-2024-agente-055",
+    "exam_slug": "pcpe-2024-agente",
+    "organization": "Polícia Civil de Pernambuco",
+    "organization_acronym": "PCPE",
+    "position": "Agente de Polícia",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CEBRASPE",
+    "year": 2024,
+    "applied_at": "2024-02-25",
+    "booklet": "MATRIZ_954PC_PE001_00_COM_JUSTIFICATIVA",
+    "block": "Conhecimentos Específicos",
+    "subject": "Estatística",
+    "topic": "Estatística descritiva e análise exploratória de dados: gráficos, diagramas, tabelas, medidas descritivas (posição, dispersão, assimetria e curtose)",
+    "number": 55,
+    "question_type": "multiple_choice",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": null,
+    "statement": "A figura precedente mostra a evolução temporal da taxa de determinado crime, de 2004 a 2021, com valores por 100 mil habitantes, no estado de Pernambuco. Nesse período, essa taxa atingiu o pico em 2017 (57 por 100 mil habitantes), alcançando o menor patamar dessa série histórica em 2021 (34 por 100 mil habitantes). A diferença entre esses extremos, de 23 por 100 mil habitantes, representa uma medida de dispersão conhecida como",
+    "options": {
+      "A": "desvio padrão.",
+      "B": "variância.",
+      "C": "curtose.",
+      "D": "intervalo interquartil.",
+      "E": "amplitude amostral."
+    },
+    "answer": "E",
+    "annulled": false,
+    "explanations": {
+      "A": "Pela definição, o desvio padrão deve ser inferior à metade da diferença entre o máximo e o mínimo.",
+      "B": "A variância representa uma variação quadrática, por isso não seria possível encontrá-la na mesma unidade de medida da taxa do crime.",
+      "C": "A curtose não é medida de dispersão.",
+      "D": "O intervalo interquartil denota a amplitude entre o quartil superior e o inferior. Por isso, essa medida deveria ser inferior a 23.",
+      "E": "A diferença entre os extremos superior e inferior da série de dados é chamada de amplitude amostral."
+    },
+    "needs_figure": true,
+    "figures": [
+      "/questoes/figuras/pcpe-2024-agente-055.png"
+    ],
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/pc_pe_23/arquivos/MATRIZ_954PC_PE001_00_COM_JUSTIFICATIVA.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/pc_pe_23/arquivos/GAB_DEFINITIVO_MATRIZ_954PC_PE001_00.PDF"
+  },
+  {
+    "id": "pcpe-2024-agente-059",
+    "exam_slug": "pcpe-2024-agente",
+    "organization": "Polícia Civil de Pernambuco",
+    "organization_acronym": "PCPE",
+    "position": "Agente de Polícia",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CEBRASPE",
+    "year": 2024,
+    "applied_at": "2024-02-25",
+    "booklet": "MATRIZ_954PC_PE001_00_COM_JUSTIFICATIVA",
+    "block": "Conhecimentos Específicos",
+    "subject": "Estatística",
+    "topic": "Técnicas de amostragem: amostragem aleatória simples, estratificada, sistemática e por conglomerados",
+    "number": 59,
+    "question_type": "multiple_choice",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": null,
+    "statement": "Suponha que uma população formada por 600 mil pessoas se encontre distribuída em cinco estratos, conforme o quadro precedente, que mostra, ainda, o desvio padrão da variável de interesse. Para a estimação da média populacional dessa variável de interesse mediante amostragem estratificada com alocação ótima de Neyman, o estrato que deve contribuir com o maior número de unidades amostrais é o",
+    "options": {
+      "A": "I.",
+      "B": "II.",
+      "C": "III.",
+      "D": "IV.",
+      "E": "V."
+    },
+    "answer": "C",
+    "annulled": false,
+    "explanations": {
+      "A": "O estrato I apresenta o segundo menor número de unidades amostrais.",
+      "B": "Os estratos II e IV apresentam o segundo maior número de unidades amostrais.",
+      "C": "Com as devidas simplificações, o quadro a seguir mostra o resultado do produto entre tamanho de cada estrado e o desvio padrão da variável de interesse. Como a maior variação total se encontra no estrato III, pela alocação ótima de Neyman, ele deverá contribuir proporcionalmente com o maior número de unidades amostrais. estrato populacional tamanho padrão desvio produto I 5 5 25 II 8 4 32 III 12 3 36 IV 16 2 32 V 19 1 19",
+      "D": "Os estratos II e IV apresentam o segundo maior número de unidades amostrais.",
+      "E": "O estrato V apresenta o menor número de unidades amostrais."
+    },
+    "needs_figure": true,
+    "figures": [
+      "/questoes/figuras/pcpe-2024-agente-059.png"
+    ],
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/pc_pe_23/arquivos/MATRIZ_954PC_PE001_00_COM_JUSTIFICATIVA.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/pc_pe_23/arquivos/GAB_DEFINITIVO_MATRIZ_954PC_PE001_00.PDF"
+  },
+  {
+    "id": "pcpe-2024-escrivao-048",
+    "exam_slug": "pcpe-2024-escrivao",
+    "organization": "Polícia Civil de Pernambuco",
+    "organization_acronym": "PCPE",
+    "position": "Escrivão de Polícia",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CEBRASPE",
+    "year": 2024,
+    "applied_at": "2024-02-25",
+    "booklet": "MATRIZ_954PC_PE002_00_COM_JUSTIFICATIVA",
+    "block": "Conhecimentos Específicos",
+    "subject": "Estatística",
+    "topic": "Estatística descritiva e análise exploratória de dados: gráficos, diagramas, tabelas, medidas descritivas (posição, dispersão, assimetria e curtose)",
+    "number": 48,
+    "question_type": "multiple_choice",
+    "support_text": "Texto 2A4-II\nOs números de homicídios, de 2011 a 2021, de determinado país estão representados na tabela a seguir.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Os números de homicídios, de 2011 a 2021, de"
+      },
+      {
+        "n": null,
+        "text": "determinado país estão representados na tabela a seguir."
+      }
+    ],
+    "instruction": null,
+    "statement": "Com base nos dados apresentados no texto 2A4-II, julgue os itens a seguir. I De 2020 a 2021, o número de homicídios diminuiu em aproximadamente 9,2%. II No período de 2011 a 2021, o país apresentou uma média de homicídios por ano superior a 3.900. III Se uma nova sequência de valores for criada, em que a primeira posição corresponda à média entre os anos 2011 e 2015, a segunda corresponda à média entre os anos 2012 e 2016, e assim por diante, o valor máximo dessa nova sequência será a média entre os anos 2015 e 2019. Assinale a opção correta.",
+    "options": {
+      "A": "Apenas o item II está certo.",
+      "B": "Apenas o item III está certo.",
+      "C": "Apenas os itens I e II estão certos.",
+      "D": "Apenas os itens I e III estão certos.",
+      "E": "Todos os itens estão certos."
+    },
+    "answer": "D",
+    "annulled": false,
+    "explanations": {
+      "A": "O item II está errado, pois a média de homicídios no período de 2011 a 2021 será μ = 41.882/11, o que resulta no valor aproximado de 3.807 por ano.",
+      "B": "Além do item III, o item I também está certo, pois a variação entre o número de homicídios de 2021 e 2020 será de aproximadamente (3.439 – 3.786)/3.786 = −9,2%.",
+      "C": "O item II está errado, pois a média de homicídios no período de 2011 a 2021 será μ = 41.882/11, o que resulta no valor aproximado de 3.807 por ano.",
+      "D": "O item I está certo, pois a variação entre o número de homicídios de 2021 e 2020 será de aproximadamente (3.439 – 3.786)/3.786 = −9,2%. O item II está errado, pois a média de homicídios no período de 2011 a 2021 será μ = 41.882/11, o que resulta no valor aproximado de 3.807 por ano. O item III está certo, pois, calculando-se as médias por período de 5 anos, começando-se em 2011, encontram-se os valores μ(2011 a 15) = 3.425,4; μ(2012 a 2016) = 3.620,6; μ(2013 a 2017) = 4.039,0; μ(2014 a 2018) = 4.252,2; μ(2015 a 2019) = 4.275,4; μ(2016 a 2020) = 4.263,2; μ(2017 a 2021) = 4.061,6, o que comprova que a média mais elevada é a apresentada no período de 2015 a 2019. Portanto, a opção está correta.",
+      "E": "O item II está errado, pois a média de homicídios no período de 2011 a 2021 será μ = 41.882/11, o que resulta no valor aproximado de 3.807 por ano."
+    },
+    "needs_figure": true,
+    "figures": [
+      "/questoes/figuras/pcpe-2024-escrivao-texto-2a4-ii.png"
+    ],
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/pc_pe_23/arquivos/MATRIZ_954PC_PE002_00_COM_JUSTIFICATIVA.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/pc_pe_23/arquivos/GAB_DEFINITIVO_MATRIZ_954PC_PE002_00.PDF"
+  },
+  {
+    "id": "pcpe-2024-escrivao-049",
+    "exam_slug": "pcpe-2024-escrivao",
+    "organization": "Polícia Civil de Pernambuco",
+    "organization_acronym": "PCPE",
+    "position": "Escrivão de Polícia",
+    "exam_board": "CEBRASPE",
+    "exam_board_label": "CEBRASPE",
+    "year": 2024,
+    "applied_at": "2024-02-25",
+    "booklet": "MATRIZ_954PC_PE002_00_COM_JUSTIFICATIVA",
+    "block": "Conhecimentos Específicos",
+    "subject": "Estatística",
+    "topic": "Estatística descritiva e análise exploratória de dados: gráficos, diagramas, tabelas, medidas descritivas (posição, dispersão, assimetria e curtose)",
+    "number": 49,
+    "question_type": "multiple_choice",
+    "support_text": "Texto 2A4-II\nOs números de homicídios, de 2011 a 2021, de determinado país estão representados na tabela a seguir.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Os números de homicídios, de 2011 a 2021, de"
+      },
+      {
+        "n": null,
+        "text": "determinado país estão representados na tabela a seguir."
+      }
+    ],
+    "instruction": null,
+    "statement": "De acordo com o texto 2A4-II, é correto afirmar que o coeficiente de variação do quantitativo de homicídios no período de 2011 a 2021 é um valor entre",
+    "options": {
+      "A": "14% e 15%.",
+      "B": "15% e 16%.",
+      "C": "16% e 17%.",
+      "D": "17% e 18%.",
+      "E": "18% e 19%."
+    },
+    "answer": "C",
+    "annulled": false,
+    "explanations": {
+      "A": "O coeficiente de variação é a razão entre o desvio padrão e a média da população. Assim, k v = 633,5019/3807,455 = 16,63%.",
+      "B": "O coeficiente de variação é a razão entre o desvio padrão e a média da população. Assim, k v = 633,5019/3807,455 = 16,63%.",
+      "C": "O coeficiente de variação é a razão entre o desvio padrão e a média da população. Assim, k v = 633,5019/3807,455 = 16,63%.",
+      "D": "O coeficiente de variação é a razão entre o desvio padrão e a média da população. Assim, k v = 633,5019/3807,455 = 16,63%.",
+      "E": "O coeficiente de variação é a razão entre o desvio padrão e a média da população. Assim, k v = 633,5019/3807,455 = 16,63%."
+    },
+    "needs_figure": true,
+    "figures": [
+      "/questoes/figuras/pcpe-2024-escrivao-texto-2a4-ii.png"
+    ],
+    "needs_review": false,
+    "source_exam_url": "https://cdn.cebraspe.org.br/concursos/pc_pe_23/arquivos/MATRIZ_954PC_PE002_00_COM_JUSTIFICATIVA.PDF",
+    "source_answer_url": "https://cdn.cebraspe.org.br/concursos/pc_pe_23/arquivos/GAB_DEFINITIVO_MATRIZ_954PC_PE002_00.PDF"
+  }
+]

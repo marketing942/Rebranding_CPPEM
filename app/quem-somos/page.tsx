@@ -6,6 +6,8 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { StudentProof } from "@/components/home/student-proof";
 import { AnimatedStat } from "@/components/about/animated-stat";
+import { AboutTicker } from "@/components/about/about-ticker";
+import { AboutHowItWorks } from "@/components/about/about-how-it-works";
 import { approvedStudentImages } from "@/lib/mock-data";
 
 export const metadata: Metadata = {
@@ -13,12 +15,6 @@ export const metadata: Metadata = {
   description: "Conheça os pilares que orientam a preparação do CPPEM para concursos policiais.",
   alternates: { canonical: "/quem-somos" },
 };
-
-const principles = [
-  ["01", "Mentalidade", "Pensar como quem está construindo uma aprovação."],
-  ["02", "Disciplina", "Transformar intenção em constância todos os dias."],
-  ["03", "Técnica", "Estudar com método, estratégia e direção."],
-] as const;
 
 const platformFeatures = [
   { position: "missions", title: "Missões diárias", description: "Organize o que estudar em cada etapa da preparação.", Icon: CalendarCheck2 },
@@ -71,11 +67,11 @@ export default function AboutPage() {
             <span className="about-axis about-axis-three">Técnica</span>
           </div>
         </div>
-
-        <div className="container about-principles">
-          {principles.map(([number, title, description]) => <article className="about-principle" key={number}><span>{number}</span><div><h2>{title}</h2><p>{description}</p></div></article>)}
-        </div>
       </section>
+
+      <AboutTicker />
+
+      <AboutHowItWorks />
 
       <section className="about-platform-section">
         <div className="container about-platform-heading">

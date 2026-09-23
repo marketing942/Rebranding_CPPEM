@@ -1,0 +1,4575 @@
+[
+  {
+    "id": "prf-2013-001",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Língua Portuguesa",
+    "number": 1,
+    "question_type": "true_false",
+    "support_text": "Leio que a ciência deu agora mais um passo definitivo. É claro que o definitivo da ciência é transitório, e não por deficiência da ciência (é ciência demais), que se supera a si mesma a cada dia... Não indaguemos para que, já que a própria ciência não o faz — o que, aliás, é a mais moderna forma de objetividade de que dispomos. Mas vamos ao definitivo transitório. Os cientistas afirmam que podem realmente construir agora a bomba limpa. Sabemos todos que as bombas atômicas fabricadas até hoje são sujas (aliás, imundas) porque, depois que explodem, deixam vagando pela atmosfera o já famoso e temido estrôncio 90. Ora, isso é desagradável: pode mesmo acontecer que o próprio país que lançou a bomba venha a sofrer, a longo prazo, as consequências mortíferas da proeza. O que é, sem dúvida, uma sujeira. Pois bem, essas bombas indisciplinadas, mal-educadas, serão em breve substituídas pelas bombas n, que cumprirão sua missão com lisura: destruirão o inimigo, sem riscos para o atacante. Trata-se, portanto, de uma fabulosa conquista, não? Ferreira Gullar. Maravilha. In: A estranha vida banal. Rio de Janeiro: José Olympio, 1989, p. 109.",
+    "support_lines": [
+      {
+        "n": 1,
+        "text": "Leio que a ciência deu agora mais um passo definitivo."
+      },
+      {
+        "n": 2,
+        "text": "É claro que o definitivo da ciência é transitório, e não por"
+      },
+      {
+        "n": 3,
+        "text": "deficiência da ciência (é ciência demais), que se supera a si"
+      },
+      {
+        "n": 4,
+        "text": "mesma a cada dia... Não indaguemos para que, já que a própria"
+      },
+      {
+        "n": 5,
+        "text": "ciência não o faz — o que, aliás, é a mais moderna forma de"
+      },
+      {
+        "n": 6,
+        "text": "objetividade de que dispomos."
+      },
+      {
+        "n": 7,
+        "text": "Mas vamos ao definitivo transitório. Os cientistas"
+      },
+      {
+        "n": 8,
+        "text": "afirmam que podem realmente construir agora a bomba limpa."
+      },
+      {
+        "n": 9,
+        "text": "Sabemos todos que as bombas atômicas fabricadas até hoje são"
+      },
+      {
+        "n": 10,
+        "text": "sujas (aliás, imundas) porque, depois que explodem, deixam"
+      },
+      {
+        "n": 11,
+        "text": "vagando pela atmosfera o já famoso e temido estrôncio 90."
+      },
+      {
+        "n": 12,
+        "text": "Ora, isso é desagradável: pode mesmo acontecer que o próprio"
+      },
+      {
+        "n": 13,
+        "text": "país que lançou a bomba venha a sofrer, a longo prazo, as"
+      },
+      {
+        "n": 14,
+        "text": "consequências mortíferas da proeza. O que é, sem dúvida, uma"
+      },
+      {
+        "n": 15,
+        "text": "sujeira."
+      },
+      {
+        "n": 16,
+        "text": "Pois bem, essas bombas indisciplinadas,"
+      },
+      {
+        "n": 17,
+        "text": "mal-educadas, serão em breve substituídas pelas bombas n, que"
+      },
+      {
+        "n": 18,
+        "text": "cumprirão sua missão com lisura: destruirão o inimigo,"
+      },
+      {
+        "n": 19,
+        "text": "sem riscos para o atacante. Trata-se, portanto, de uma fabulosa"
+      },
+      {
+        "n": 20,
+        "text": "conquista, não?"
+      },
+      {
+        "n": null,
+        "text": "Ferreira Gullar. Maravilha. In: A estranha vida"
+      },
+      {
+        "n": null,
+        "text": "banal. Rio de Janeiro: José Olympio, 1989, p. 109."
+      }
+    ],
+    "instruction": "No que se refere aos sentidos e às estruturas linguísticas do texto acima, julgue os itens a seguir.",
+    "statement": "A forma verbal “podem” ( R .8) está empregada no sentido de têm autorização .",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-002",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Língua Portuguesa",
+    "number": 2,
+    "question_type": "true_false",
+    "support_text": "Leio que a ciência deu agora mais um passo definitivo. É claro que o definitivo da ciência é transitório, e não por deficiência da ciência (é ciência demais), que se supera a si mesma a cada dia... Não indaguemos para que, já que a própria ciência não o faz — o que, aliás, é a mais moderna forma de objetividade de que dispomos. Mas vamos ao definitivo transitório. Os cientistas afirmam que podem realmente construir agora a bomba limpa. Sabemos todos que as bombas atômicas fabricadas até hoje são sujas (aliás, imundas) porque, depois que explodem, deixam vagando pela atmosfera o já famoso e temido estrôncio 90. Ora, isso é desagradável: pode mesmo acontecer que o próprio país que lançou a bomba venha a sofrer, a longo prazo, as consequências mortíferas da proeza. O que é, sem dúvida, uma sujeira. Pois bem, essas bombas indisciplinadas, mal-educadas, serão em breve substituídas pelas bombas n, que cumprirão sua missão com lisura: destruirão o inimigo, sem riscos para o atacante. Trata-se, portanto, de uma fabulosa conquista, não? Ferreira Gullar. Maravilha. In: A estranha vida banal. Rio de Janeiro: José Olympio, 1989, p. 109.",
+    "support_lines": [
+      {
+        "n": 1,
+        "text": "Leio que a ciência deu agora mais um passo definitivo."
+      },
+      {
+        "n": 2,
+        "text": "É claro que o definitivo da ciência é transitório, e não por"
+      },
+      {
+        "n": 3,
+        "text": "deficiência da ciência (é ciência demais), que se supera a si"
+      },
+      {
+        "n": 4,
+        "text": "mesma a cada dia... Não indaguemos para que, já que a própria"
+      },
+      {
+        "n": 5,
+        "text": "ciência não o faz — o que, aliás, é a mais moderna forma de"
+      },
+      {
+        "n": 6,
+        "text": "objetividade de que dispomos."
+      },
+      {
+        "n": 7,
+        "text": "Mas vamos ao definitivo transitório. Os cientistas"
+      },
+      {
+        "n": 8,
+        "text": "afirmam que podem realmente construir agora a bomba limpa."
+      },
+      {
+        "n": 9,
+        "text": "Sabemos todos que as bombas atômicas fabricadas até hoje são"
+      },
+      {
+        "n": 10,
+        "text": "sujas (aliás, imundas) porque, depois que explodem, deixam"
+      },
+      {
+        "n": 11,
+        "text": "vagando pela atmosfera o já famoso e temido estrôncio 90."
+      },
+      {
+        "n": 12,
+        "text": "Ora, isso é desagradável: pode mesmo acontecer que o próprio"
+      },
+      {
+        "n": 13,
+        "text": "país que lançou a bomba venha a sofrer, a longo prazo, as"
+      },
+      {
+        "n": 14,
+        "text": "consequências mortíferas da proeza. O que é, sem dúvida, uma"
+      },
+      {
+        "n": 15,
+        "text": "sujeira."
+      },
+      {
+        "n": 16,
+        "text": "Pois bem, essas bombas indisciplinadas,"
+      },
+      {
+        "n": 17,
+        "text": "mal-educadas, serão em breve substituídas pelas bombas n, que"
+      },
+      {
+        "n": 18,
+        "text": "cumprirão sua missão com lisura: destruirão o inimigo,"
+      },
+      {
+        "n": 19,
+        "text": "sem riscos para o atacante. Trata-se, portanto, de uma fabulosa"
+      },
+      {
+        "n": 20,
+        "text": "conquista, não?"
+      },
+      {
+        "n": null,
+        "text": "Ferreira Gullar. Maravilha. In: A estranha vida"
+      },
+      {
+        "n": null,
+        "text": "banal. Rio de Janeiro: José Olympio, 1989, p. 109."
+      }
+    ],
+    "instruction": "No que se refere aos sentidos e às estruturas linguísticas do texto acima, julgue os itens a seguir.",
+    "statement": "A oração introduzida por “porque” ( R .10) expressa a razão de as bombas serem sujas.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-003",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Língua Portuguesa",
+    "number": 3,
+    "question_type": "true_false",
+    "support_text": "Leio que a ciência deu agora mais um passo definitivo. É claro que o definitivo da ciência é transitório, e não por deficiência da ciência (é ciência demais), que se supera a si mesma a cada dia... Não indaguemos para que, já que a própria ciência não o faz — o que, aliás, é a mais moderna forma de objetividade de que dispomos. Mas vamos ao definitivo transitório. Os cientistas afirmam que podem realmente construir agora a bomba limpa. Sabemos todos que as bombas atômicas fabricadas até hoje são sujas (aliás, imundas) porque, depois que explodem, deixam vagando pela atmosfera o já famoso e temido estrôncio 90. Ora, isso é desagradável: pode mesmo acontecer que o próprio país que lançou a bomba venha a sofrer, a longo prazo, as consequências mortíferas da proeza. O que é, sem dúvida, uma sujeira. Pois bem, essas bombas indisciplinadas, mal-educadas, serão em breve substituídas pelas bombas n, que cumprirão sua missão com lisura: destruirão o inimigo, sem riscos para o atacante. Trata-se, portanto, de uma fabulosa conquista, não? Ferreira Gullar. Maravilha. In: A estranha vida banal. Rio de Janeiro: José Olympio, 1989, p. 109.",
+    "support_lines": [
+      {
+        "n": 1,
+        "text": "Leio que a ciência deu agora mais um passo definitivo."
+      },
+      {
+        "n": 2,
+        "text": "É claro que o definitivo da ciência é transitório, e não por"
+      },
+      {
+        "n": 3,
+        "text": "deficiência da ciência (é ciência demais), que se supera a si"
+      },
+      {
+        "n": 4,
+        "text": "mesma a cada dia... Não indaguemos para que, já que a própria"
+      },
+      {
+        "n": 5,
+        "text": "ciência não o faz — o que, aliás, é a mais moderna forma de"
+      },
+      {
+        "n": 6,
+        "text": "objetividade de que dispomos."
+      },
+      {
+        "n": 7,
+        "text": "Mas vamos ao definitivo transitório. Os cientistas"
+      },
+      {
+        "n": 8,
+        "text": "afirmam que podem realmente construir agora a bomba limpa."
+      },
+      {
+        "n": 9,
+        "text": "Sabemos todos que as bombas atômicas fabricadas até hoje são"
+      },
+      {
+        "n": 10,
+        "text": "sujas (aliás, imundas) porque, depois que explodem, deixam"
+      },
+      {
+        "n": 11,
+        "text": "vagando pela atmosfera o já famoso e temido estrôncio 90."
+      },
+      {
+        "n": 12,
+        "text": "Ora, isso é desagradável: pode mesmo acontecer que o próprio"
+      },
+      {
+        "n": 13,
+        "text": "país que lançou a bomba venha a sofrer, a longo prazo, as"
+      },
+      {
+        "n": 14,
+        "text": "consequências mortíferas da proeza. O que é, sem dúvida, uma"
+      },
+      {
+        "n": 15,
+        "text": "sujeira."
+      },
+      {
+        "n": 16,
+        "text": "Pois bem, essas bombas indisciplinadas,"
+      },
+      {
+        "n": 17,
+        "text": "mal-educadas, serão em breve substituídas pelas bombas n, que"
+      },
+      {
+        "n": 18,
+        "text": "cumprirão sua missão com lisura: destruirão o inimigo,"
+      },
+      {
+        "n": 19,
+        "text": "sem riscos para o atacante. Trata-se, portanto, de uma fabulosa"
+      },
+      {
+        "n": 20,
+        "text": "conquista, não?"
+      },
+      {
+        "n": null,
+        "text": "Ferreira Gullar. Maravilha. In: A estranha vida"
+      },
+      {
+        "n": null,
+        "text": "banal. Rio de Janeiro: José Olympio, 1989, p. 109."
+      }
+    ],
+    "instruction": "No que se refere aos sentidos e às estruturas linguísticas do texto acima, julgue os itens a seguir.",
+    "statement": "Mantendo-se a correção gramatical e a coerência do texto, a conjunção “e”, em “e não por deficiência da ciência” ( R .2-3), poderia ser substituída por mas .",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-004",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Língua Portuguesa",
+    "number": 4,
+    "question_type": "true_false",
+    "support_text": "Leio que a ciência deu agora mais um passo definitivo. É claro que o definitivo da ciência é transitório, e não por deficiência da ciência (é ciência demais), que se supera a si mesma a cada dia... Não indaguemos para que, já que a própria ciência não o faz — o que, aliás, é a mais moderna forma de objetividade de que dispomos. Mas vamos ao definitivo transitório. Os cientistas afirmam que podem realmente construir agora a bomba limpa. Sabemos todos que as bombas atômicas fabricadas até hoje são sujas (aliás, imundas) porque, depois que explodem, deixam vagando pela atmosfera o já famoso e temido estrôncio 90. Ora, isso é desagradável: pode mesmo acontecer que o próprio país que lançou a bomba venha a sofrer, a longo prazo, as consequências mortíferas da proeza. O que é, sem dúvida, uma sujeira. Pois bem, essas bombas indisciplinadas, mal-educadas, serão em breve substituídas pelas bombas n, que cumprirão sua missão com lisura: destruirão o inimigo, sem riscos para o atacante. Trata-se, portanto, de uma fabulosa conquista, não? Ferreira Gullar. Maravilha. In: A estranha vida banal. Rio de Janeiro: José Olympio, 1989, p. 109.",
+    "support_lines": [
+      {
+        "n": 1,
+        "text": "Leio que a ciência deu agora mais um passo definitivo."
+      },
+      {
+        "n": 2,
+        "text": "É claro que o definitivo da ciência é transitório, e não por"
+      },
+      {
+        "n": 3,
+        "text": "deficiência da ciência (é ciência demais), que se supera a si"
+      },
+      {
+        "n": 4,
+        "text": "mesma a cada dia... Não indaguemos para que, já que a própria"
+      },
+      {
+        "n": 5,
+        "text": "ciência não o faz — o que, aliás, é a mais moderna forma de"
+      },
+      {
+        "n": 6,
+        "text": "objetividade de que dispomos."
+      },
+      {
+        "n": 7,
+        "text": "Mas vamos ao definitivo transitório. Os cientistas"
+      },
+      {
+        "n": 8,
+        "text": "afirmam que podem realmente construir agora a bomba limpa."
+      },
+      {
+        "n": 9,
+        "text": "Sabemos todos que as bombas atômicas fabricadas até hoje são"
+      },
+      {
+        "n": 10,
+        "text": "sujas (aliás, imundas) porque, depois que explodem, deixam"
+      },
+      {
+        "n": 11,
+        "text": "vagando pela atmosfera o já famoso e temido estrôncio 90."
+      },
+      {
+        "n": 12,
+        "text": "Ora, isso é desagradável: pode mesmo acontecer que o próprio"
+      },
+      {
+        "n": 13,
+        "text": "país que lançou a bomba venha a sofrer, a longo prazo, as"
+      },
+      {
+        "n": 14,
+        "text": "consequências mortíferas da proeza. O que é, sem dúvida, uma"
+      },
+      {
+        "n": 15,
+        "text": "sujeira."
+      },
+      {
+        "n": 16,
+        "text": "Pois bem, essas bombas indisciplinadas,"
+      },
+      {
+        "n": 17,
+        "text": "mal-educadas, serão em breve substituídas pelas bombas n, que"
+      },
+      {
+        "n": 18,
+        "text": "cumprirão sua missão com lisura: destruirão o inimigo,"
+      },
+      {
+        "n": 19,
+        "text": "sem riscos para o atacante. Trata-se, portanto, de uma fabulosa"
+      },
+      {
+        "n": 20,
+        "text": "conquista, não?"
+      },
+      {
+        "n": null,
+        "text": "Ferreira Gullar. Maravilha. In: A estranha vida"
+      },
+      {
+        "n": null,
+        "text": "banal. Rio de Janeiro: José Olympio, 1989, p. 109."
+      }
+    ],
+    "instruction": "No que se refere aos sentidos e às estruturas linguísticas do texto acima, julgue os itens a seguir.",
+    "statement": "O objetivo do texto, de caráter predominantemente dissertativo, é informar o leitor a respeito do surgimento da “bomba limpa” (R.8).",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-005",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Língua Portuguesa",
+    "number": 5,
+    "question_type": "true_false",
+    "support_text": "Leio que a ciência deu agora mais um passo definitivo. É claro que o definitivo da ciência é transitório, e não por deficiência da ciência (é ciência demais), que se supera a si mesma a cada dia... Não indaguemos para que, já que a própria ciência não o faz — o que, aliás, é a mais moderna forma de objetividade de que dispomos. Mas vamos ao definitivo transitório. Os cientistas afirmam que podem realmente construir agora a bomba limpa. Sabemos todos que as bombas atômicas fabricadas até hoje são sujas (aliás, imundas) porque, depois que explodem, deixam vagando pela atmosfera o já famoso e temido estrôncio 90. Ora, isso é desagradável: pode mesmo acontecer que o próprio país que lançou a bomba venha a sofrer, a longo prazo, as consequências mortíferas da proeza. O que é, sem dúvida, uma sujeira. Pois bem, essas bombas indisciplinadas, mal-educadas, serão em breve substituídas pelas bombas n, que cumprirão sua missão com lisura: destruirão o inimigo, sem riscos para o atacante. Trata-se, portanto, de uma fabulosa conquista, não? Ferreira Gullar. Maravilha. In: A estranha vida banal. Rio de Janeiro: José Olympio, 1989, p. 109.",
+    "support_lines": [
+      {
+        "n": 1,
+        "text": "Leio que a ciência deu agora mais um passo definitivo."
+      },
+      {
+        "n": 2,
+        "text": "É claro que o definitivo da ciência é transitório, e não por"
+      },
+      {
+        "n": 3,
+        "text": "deficiência da ciência (é ciência demais), que se supera a si"
+      },
+      {
+        "n": 4,
+        "text": "mesma a cada dia... Não indaguemos para que, já que a própria"
+      },
+      {
+        "n": 5,
+        "text": "ciência não o faz — o que, aliás, é a mais moderna forma de"
+      },
+      {
+        "n": 6,
+        "text": "objetividade de que dispomos."
+      },
+      {
+        "n": 7,
+        "text": "Mas vamos ao definitivo transitório. Os cientistas"
+      },
+      {
+        "n": 8,
+        "text": "afirmam que podem realmente construir agora a bomba limpa."
+      },
+      {
+        "n": 9,
+        "text": "Sabemos todos que as bombas atômicas fabricadas até hoje são"
+      },
+      {
+        "n": 10,
+        "text": "sujas (aliás, imundas) porque, depois que explodem, deixam"
+      },
+      {
+        "n": 11,
+        "text": "vagando pela atmosfera o já famoso e temido estrôncio 90."
+      },
+      {
+        "n": 12,
+        "text": "Ora, isso é desagradável: pode mesmo acontecer que o próprio"
+      },
+      {
+        "n": 13,
+        "text": "país que lançou a bomba venha a sofrer, a longo prazo, as"
+      },
+      {
+        "n": 14,
+        "text": "consequências mortíferas da proeza. O que é, sem dúvida, uma"
+      },
+      {
+        "n": 15,
+        "text": "sujeira."
+      },
+      {
+        "n": 16,
+        "text": "Pois bem, essas bombas indisciplinadas,"
+      },
+      {
+        "n": 17,
+        "text": "mal-educadas, serão em breve substituídas pelas bombas n, que"
+      },
+      {
+        "n": 18,
+        "text": "cumprirão sua missão com lisura: destruirão o inimigo,"
+      },
+      {
+        "n": 19,
+        "text": "sem riscos para o atacante. Trata-se, portanto, de uma fabulosa"
+      },
+      {
+        "n": 20,
+        "text": "conquista, não?"
+      },
+      {
+        "n": null,
+        "text": "Ferreira Gullar. Maravilha. In: A estranha vida"
+      },
+      {
+        "n": null,
+        "text": "banal. Rio de Janeiro: José Olympio, 1989, p. 109."
+      }
+    ],
+    "instruction": "No que se refere aos sentidos e às estruturas linguísticas do texto acima, julgue os itens a seguir.",
+    "statement": "Tendo a oração “que se supera a si mesma a cada dia” (R.3-4) caráter explicativo, o vocábulo “que” poderia ser corretamente substituído por pois ou porque, sem prejuízo do sentido original do período.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-006",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Língua Portuguesa",
+    "number": 6,
+    "question_type": "true_false",
+    "support_text": "Leio que a ciência deu agora mais um passo definitivo. É claro que o definitivo da ciência é transitório, e não por deficiência da ciência (é ciência demais), que se supera a si mesma a cada dia... Não indaguemos para que, já que a própria ciência não o faz — o que, aliás, é a mais moderna forma de objetividade de que dispomos. Mas vamos ao definitivo transitório. Os cientistas afirmam que podem realmente construir agora a bomba limpa. Sabemos todos que as bombas atômicas fabricadas até hoje são sujas (aliás, imundas) porque, depois que explodem, deixam vagando pela atmosfera o já famoso e temido estrôncio 90. Ora, isso é desagradável: pode mesmo acontecer que o próprio país que lançou a bomba venha a sofrer, a longo prazo, as consequências mortíferas da proeza. O que é, sem dúvida, uma sujeira. Pois bem, essas bombas indisciplinadas, mal-educadas, serão em breve substituídas pelas bombas n, que cumprirão sua missão com lisura: destruirão o inimigo, sem riscos para o atacante. Trata-se, portanto, de uma fabulosa conquista, não? Ferreira Gullar. Maravilha. In: A estranha vida banal. Rio de Janeiro: José Olympio, 1989, p. 109.",
+    "support_lines": [
+      {
+        "n": 1,
+        "text": "Leio que a ciência deu agora mais um passo definitivo."
+      },
+      {
+        "n": 2,
+        "text": "É claro que o definitivo da ciência é transitório, e não por"
+      },
+      {
+        "n": 3,
+        "text": "deficiência da ciência (é ciência demais), que se supera a si"
+      },
+      {
+        "n": 4,
+        "text": "mesma a cada dia... Não indaguemos para que, já que a própria"
+      },
+      {
+        "n": 5,
+        "text": "ciência não o faz — o que, aliás, é a mais moderna forma de"
+      },
+      {
+        "n": 6,
+        "text": "objetividade de que dispomos."
+      },
+      {
+        "n": 7,
+        "text": "Mas vamos ao definitivo transitório. Os cientistas"
+      },
+      {
+        "n": 8,
+        "text": "afirmam que podem realmente construir agora a bomba limpa."
+      },
+      {
+        "n": 9,
+        "text": "Sabemos todos que as bombas atômicas fabricadas até hoje são"
+      },
+      {
+        "n": 10,
+        "text": "sujas (aliás, imundas) porque, depois que explodem, deixam"
+      },
+      {
+        "n": 11,
+        "text": "vagando pela atmosfera o já famoso e temido estrôncio 90."
+      },
+      {
+        "n": 12,
+        "text": "Ora, isso é desagradável: pode mesmo acontecer que o próprio"
+      },
+      {
+        "n": 13,
+        "text": "país que lançou a bomba venha a sofrer, a longo prazo, as"
+      },
+      {
+        "n": 14,
+        "text": "consequências mortíferas da proeza. O que é, sem dúvida, uma"
+      },
+      {
+        "n": 15,
+        "text": "sujeira."
+      },
+      {
+        "n": 16,
+        "text": "Pois bem, essas bombas indisciplinadas,"
+      },
+      {
+        "n": 17,
+        "text": "mal-educadas, serão em breve substituídas pelas bombas n, que"
+      },
+      {
+        "n": 18,
+        "text": "cumprirão sua missão com lisura: destruirão o inimigo,"
+      },
+      {
+        "n": 19,
+        "text": "sem riscos para o atacante. Trata-se, portanto, de uma fabulosa"
+      },
+      {
+        "n": 20,
+        "text": "conquista, não?"
+      },
+      {
+        "n": null,
+        "text": "Ferreira Gullar. Maravilha. In: A estranha vida"
+      },
+      {
+        "n": null,
+        "text": "banal. Rio de Janeiro: José Olympio, 1989, p. 109."
+      }
+    ],
+    "instruction": "No que se refere aos sentidos e às estruturas linguísticas do texto acima, julgue os itens a seguir.",
+    "statement": "A visão do autor do texto a respeito das “bombas n” (R.17) é positiva, o que é confirmado pelo uso da palavra “lisura” (R.18) para se referir a esse tipo de bomba, em oposição ao emprego de palavras como “indisciplinadas” (R.16) e “mal-educadas” ( R .17) em referência às bombas que liberam “estrôncio 90” (R.11), estas sim consideradas desastrosas por atingirem indistintamente países considerados amigos e inimigos.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-007",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Língua Portuguesa",
+    "number": 7,
+    "question_type": "true_false",
+    "support_text": "Leio que a ciência deu agora mais um passo definitivo. É claro que o definitivo da ciência é transitório, e não por deficiência da ciência (é ciência demais), que se supera a si mesma a cada dia... Não indaguemos para que, já que a própria ciência não o faz — o que, aliás, é a mais moderna forma de objetividade de que dispomos. Mas vamos ao definitivo transitório. Os cientistas afirmam que podem realmente construir agora a bomba limpa. Sabemos todos que as bombas atômicas fabricadas até hoje são sujas (aliás, imundas) porque, depois que explodem, deixam vagando pela atmosfera o já famoso e temido estrôncio 90. Ora, isso é desagradável: pode mesmo acontecer que o próprio país que lançou a bomba venha a sofrer, a longo prazo, as consequências mortíferas da proeza. O que é, sem dúvida, uma sujeira. Pois bem, essas bombas indisciplinadas, mal-educadas, serão em breve substituídas pelas bombas n, que cumprirão sua missão com lisura: destruirão o inimigo, sem riscos para o atacante. Trata-se, portanto, de uma fabulosa conquista, não? Ferreira Gullar. Maravilha. In: A estranha vida banal. Rio de Janeiro: José Olympio, 1989, p. 109.",
+    "support_lines": [
+      {
+        "n": 1,
+        "text": "Leio que a ciência deu agora mais um passo definitivo."
+      },
+      {
+        "n": 2,
+        "text": "É claro que o definitivo da ciência é transitório, e não por"
+      },
+      {
+        "n": 3,
+        "text": "deficiência da ciência (é ciência demais), que se supera a si"
+      },
+      {
+        "n": 4,
+        "text": "mesma a cada dia... Não indaguemos para que, já que a própria"
+      },
+      {
+        "n": 5,
+        "text": "ciência não o faz — o que, aliás, é a mais moderna forma de"
+      },
+      {
+        "n": 6,
+        "text": "objetividade de que dispomos."
+      },
+      {
+        "n": 7,
+        "text": "Mas vamos ao definitivo transitório. Os cientistas"
+      },
+      {
+        "n": 8,
+        "text": "afirmam que podem realmente construir agora a bomba limpa."
+      },
+      {
+        "n": 9,
+        "text": "Sabemos todos que as bombas atômicas fabricadas até hoje são"
+      },
+      {
+        "n": 10,
+        "text": "sujas (aliás, imundas) porque, depois que explodem, deixam"
+      },
+      {
+        "n": 11,
+        "text": "vagando pela atmosfera o já famoso e temido estrôncio 90."
+      },
+      {
+        "n": 12,
+        "text": "Ora, isso é desagradável: pode mesmo acontecer que o próprio"
+      },
+      {
+        "n": 13,
+        "text": "país que lançou a bomba venha a sofrer, a longo prazo, as"
+      },
+      {
+        "n": 14,
+        "text": "consequências mortíferas da proeza. O que é, sem dúvida, uma"
+      },
+      {
+        "n": 15,
+        "text": "sujeira."
+      },
+      {
+        "n": 16,
+        "text": "Pois bem, essas bombas indisciplinadas,"
+      },
+      {
+        "n": 17,
+        "text": "mal-educadas, serão em breve substituídas pelas bombas n, que"
+      },
+      {
+        "n": 18,
+        "text": "cumprirão sua missão com lisura: destruirão o inimigo,"
+      },
+      {
+        "n": 19,
+        "text": "sem riscos para o atacante. Trata-se, portanto, de uma fabulosa"
+      },
+      {
+        "n": 20,
+        "text": "conquista, não?"
+      },
+      {
+        "n": null,
+        "text": "Ferreira Gullar. Maravilha. In: A estranha vida"
+      },
+      {
+        "n": null,
+        "text": "banal. Rio de Janeiro: José Olympio, 1989, p. 109."
+      }
+    ],
+    "instruction": "No que se refere aos sentidos e às estruturas linguísticas do texto acima, julgue os itens a seguir.",
+    "statement": "O emprego do acento nas palavras “ciência” e “transitório” justifica-se com base na mesma regra de acentuação.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-008",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Língua Portuguesa",
+    "number": 8,
+    "question_type": "true_false",
+    "support_text": "Todos nós, homens e mulheres, adultos e jovens, passamos boa parte da vida tendo de optar entre o certo e o errado, entre o bem e o mal. Na realidade, entre o que consideramos bem e o que consideramos mal. Apesar da longa permanência da questão, o que se considera certo e o que se considera errado muda ao longo da história e ao redor do globo terrestre. Ainda hoje, em certos lugares, a previsão da pena de morte autoriza o Estado a matar em nome da justiça. Em outras sociedades, o direito à vida é inviolável e nem o Estado nem ninguém tem o direito de tirar a vida alheia. Tempos atrás era tido como legítimo espancarem-se mulheres e crianças, escravizarem-se povos. Hoje em dia, embora ainda se saiba de casos de espancamento de mulheres e crianças, de trabalho escravo, esses comportamentos são publicamente condenados na maior parte do mundo. Mas a opção entre o certo e o errado não se coloca apenas na esfera de temas polêmicos que atraem os holofotes da mídia. Muitas e muitas vezes é na solidão da consciência de cada um de nós, homens e mulheres, pequenos e grandes, que certo e errado se enfrentam. E a ética é o domínio desse enfrentamento. Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações).",
+    "support_lines": [
+      {
+        "n": 1,
+        "text": "Todos nós, homens e mulheres, adultos e jovens,"
+      },
+      {
+        "n": 2,
+        "text": "passamos boa parte da vida tendo de optar entre o certo e o"
+      },
+      {
+        "n": 3,
+        "text": "errado, entre o bem e o mal. Na realidade, entre o que"
+      },
+      {
+        "n": 4,
+        "text": "consideramos bem e o que consideramos mal. Apesar da longa"
+      },
+      {
+        "n": 5,
+        "text": "permanência da questão, o que se considera certo e o que se"
+      },
+      {
+        "n": 6,
+        "text": "considera errado muda ao longo da história e ao redor do globo"
+      },
+      {
+        "n": 7,
+        "text": "terrestre."
+      },
+      {
+        "n": 8,
+        "text": "Ainda hoje, em certos lugares, a previsão da pena de"
+      },
+      {
+        "n": 9,
+        "text": "morte autoriza o Estado a matar em nome da justiça. Em outras"
+      },
+      {
+        "n": 10,
+        "text": "sociedades, o direito à vida é inviolável e nem o Estado nem"
+      },
+      {
+        "n": 11,
+        "text": "ninguém tem o direito de tirar a vida alheia. Tempos atrás era"
+      },
+      {
+        "n": 12,
+        "text": "tido como legítimo espancarem-se mulheres e crianças,"
+      },
+      {
+        "n": 13,
+        "text": "escravizarem-se povos. Hoje em dia, embora ainda se saiba de"
+      },
+      {
+        "n": 14,
+        "text": "casos de espancamento de mulheres e crianças, de trabalho"
+      },
+      {
+        "n": 15,
+        "text": "escravo, esses comportamentos são publicamente condenados"
+      },
+      {
+        "n": 16,
+        "text": "na maior parte do mundo."
+      },
+      {
+        "n": 17,
+        "text": "Mas a opção entre o certo e o errado não se coloca"
+      },
+      {
+        "n": 18,
+        "text": "apenas na esfera de temas polêmicos que atraem os holofotes"
+      },
+      {
+        "n": 19,
+        "text": "da mídia. Muitas e muitas vezes é na solidão da consciência de"
+      },
+      {
+        "n": 20,
+        "text": "cada um de nós, homens e mulheres, pequenos e grandes, que"
+      },
+      {
+        "n": 21,
+        "text": "certo e errado se enfrentam."
+      },
+      {
+        "n": 22,
+        "text": "E a ética é o domínio desse enfrentamento."
+      },
+      {
+        "n": null,
+        "text": "Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre"
+      },
+      {
+        "n": null,
+        "text": "a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações)."
+      }
+    ],
+    "instruction": "A partir das ideias e das estruturas linguísticas do texto acima, julgue os itens que se seguem.",
+    "statement": "No texto, a expressão “pequenos e grandes” ( R .20) não se refere a tamanho, podendo ser interpretada como equivalente à expressão “adultos e jovens” ( R .1), ou seja, em referência a faixas etárias.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-009",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Língua Portuguesa",
+    "number": 9,
+    "question_type": "true_false",
+    "support_text": "Todos nós, homens e mulheres, adultos e jovens, passamos boa parte da vida tendo de optar entre o certo e o errado, entre o bem e o mal. Na realidade, entre o que consideramos bem e o que consideramos mal. Apesar da longa permanência da questão, o que se considera certo e o que se considera errado muda ao longo da história e ao redor do globo terrestre. Ainda hoje, em certos lugares, a previsão da pena de morte autoriza o Estado a matar em nome da justiça. Em outras sociedades, o direito à vida é inviolável e nem o Estado nem ninguém tem o direito de tirar a vida alheia. Tempos atrás era tido como legítimo espancarem-se mulheres e crianças, escravizarem-se povos. Hoje em dia, embora ainda se saiba de casos de espancamento de mulheres e crianças, de trabalho escravo, esses comportamentos são publicamente condenados na maior parte do mundo. Mas a opção entre o certo e o errado não se coloca apenas na esfera de temas polêmicos que atraem os holofotes da mídia. Muitas e muitas vezes é na solidão da consciência de cada um de nós, homens e mulheres, pequenos e grandes, que certo e errado se enfrentam. E a ética é o domínio desse enfrentamento. Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações).",
+    "support_lines": [
+      {
+        "n": 1,
+        "text": "Todos nós, homens e mulheres, adultos e jovens,"
+      },
+      {
+        "n": 2,
+        "text": "passamos boa parte da vida tendo de optar entre o certo e o"
+      },
+      {
+        "n": 3,
+        "text": "errado, entre o bem e o mal. Na realidade, entre o que"
+      },
+      {
+        "n": 4,
+        "text": "consideramos bem e o que consideramos mal. Apesar da longa"
+      },
+      {
+        "n": 5,
+        "text": "permanência da questão, o que se considera certo e o que se"
+      },
+      {
+        "n": 6,
+        "text": "considera errado muda ao longo da história e ao redor do globo"
+      },
+      {
+        "n": 7,
+        "text": "terrestre."
+      },
+      {
+        "n": 8,
+        "text": "Ainda hoje, em certos lugares, a previsão da pena de"
+      },
+      {
+        "n": 9,
+        "text": "morte autoriza o Estado a matar em nome da justiça. Em outras"
+      },
+      {
+        "n": 10,
+        "text": "sociedades, o direito à vida é inviolável e nem o Estado nem"
+      },
+      {
+        "n": 11,
+        "text": "ninguém tem o direito de tirar a vida alheia. Tempos atrás era"
+      },
+      {
+        "n": 12,
+        "text": "tido como legítimo espancarem-se mulheres e crianças,"
+      },
+      {
+        "n": 13,
+        "text": "escravizarem-se povos. Hoje em dia, embora ainda se saiba de"
+      },
+      {
+        "n": 14,
+        "text": "casos de espancamento de mulheres e crianças, de trabalho"
+      },
+      {
+        "n": 15,
+        "text": "escravo, esses comportamentos são publicamente condenados"
+      },
+      {
+        "n": 16,
+        "text": "na maior parte do mundo."
+      },
+      {
+        "n": 17,
+        "text": "Mas a opção entre o certo e o errado não se coloca"
+      },
+      {
+        "n": 18,
+        "text": "apenas na esfera de temas polêmicos que atraem os holofotes"
+      },
+      {
+        "n": 19,
+        "text": "da mídia. Muitas e muitas vezes é na solidão da consciência de"
+      },
+      {
+        "n": 20,
+        "text": "cada um de nós, homens e mulheres, pequenos e grandes, que"
+      },
+      {
+        "n": 21,
+        "text": "certo e errado se enfrentam."
+      },
+      {
+        "n": 22,
+        "text": "E a ética é o domínio desse enfrentamento."
+      },
+      {
+        "n": null,
+        "text": "Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre"
+      },
+      {
+        "n": null,
+        "text": "a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações)."
+      }
+    ],
+    "instruction": "A partir das ideias e das estruturas linguísticas do texto acima, julgue os itens que se seguem.",
+    "statement": "O trecho “Tempos atrás era tido como legítimo espancarem-se mulheres e crianças, escravizarem-se povos” ( R .11-13) poderia ser corretamente reescrito da seguinte forma: Há tempos, considerava-se legítimo que se espancassem mulheres e crianças, que se escravizassem povos.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-010",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Língua Portuguesa",
+    "number": 10,
+    "question_type": "true_false",
+    "support_text": "Todos nós, homens e mulheres, adultos e jovens, passamos boa parte da vida tendo de optar entre o certo e o errado, entre o bem e o mal. Na realidade, entre o que consideramos bem e o que consideramos mal. Apesar da longa permanência da questão, o que se considera certo e o que se considera errado muda ao longo da história e ao redor do globo terrestre. Ainda hoje, em certos lugares, a previsão da pena de morte autoriza o Estado a matar em nome da justiça. Em outras sociedades, o direito à vida é inviolável e nem o Estado nem ninguém tem o direito de tirar a vida alheia. Tempos atrás era tido como legítimo espancarem-se mulheres e crianças, escravizarem-se povos. Hoje em dia, embora ainda se saiba de casos de espancamento de mulheres e crianças, de trabalho escravo, esses comportamentos são publicamente condenados na maior parte do mundo. Mas a opção entre o certo e o errado não se coloca apenas na esfera de temas polêmicos que atraem os holofotes da mídia. Muitas e muitas vezes é na solidão da consciência de cada um de nós, homens e mulheres, pequenos e grandes, que certo e errado se enfrentam. E a ética é o domínio desse enfrentamento. Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações).",
+    "support_lines": [
+      {
+        "n": 1,
+        "text": "Todos nós, homens e mulheres, adultos e jovens,"
+      },
+      {
+        "n": 2,
+        "text": "passamos boa parte da vida tendo de optar entre o certo e o"
+      },
+      {
+        "n": 3,
+        "text": "errado, entre o bem e o mal. Na realidade, entre o que"
+      },
+      {
+        "n": 4,
+        "text": "consideramos bem e o que consideramos mal. Apesar da longa"
+      },
+      {
+        "n": 5,
+        "text": "permanência da questão, o que se considera certo e o que se"
+      },
+      {
+        "n": 6,
+        "text": "considera errado muda ao longo da história e ao redor do globo"
+      },
+      {
+        "n": 7,
+        "text": "terrestre."
+      },
+      {
+        "n": 8,
+        "text": "Ainda hoje, em certos lugares, a previsão da pena de"
+      },
+      {
+        "n": 9,
+        "text": "morte autoriza o Estado a matar em nome da justiça. Em outras"
+      },
+      {
+        "n": 10,
+        "text": "sociedades, o direito à vida é inviolável e nem o Estado nem"
+      },
+      {
+        "n": 11,
+        "text": "ninguém tem o direito de tirar a vida alheia. Tempos atrás era"
+      },
+      {
+        "n": 12,
+        "text": "tido como legítimo espancarem-se mulheres e crianças,"
+      },
+      {
+        "n": 13,
+        "text": "escravizarem-se povos. Hoje em dia, embora ainda se saiba de"
+      },
+      {
+        "n": 14,
+        "text": "casos de espancamento de mulheres e crianças, de trabalho"
+      },
+      {
+        "n": 15,
+        "text": "escravo, esses comportamentos são publicamente condenados"
+      },
+      {
+        "n": 16,
+        "text": "na maior parte do mundo."
+      },
+      {
+        "n": 17,
+        "text": "Mas a opção entre o certo e o errado não se coloca"
+      },
+      {
+        "n": 18,
+        "text": "apenas na esfera de temas polêmicos que atraem os holofotes"
+      },
+      {
+        "n": 19,
+        "text": "da mídia. Muitas e muitas vezes é na solidão da consciência de"
+      },
+      {
+        "n": 20,
+        "text": "cada um de nós, homens e mulheres, pequenos e grandes, que"
+      },
+      {
+        "n": 21,
+        "text": "certo e errado se enfrentam."
+      },
+      {
+        "n": 22,
+        "text": "E a ética é o domínio desse enfrentamento."
+      },
+      {
+        "n": null,
+        "text": "Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre"
+      },
+      {
+        "n": null,
+        "text": "a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações)."
+      }
+    ],
+    "instruction": "A partir das ideias e das estruturas linguísticas do texto acima, julgue os itens que se seguem.",
+    "statement": "Infere-se do texto que algumas práticas sociais são absolutamente erradas, ainda que o conceito de certo e errado seja variável do ponto de vista social e histórico.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-011",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Língua Portuguesa",
+    "number": 11,
+    "question_type": "true_false",
+    "support_text": "Todos nós, homens e mulheres, adultos e jovens, passamos boa parte da vida tendo de optar entre o certo e o errado, entre o bem e o mal. Na realidade, entre o que consideramos bem e o que consideramos mal. Apesar da longa permanência da questão, o que se considera certo e o que se considera errado muda ao longo da história e ao redor do globo terrestre. Ainda hoje, em certos lugares, a previsão da pena de morte autoriza o Estado a matar em nome da justiça. Em outras sociedades, o direito à vida é inviolável e nem o Estado nem ninguém tem o direito de tirar a vida alheia. Tempos atrás era tido como legítimo espancarem-se mulheres e crianças, escravizarem-se povos. Hoje em dia, embora ainda se saiba de casos de espancamento de mulheres e crianças, de trabalho escravo, esses comportamentos são publicamente condenados na maior parte do mundo. Mas a opção entre o certo e o errado não se coloca apenas na esfera de temas polêmicos que atraem os holofotes da mídia. Muitas e muitas vezes é na solidão da consciência de cada um de nós, homens e mulheres, pequenos e grandes, que certo e errado se enfrentam. E a ética é o domínio desse enfrentamento. Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações).",
+    "support_lines": [
+      {
+        "n": 1,
+        "text": "Todos nós, homens e mulheres, adultos e jovens,"
+      },
+      {
+        "n": 2,
+        "text": "passamos boa parte da vida tendo de optar entre o certo e o"
+      },
+      {
+        "n": 3,
+        "text": "errado, entre o bem e o mal. Na realidade, entre o que"
+      },
+      {
+        "n": 4,
+        "text": "consideramos bem e o que consideramos mal. Apesar da longa"
+      },
+      {
+        "n": 5,
+        "text": "permanência da questão, o que se considera certo e o que se"
+      },
+      {
+        "n": 6,
+        "text": "considera errado muda ao longo da história e ao redor do globo"
+      },
+      {
+        "n": 7,
+        "text": "terrestre."
+      },
+      {
+        "n": 8,
+        "text": "Ainda hoje, em certos lugares, a previsão da pena de"
+      },
+      {
+        "n": 9,
+        "text": "morte autoriza o Estado a matar em nome da justiça. Em outras"
+      },
+      {
+        "n": 10,
+        "text": "sociedades, o direito à vida é inviolável e nem o Estado nem"
+      },
+      {
+        "n": 11,
+        "text": "ninguém tem o direito de tirar a vida alheia. Tempos atrás era"
+      },
+      {
+        "n": 12,
+        "text": "tido como legítimo espancarem-se mulheres e crianças,"
+      },
+      {
+        "n": 13,
+        "text": "escravizarem-se povos. Hoje em dia, embora ainda se saiba de"
+      },
+      {
+        "n": 14,
+        "text": "casos de espancamento de mulheres e crianças, de trabalho"
+      },
+      {
+        "n": 15,
+        "text": "escravo, esses comportamentos são publicamente condenados"
+      },
+      {
+        "n": 16,
+        "text": "na maior parte do mundo."
+      },
+      {
+        "n": 17,
+        "text": "Mas a opção entre o certo e o errado não se coloca"
+      },
+      {
+        "n": 18,
+        "text": "apenas na esfera de temas polêmicos que atraem os holofotes"
+      },
+      {
+        "n": 19,
+        "text": "da mídia. Muitas e muitas vezes é na solidão da consciência de"
+      },
+      {
+        "n": 20,
+        "text": "cada um de nós, homens e mulheres, pequenos e grandes, que"
+      },
+      {
+        "n": 21,
+        "text": "certo e errado se enfrentam."
+      },
+      {
+        "n": 22,
+        "text": "E a ética é o domínio desse enfrentamento."
+      },
+      {
+        "n": null,
+        "text": "Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre"
+      },
+      {
+        "n": null,
+        "text": "a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações)."
+      }
+    ],
+    "instruction": "A partir das ideias e das estruturas linguísticas do texto acima, julgue os itens que se seguem.",
+    "statement": "Dado o fato de que nem equivale a e não, a supressão da conjunção “e” empregada logo após “inviolável”, na linha 10, manteria a correção gramatical do texto.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-012",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Língua Portuguesa",
+    "number": 12,
+    "question_type": "true_false",
+    "support_text": "Todos nós, homens e mulheres, adultos e jovens, passamos boa parte da vida tendo de optar entre o certo e o errado, entre o bem e o mal. Na realidade, entre o que consideramos bem e o que consideramos mal. Apesar da longa permanência da questão, o que se considera certo e o que se considera errado muda ao longo da história e ao redor do globo terrestre. Ainda hoje, em certos lugares, a previsão da pena de morte autoriza o Estado a matar em nome da justiça. Em outras sociedades, o direito à vida é inviolável e nem o Estado nem ninguém tem o direito de tirar a vida alheia. Tempos atrás era tido como legítimo espancarem-se mulheres e crianças, escravizarem-se povos. Hoje em dia, embora ainda se saiba de casos de espancamento de mulheres e crianças, de trabalho escravo, esses comportamentos são publicamente condenados na maior parte do mundo. Mas a opção entre o certo e o errado não se coloca apenas na esfera de temas polêmicos que atraem os holofotes da mídia. Muitas e muitas vezes é na solidão da consciência de cada um de nós, homens e mulheres, pequenos e grandes, que certo e errado se enfrentam. E a ética é o domínio desse enfrentamento. Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações).",
+    "support_lines": [
+      {
+        "n": 1,
+        "text": "Todos nós, homens e mulheres, adultos e jovens,"
+      },
+      {
+        "n": 2,
+        "text": "passamos boa parte da vida tendo de optar entre o certo e o"
+      },
+      {
+        "n": 3,
+        "text": "errado, entre o bem e o mal. Na realidade, entre o que"
+      },
+      {
+        "n": 4,
+        "text": "consideramos bem e o que consideramos mal. Apesar da longa"
+      },
+      {
+        "n": 5,
+        "text": "permanência da questão, o que se considera certo e o que se"
+      },
+      {
+        "n": 6,
+        "text": "considera errado muda ao longo da história e ao redor do globo"
+      },
+      {
+        "n": 7,
+        "text": "terrestre."
+      },
+      {
+        "n": 8,
+        "text": "Ainda hoje, em certos lugares, a previsão da pena de"
+      },
+      {
+        "n": 9,
+        "text": "morte autoriza o Estado a matar em nome da justiça. Em outras"
+      },
+      {
+        "n": 10,
+        "text": "sociedades, o direito à vida é inviolável e nem o Estado nem"
+      },
+      {
+        "n": 11,
+        "text": "ninguém tem o direito de tirar a vida alheia. Tempos atrás era"
+      },
+      {
+        "n": 12,
+        "text": "tido como legítimo espancarem-se mulheres e crianças,"
+      },
+      {
+        "n": 13,
+        "text": "escravizarem-se povos. Hoje em dia, embora ainda se saiba de"
+      },
+      {
+        "n": 14,
+        "text": "casos de espancamento de mulheres e crianças, de trabalho"
+      },
+      {
+        "n": 15,
+        "text": "escravo, esses comportamentos são publicamente condenados"
+      },
+      {
+        "n": 16,
+        "text": "na maior parte do mundo."
+      },
+      {
+        "n": 17,
+        "text": "Mas a opção entre o certo e o errado não se coloca"
+      },
+      {
+        "n": 18,
+        "text": "apenas na esfera de temas polêmicos que atraem os holofotes"
+      },
+      {
+        "n": 19,
+        "text": "da mídia. Muitas e muitas vezes é na solidão da consciência de"
+      },
+      {
+        "n": 20,
+        "text": "cada um de nós, homens e mulheres, pequenos e grandes, que"
+      },
+      {
+        "n": 21,
+        "text": "certo e errado se enfrentam."
+      },
+      {
+        "n": 22,
+        "text": "E a ética é o domínio desse enfrentamento."
+      },
+      {
+        "n": null,
+        "text": "Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre"
+      },
+      {
+        "n": null,
+        "text": "a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações)."
+      }
+    ],
+    "instruction": "A partir das ideias e das estruturas linguísticas do texto acima, julgue os itens que se seguem.",
+    "statement": "Devido à presença do advérbio “apenas” (R.18), o pronome “se” (R.17) poderia ser deslocado para imediatamente após a forma verbal “coloca” (R.17), da seguinte forma: coloca-se.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-013",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Língua Portuguesa",
+    "number": 13,
+    "question_type": "true_false",
+    "support_text": "Todos nós, homens e mulheres, adultos e jovens, passamos boa parte da vida tendo de optar entre o certo e o errado, entre o bem e o mal. Na realidade, entre o que consideramos bem e o que consideramos mal. Apesar da longa permanência da questão, o que se considera certo e o que se considera errado muda ao longo da história e ao redor do globo terrestre. Ainda hoje, em certos lugares, a previsão da pena de morte autoriza o Estado a matar em nome da justiça. Em outras sociedades, o direito à vida é inviolável e nem o Estado nem ninguém tem o direito de tirar a vida alheia. Tempos atrás era tido como legítimo espancarem-se mulheres e crianças, escravizarem-se povos. Hoje em dia, embora ainda se saiba de casos de espancamento de mulheres e crianças, de trabalho escravo, esses comportamentos são publicamente condenados na maior parte do mundo. Mas a opção entre o certo e o errado não se coloca apenas na esfera de temas polêmicos que atraem os holofotes da mídia. Muitas e muitas vezes é na solidão da consciência de cada um de nós, homens e mulheres, pequenos e grandes, que certo e errado se enfrentam. E a ética é o domínio desse enfrentamento. Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações).",
+    "support_lines": [
+      {
+        "n": 1,
+        "text": "Todos nós, homens e mulheres, adultos e jovens,"
+      },
+      {
+        "n": 2,
+        "text": "passamos boa parte da vida tendo de optar entre o certo e o"
+      },
+      {
+        "n": 3,
+        "text": "errado, entre o bem e o mal. Na realidade, entre o que"
+      },
+      {
+        "n": 4,
+        "text": "consideramos bem e o que consideramos mal. Apesar da longa"
+      },
+      {
+        "n": 5,
+        "text": "permanência da questão, o que se considera certo e o que se"
+      },
+      {
+        "n": 6,
+        "text": "considera errado muda ao longo da história e ao redor do globo"
+      },
+      {
+        "n": 7,
+        "text": "terrestre."
+      },
+      {
+        "n": 8,
+        "text": "Ainda hoje, em certos lugares, a previsão da pena de"
+      },
+      {
+        "n": 9,
+        "text": "morte autoriza o Estado a matar em nome da justiça. Em outras"
+      },
+      {
+        "n": 10,
+        "text": "sociedades, o direito à vida é inviolável e nem o Estado nem"
+      },
+      {
+        "n": 11,
+        "text": "ninguém tem o direito de tirar a vida alheia. Tempos atrás era"
+      },
+      {
+        "n": 12,
+        "text": "tido como legítimo espancarem-se mulheres e crianças,"
+      },
+      {
+        "n": 13,
+        "text": "escravizarem-se povos. Hoje em dia, embora ainda se saiba de"
+      },
+      {
+        "n": 14,
+        "text": "casos de espancamento de mulheres e crianças, de trabalho"
+      },
+      {
+        "n": 15,
+        "text": "escravo, esses comportamentos são publicamente condenados"
+      },
+      {
+        "n": 16,
+        "text": "na maior parte do mundo."
+      },
+      {
+        "n": 17,
+        "text": "Mas a opção entre o certo e o errado não se coloca"
+      },
+      {
+        "n": 18,
+        "text": "apenas na esfera de temas polêmicos que atraem os holofotes"
+      },
+      {
+        "n": 19,
+        "text": "da mídia. Muitas e muitas vezes é na solidão da consciência de"
+      },
+      {
+        "n": 20,
+        "text": "cada um de nós, homens e mulheres, pequenos e grandes, que"
+      },
+      {
+        "n": 21,
+        "text": "certo e errado se enfrentam."
+      },
+      {
+        "n": 22,
+        "text": "E a ética é o domínio desse enfrentamento."
+      },
+      {
+        "n": null,
+        "text": "Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre"
+      },
+      {
+        "n": null,
+        "text": "a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações)."
+      }
+    ],
+    "instruction": "A partir das ideias e das estruturas linguísticas do texto acima, julgue os itens que se seguem.",
+    "statement": "Sem prejuízo para o sentido original do texto, o trecho “esses comportamentos são publicamente condenados na maior parte do mundo” (R.15-16) poderia ser corretamente reescrito da seguinte forma: publicamente, esses comportamentos consideram-se condenados em quase todo o mundo.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-014",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Língua Portuguesa",
+    "number": 14,
+    "question_type": "true_false",
+    "support_text": "Todos nós, homens e mulheres, adultos e jovens, passamos boa parte da vida tendo de optar entre o certo e o errado, entre o bem e o mal. Na realidade, entre o que consideramos bem e o que consideramos mal. Apesar da longa permanência da questão, o que se considera certo e o que se considera errado muda ao longo da história e ao redor do globo terrestre. Ainda hoje, em certos lugares, a previsão da pena de morte autoriza o Estado a matar em nome da justiça. Em outras sociedades, o direito à vida é inviolável e nem o Estado nem ninguém tem o direito de tirar a vida alheia. Tempos atrás era tido como legítimo espancarem-se mulheres e crianças, escravizarem-se povos. Hoje em dia, embora ainda se saiba de casos de espancamento de mulheres e crianças, de trabalho escravo, esses comportamentos são publicamente condenados na maior parte do mundo. Mas a opção entre o certo e o errado não se coloca apenas na esfera de temas polêmicos que atraem os holofotes da mídia. Muitas e muitas vezes é na solidão da consciência de cada um de nós, homens e mulheres, pequenos e grandes, que certo e errado se enfrentam. E a ética é o domínio desse enfrentamento. Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações).",
+    "support_lines": [
+      {
+        "n": 1,
+        "text": "Todos nós, homens e mulheres, adultos e jovens,"
+      },
+      {
+        "n": 2,
+        "text": "passamos boa parte da vida tendo de optar entre o certo e o"
+      },
+      {
+        "n": 3,
+        "text": "errado, entre o bem e o mal. Na realidade, entre o que"
+      },
+      {
+        "n": 4,
+        "text": "consideramos bem e o que consideramos mal. Apesar da longa"
+      },
+      {
+        "n": 5,
+        "text": "permanência da questão, o que se considera certo e o que se"
+      },
+      {
+        "n": 6,
+        "text": "considera errado muda ao longo da história e ao redor do globo"
+      },
+      {
+        "n": 7,
+        "text": "terrestre."
+      },
+      {
+        "n": 8,
+        "text": "Ainda hoje, em certos lugares, a previsão da pena de"
+      },
+      {
+        "n": 9,
+        "text": "morte autoriza o Estado a matar em nome da justiça. Em outras"
+      },
+      {
+        "n": 10,
+        "text": "sociedades, o direito à vida é inviolável e nem o Estado nem"
+      },
+      {
+        "n": 11,
+        "text": "ninguém tem o direito de tirar a vida alheia. Tempos atrás era"
+      },
+      {
+        "n": 12,
+        "text": "tido como legítimo espancarem-se mulheres e crianças,"
+      },
+      {
+        "n": 13,
+        "text": "escravizarem-se povos. Hoje em dia, embora ainda se saiba de"
+      },
+      {
+        "n": 14,
+        "text": "casos de espancamento de mulheres e crianças, de trabalho"
+      },
+      {
+        "n": 15,
+        "text": "escravo, esses comportamentos são publicamente condenados"
+      },
+      {
+        "n": 16,
+        "text": "na maior parte do mundo."
+      },
+      {
+        "n": 17,
+        "text": "Mas a opção entre o certo e o errado não se coloca"
+      },
+      {
+        "n": 18,
+        "text": "apenas na esfera de temas polêmicos que atraem os holofotes"
+      },
+      {
+        "n": 19,
+        "text": "da mídia. Muitas e muitas vezes é na solidão da consciência de"
+      },
+      {
+        "n": 20,
+        "text": "cada um de nós, homens e mulheres, pequenos e grandes, que"
+      },
+      {
+        "n": 21,
+        "text": "certo e errado se enfrentam."
+      },
+      {
+        "n": 22,
+        "text": "E a ética é o domínio desse enfrentamento."
+      },
+      {
+        "n": null,
+        "text": "Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre"
+      },
+      {
+        "n": null,
+        "text": "a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações)."
+      }
+    ],
+    "instruction": "A partir das ideias e das estruturas linguísticas do texto acima, julgue os itens que se seguem.",
+    "statement": "No trecho “o que consideramos bem” ( R .3-4), o vocábulo “que” classifica-se como pronome e exerce a função de complemento da forma verbal “consideramos”.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-015",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Língua Portuguesa",
+    "number": 15,
+    "question_type": "true_false",
+    "support_text": "Todos nós, homens e mulheres, adultos e jovens, passamos boa parte da vida tendo de optar entre o certo e o errado, entre o bem e o mal. Na realidade, entre o que consideramos bem e o que consideramos mal. Apesar da longa permanência da questão, o que se considera certo e o que se considera errado muda ao longo da história e ao redor do globo terrestre. Ainda hoje, em certos lugares, a previsão da pena de morte autoriza o Estado a matar em nome da justiça. Em outras sociedades, o direito à vida é inviolável e nem o Estado nem ninguém tem o direito de tirar a vida alheia. Tempos atrás era tido como legítimo espancarem-se mulheres e crianças, escravizarem-se povos. Hoje em dia, embora ainda se saiba de casos de espancamento de mulheres e crianças, de trabalho escravo, esses comportamentos são publicamente condenados na maior parte do mundo. Mas a opção entre o certo e o errado não se coloca apenas na esfera de temas polêmicos que atraem os holofotes da mídia. Muitas e muitas vezes é na solidão da consciência de cada um de nós, homens e mulheres, pequenos e grandes, que certo e errado se enfrentam. E a ética é o domínio desse enfrentamento. Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações).",
+    "support_lines": [
+      {
+        "n": 1,
+        "text": "Todos nós, homens e mulheres, adultos e jovens,"
+      },
+      {
+        "n": 2,
+        "text": "passamos boa parte da vida tendo de optar entre o certo e o"
+      },
+      {
+        "n": 3,
+        "text": "errado, entre o bem e o mal. Na realidade, entre o que"
+      },
+      {
+        "n": 4,
+        "text": "consideramos bem e o que consideramos mal. Apesar da longa"
+      },
+      {
+        "n": 5,
+        "text": "permanência da questão, o que se considera certo e o que se"
+      },
+      {
+        "n": 6,
+        "text": "considera errado muda ao longo da história e ao redor do globo"
+      },
+      {
+        "n": 7,
+        "text": "terrestre."
+      },
+      {
+        "n": 8,
+        "text": "Ainda hoje, em certos lugares, a previsão da pena de"
+      },
+      {
+        "n": 9,
+        "text": "morte autoriza o Estado a matar em nome da justiça. Em outras"
+      },
+      {
+        "n": 10,
+        "text": "sociedades, o direito à vida é inviolável e nem o Estado nem"
+      },
+      {
+        "n": 11,
+        "text": "ninguém tem o direito de tirar a vida alheia. Tempos atrás era"
+      },
+      {
+        "n": 12,
+        "text": "tido como legítimo espancarem-se mulheres e crianças,"
+      },
+      {
+        "n": 13,
+        "text": "escravizarem-se povos. Hoje em dia, embora ainda se saiba de"
+      },
+      {
+        "n": 14,
+        "text": "casos de espancamento de mulheres e crianças, de trabalho"
+      },
+      {
+        "n": 15,
+        "text": "escravo, esses comportamentos são publicamente condenados"
+      },
+      {
+        "n": 16,
+        "text": "na maior parte do mundo."
+      },
+      {
+        "n": 17,
+        "text": "Mas a opção entre o certo e o errado não se coloca"
+      },
+      {
+        "n": 18,
+        "text": "apenas na esfera de temas polêmicos que atraem os holofotes"
+      },
+      {
+        "n": 19,
+        "text": "da mídia. Muitas e muitas vezes é na solidão da consciência de"
+      },
+      {
+        "n": 20,
+        "text": "cada um de nós, homens e mulheres, pequenos e grandes, que"
+      },
+      {
+        "n": 21,
+        "text": "certo e errado se enfrentam."
+      },
+      {
+        "n": 22,
+        "text": "E a ética é o domínio desse enfrentamento."
+      },
+      {
+        "n": null,
+        "text": "Marisa Lajolo. Entre o bem e o mal. In: Histórias sobre"
+      },
+      {
+        "n": null,
+        "text": "a ética. 5.ª ed. São Paulo: Ática, 2008 (com adaptações)."
+      }
+    ],
+    "instruction": "A partir das ideias e das estruturas linguísticas do texto acima, julgue os itens que se seguem.",
+    "statement": "Infere-se do período “Mas a opção (...) da mídia” ( R .17-19) que nem todos “os temas polêmicos” recebem a atenção dos meios de comunicação.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-016",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Raciocínio Lógico-Matemático",
+    "number": 16,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Considerando que uma equipe de 30 operários, igualmente produtivos, construa uma estrada de 10 km de extensão em 30 dias, julgue os próximos itens.",
+    "statement": "Se a tarefa estiver sendo realizada pela equipe inicial de 30 operários e, no início do quinto dia, 2 operários abandonarem a equipe, e não forem substituídos, então essa perda ocasionará atraso de 10 dias no prazo de conclusão da obra.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-017",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Raciocínio Lógico-Matemático",
+    "number": 17,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Considerando que uma equipe de 30 operários, igualmente produtivos, construa uma estrada de 10 km de extensão em 30 dias, julgue os próximos itens.",
+    "statement": "Se, ao iniciar a obra, a equipe designada para a empreitada receber reforço de uma segunda equipe, com 90 operários igualmente produtivos e desempenho igual ao dos operários da 1 equipe inicial, então a estrada será concluída em menos de 5 do tempo inicialmente previsto.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-024",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Raciocínio Lógico-Matemático",
+    "number": 24,
+    "question_type": "true_false",
+    "support_text": "g\\L 3 concentração de álcool no sangue (g/L) 2 1 t₀ t₁ t₂ t Considere que o nível de concentração de álcool na corrente sanguínea, em g/L, de uma pessoa, em função do tempo t, em horas, seja expresso por N = −0,008(t² – 35t + 34). Considere, ainda, que essa pessoa tenha começado a ingerir bebida alcoólica a partir de t = t₀ (N(t₀ ) = 0), partindo de um estado de sobriedade, e que tenha parado de ingerir bebida alcoólica em t = t₁ , voltando a ficar sóbria em t = t₂ . Considere, por fim, a figura acima, que apresenta o gráfico da função N(t) para t 0 [t₀ , t₂ ].",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "g\\L"
+      },
+      {
+        "n": null,
+        "text": "3 concentração de álcool no sangue (g/L)"
+      },
+      {
+        "n": null,
+        "text": "2"
+      },
+      {
+        "n": null,
+        "text": "1"
+      },
+      {
+        "n": null,
+        "text": "t₀ t₁ t₂ t"
+      },
+      {
+        "n": null,
+        "text": "Considere que o nível de concentração de álcool na corrente"
+      },
+      {
+        "n": null,
+        "text": "sanguínea, em g/L, de uma pessoa, em função do tempo t, em horas,"
+      },
+      {
+        "n": null,
+        "text": "seja expresso por N = −0,008(t² – 35t + 34). Considere, ainda, que"
+      },
+      {
+        "n": null,
+        "text": "essa pessoa tenha começado a ingerir bebida alcoólica a partir de"
+      },
+      {
+        "n": null,
+        "text": "t = t₀ (N(t₀ ) = 0), partindo de um estado de sobriedade, e que tenha"
+      },
+      {
+        "n": null,
+        "text": "parado de ingerir bebida alcoólica em t = t₁ , voltando a ficar sóbria"
+      },
+      {
+        "n": null,
+        "text": "em t = t₂ . Considere, por fim, a figura acima, que apresenta o"
+      },
+      {
+        "n": null,
+        "text": "gráfico da função N(t) para t 0 [t₀ , t₂ ]. Com base nessas informações"
+      }
+    ],
+    "instruction": "Com base nessas informações e tomando 24,3 como valor aproximado de 589 , julgue os itens que se seguem.",
+    "statement": "O nível de concentração de álcool na corrente sanguínea da pessoa em questão foi superior a 1 g/L por pelo menos 23 horas.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-025",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Raciocínio Lógico-Matemático",
+    "number": 25,
+    "question_type": "true_false",
+    "support_text": "g\\L 3 concentração de álcool no sangue (g/L) 2 1 t₀ t₁ t₂ t Considere que o nível de concentração de álcool na corrente sanguínea, em g/L, de uma pessoa, em função do tempo t, em horas, seja expresso por N = −0,008(t² – 35t + 34). Considere, ainda, que essa pessoa tenha começado a ingerir bebida alcoólica a partir de t = t₀ (N(t₀ ) = 0), partindo de um estado de sobriedade, e que tenha parado de ingerir bebida alcoólica em t = t₁ , voltando a ficar sóbria em t = t₂ . Considere, por fim, a figura acima, que apresenta o gráfico da função N(t) para t 0 [t₀ , t₂ ].",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "g\\L"
+      },
+      {
+        "n": null,
+        "text": "3 concentração de álcool no sangue (g/L)"
+      },
+      {
+        "n": null,
+        "text": "2"
+      },
+      {
+        "n": null,
+        "text": "1"
+      },
+      {
+        "n": null,
+        "text": "t₀ t₁ t₂ t"
+      },
+      {
+        "n": null,
+        "text": "Considere que o nível de concentração de álcool na corrente"
+      },
+      {
+        "n": null,
+        "text": "sanguínea, em g/L, de uma pessoa, em função do tempo t, em horas,"
+      },
+      {
+        "n": null,
+        "text": "seja expresso por N = −0,008(t² – 35t + 34). Considere, ainda, que"
+      },
+      {
+        "n": null,
+        "text": "essa pessoa tenha começado a ingerir bebida alcoólica a partir de"
+      },
+      {
+        "n": null,
+        "text": "t = t₀ (N(t₀ ) = 0), partindo de um estado de sobriedade, e que tenha"
+      },
+      {
+        "n": null,
+        "text": "parado de ingerir bebida alcoólica em t = t₁ , voltando a ficar sóbria"
+      },
+      {
+        "n": null,
+        "text": "em t = t₂ . Considere, por fim, a figura acima, que apresenta o"
+      },
+      {
+        "n": null,
+        "text": "gráfico da função N(t) para t 0 [t₀ , t₂ ]. Com base nessas informações"
+      }
+    ],
+    "instruction": "Com base nessas informações e tomando 24,3 como valor aproximado de 589 , julgue os itens que se seguem.",
+    "statement": "O valor de t₂ é inferior a 36.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-026",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Direito Constitucional",
+    "number": 26,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere aos princípios fundamentais da Constituição Federal de 1988 (CF) e à aplicabilidade das normas constitucionais, julgue os itens a seguir.",
+    "statement": "O mecanismo denominado sistema de freios e contrapesos é aplicado, por exemplo, no caso da nomeação dos ministros do Supremo Tribunal Federal (STF), atribuição do presidente da República e dependente da aprovação pelo Senado Federal.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-027",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Direito Constitucional",
+    "number": 27,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere aos princípios fundamentais da Constituição Federal de 1988 (CF) e à aplicabilidade das normas constitucionais, julgue os itens a seguir.",
+    "statement": "A liberdade de exercer qualquer trabalho, ofício ou profissão, atendidas as qualificações profissionais que a lei estabelecer, é um exemplo de norma constitucional de eficácia limitada.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-028",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Direito Constitucional",
+    "number": 28,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere aos princípios fundamentais da Constituição Federal de 1988 (CF) e à aplicabilidade das normas constitucionais, julgue os itens a seguir.",
+    "statement": "Decorre do princípio constitucional fundamental da independência e harmonia entre os poderes a impossibilidade de que um poder exerça função típica de outro, não podendo, por exemplo, o Poder Judiciário exercer a função administrativa.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-029",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Direito Constitucional",
+    "number": 29,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere aos princípios fundamentais da Constituição Federal de 1988 (CF) e à aplicabilidade das normas constitucionais, julgue os itens a seguir.",
+    "statement": "No que se refere às relações internacionais, a República Federativa do Brasil rege-se pelos princípios da igualdade entre os Estados, da cooperação entre os povos para o progresso da humanidade e da concessão de asilo político, entre outros.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-030",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Direito Constitucional",
+    "number": 30,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Julgue os itens subsequentes, relativos aos direitos e garantias fundamentais previstos na CF.",
+    "statement": "Consideram-se brasileiros naturalizados os nascidos no estrangeiro de pai brasileiro ou de mãe brasileira, desde que sejam registrados em repartição brasileira competente ou venham a residir na República Federativa do Brasil e optem, em qualquer tempo, depois de atingida a maioridade, pela nacionalidade brasileira.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-031",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Direito Constitucional",
+    "number": 31,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Julgue os itens subsequentes, relativos aos direitos e garantias fundamentais previstos na CF.",
+    "statement": "No caso de iminente perigo público, a autoridade competente poderá usar de propriedade particular, assegurada ao proprietário indenização ulterior, se houver dano.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-032",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Direito Constitucional",
+    "number": 32,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Julgue os itens subsequentes, relativos aos direitos e garantias fundamentais previstos na CF.",
+    "statement": "O estrangeiro condenado por autoridades estrangeiras pela prática de crime político poderá ser extraditado do Brasil se houver reciprocidade do país solicitante.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-033",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Direito Constitucional",
+    "number": 33,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Julgue os itens subsequentes, relativos aos direitos e garantias fundamentais previstos na CF.",
+    "statement": "Aos que comprovem insuficiência de recursos é assegurada a gratuidade na prestação de assistência jurídica integral pelo Estado.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-034",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Direito Constitucional",
+    "number": 34,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Julgue os itens subsequentes, relativos aos direitos e garantias fundamentais previstos na CF.",
+    "statement": "Somente aos brasileiros e aos estrangeiros residentes no país é assegurado o direito de petição em defesa de direitos ou contra ilegalidade ou abuso de poder.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-035",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Direito Constitucional",
+    "number": 35,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "A respeito da organização político-administrativa do Estado e da administração pública, julgue os itens que se seguem.",
+    "statement": "O Distrito Federal (DF) é ente federativo autônomo, pois possui capacidade de auto-organização, autogoverno e autoadministração, sendo vedado subdividi-lo em municípios.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-036",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Direito Constitucional",
+    "number": 36,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "A respeito da organização político-administrativa do Estado e da administração pública, julgue os itens que se seguem.",
+    "statement": "Conforme o STF, a responsabilidade civil das empresas prestadoras de serviço público é objetiva, mesmo em relação a terceiros não usuários do serviço público.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-037",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Direito Constitucional",
+    "number": 37,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "A respeito da organização político-administrativa do Estado e da administração pública, julgue os itens que se seguem.",
+    "statement": "Os atos de improbidade administrativa importarão ao agente a suspensão dos direitos políticos, a perda da função pública, a indisponibilidade dos bens e o ressarcimento ao erário, na forma e gradação previstas em lei, sem prejuízo da ação penal cabível.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-038",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Direito Constitucional",
+    "number": 38,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "A respeito da organização político-administrativa do Estado e da administração pública, julgue os itens que se seguem.",
+    "statement": "Em se tratando de matéria para a qual se preveja a competência legislativa concorrente, a CF autoriza os estados a exercerem a competência legislativa plena para atenderem a suas peculiaridades se inexistir lei federal sobre normas gerais.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-039",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Direito Constitucional",
+    "number": 39,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que concerne ao Poder Executivo e ao Poder Judiciário, julgue os itens subsecutivos.",
+    "statement": "Compete originariamente ao Superior Tribunal de Justiça (STJ) julgar o litígio entre Estado estrangeiro ou organismo internacional e a União, os estados ou o DF.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-040",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Direito Constitucional",
+    "number": 40,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que concerne ao Poder Executivo e ao Poder Judiciário, julgue os itens subsecutivos.",
+    "statement": "Compete privativamente ao presidente da República conceder indulto e comutar penas, ouvidos, se necessário, os órgãos instituídos em lei.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-041",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Ética e Cidadania",
+    "number": 41,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "A respeito da ética no serviço público, julgue os itens subsequentes.",
+    "statement": "Considere que os usuários de determinado serviço público tenham formado longas filas à espera de atendimento por determinado servidor que, embora responsável pelo setor, não viabilizou o atendimento. Nessa situação, segundo dispõe a legislação de regência, a atitude do servidor caracteriza conduta contrária à ética e ato de desumanidade, mas não grave dano moral aos usuários do serviço.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-042",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Ética e Cidadania",
+    "number": 42,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "A respeito da ética no serviço público, julgue os itens subsequentes.",
+    "statement": "O elemento ético deve estar presente na conduta de todo servidor público, que deve ser capaz de discernir o que é honesto e desonesto no exercício de sua função.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-043",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Ética e Cidadania",
+    "number": 43,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere aos deveres do servidor público, previstos no Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal, julgue os próximos itens.",
+    "statement": "Os registros que consistiram em objeto de apuração e aplicação de penalidade referentes à conduta ética do servidor devem ficar arquivados junto à comissão de ética e não podem ser fornecidos a outras unidades do órgão a que se encontre vinculado o servidor.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-044",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Ética e Cidadania",
+    "number": 44,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere aos deveres do servidor público, previstos no Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal, julgue os próximos itens.",
+    "statement": "Estará sujeito à penalidade de censura, a qual é aplicada pela comissão de ética, mediante parecer assinado por todos os seus integrantes, o servidor que violar algum de seus deveres funcionais.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-045",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Básicos",
+    "subject": "Ética e Cidadania",
+    "number": 45,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere aos deveres do servidor público, previstos no Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal, julgue os próximos itens.",
+    "statement": "A publicidade de ato administrativo, qualquer que seja sua natureza, constitui requisito de eficácia e moralidade.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-051",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Administrativo",
+    "number": 51,
+    "question_type": "true_false",
+    "support_text": "Nos itens que avaliam conhecimentos específicos , a sigla PRF, sempre rodoviário federal, conforme o contexto. Um PRF, ao desviar de um cachorro que surgiu inesperadamente na pista em que ele trafegava com a viatura de polícia, colidiu com veículo que trafegava em sentido contrário, o que ocasionou a morte do condutor desse veículo.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Nos itens que avaliam conhecimentos específicos , a sigla PRF, sempre"
+      },
+      {
+        "n": null,
+        "text": "rodoviário federal, conforme o contexto."
+      },
+      {
+        "n": null,
+        "text": "Um PRF, ao desviar de um cachorro que surgiu"
+      },
+      {
+        "n": null,
+        "text": "inesperadamente na pista em que ele trafegava com a viatura de"
+      },
+      {
+        "n": null,
+        "text": "polícia, colidiu com veículo que trafegava em sentido contrário, o"
+      },
+      {
+        "n": null,
+        "text": "que ocasionou a morte do condutor desse veículo."
+      }
+    ],
+    "instruction": "Com base nessa situação hipotética, julgue os itens a seguir.",
+    "statement": "Em razão da responsabilidade civil objetiva da administração, o PRF será obrigado a ressarcir os danos causados à administração e a terceiros, independentemente de ter agido com dolo ou culpa.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-052",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Administrativo",
+    "number": 52,
+    "question_type": "true_false",
+    "support_text": "Nos itens que avaliam conhecimentos específicos , a sigla PRF, sempre rodoviário federal, conforme o contexto. Um PRF, ao desviar de um cachorro que surgiu inesperadamente na pista em que ele trafegava com a viatura de polícia, colidiu com veículo que trafegava em sentido contrário, o que ocasionou a morte do condutor desse veículo.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Nos itens que avaliam conhecimentos específicos , a sigla PRF, sempre"
+      },
+      {
+        "n": null,
+        "text": "rodoviário federal, conforme o contexto."
+      },
+      {
+        "n": null,
+        "text": "Um PRF, ao desviar de um cachorro que surgiu"
+      },
+      {
+        "n": null,
+        "text": "inesperadamente na pista em que ele trafegava com a viatura de"
+      },
+      {
+        "n": null,
+        "text": "polícia, colidiu com veículo que trafegava em sentido contrário, o"
+      },
+      {
+        "n": null,
+        "text": "que ocasionou a morte do condutor desse veículo."
+      }
+    ],
+    "instruction": "Com base nessa situação hipotética, julgue os itens a seguir.",
+    "statement": "Não poderá ser objeto de delegação a decisão referente a recurso administrativo interposto pelo PRF contra decisão que lhe tiver aplicado penalidade em razão do acidente.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-053",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Administrativo",
+    "number": 53,
+    "question_type": "true_false",
+    "support_text": "Nos itens que avaliam conhecimentos específicos , a sigla PRF, sempre rodoviário federal, conforme o contexto. Um PRF, ao desviar de um cachorro que surgiu inesperadamente na pista em que ele trafegava com a viatura de polícia, colidiu com veículo que trafegava em sentido contrário, o que ocasionou a morte do condutor desse veículo.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Nos itens que avaliam conhecimentos específicos , a sigla PRF, sempre"
+      },
+      {
+        "n": null,
+        "text": "rodoviário federal, conforme o contexto."
+      },
+      {
+        "n": null,
+        "text": "Um PRF, ao desviar de um cachorro que surgiu"
+      },
+      {
+        "n": null,
+        "text": "inesperadamente na pista em que ele trafegava com a viatura de"
+      },
+      {
+        "n": null,
+        "text": "polícia, colidiu com veículo que trafegava em sentido contrário, o"
+      },
+      {
+        "n": null,
+        "text": "que ocasionou a morte do condutor desse veículo."
+      }
+    ],
+    "instruction": "Com base nessa situação hipotética, julgue os itens a seguir.",
+    "statement": "Ainda que seja absolvido por ausência de provas em processo penal, o PRF poderá ser processado administrativamente por eventual infração disciplinar cometida em razão do acidente.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-054",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Administrativo",
+    "number": 54,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "A respeito da organização do Departamento de Polícia Rodoviária Federal e da natureza dos atos praticados por seus agentes, julgue os itens que se seguem.",
+    "statement": "Praticado ato ilegal por agente da PRF, deve a administração revogá-lo.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-055",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Administrativo",
+    "number": 55,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "A respeito da organização do Departamento de Polícia Rodoviária Federal e da natureza dos atos praticados por seus agentes, julgue os itens que se seguem.",
+    "statement": "Por ser órgão do Ministério da Justiça, a PRF é órgão do Poder Executivo, integrante da administração direta.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-056",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Administrativo",
+    "number": 56,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "A respeito da organização do Departamento de Polícia Rodoviária Federal e da natureza dos atos praticados por seus agentes, julgue os itens que se seguem.",
+    "statement": "Os atos praticados pelos agentes públicos da PRF estão sujeitos ao controle contábil e financeiro do Tribunal de Contas da União.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-057",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Administrativo",
+    "number": 57,
+    "question_type": "true_false",
+    "support_text": "Chrome, julgue os itens subsequentes, a respeito de redes de e não necessita de um programa hospedeiro para se propagar, programa hospedeiro.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Chrome, julgue os itens subsequentes, a respeito de redes de"
+      },
+      {
+        "n": null,
+        "text": "e não necessita de um programa hospedeiro para se propagar,"
+      },
+      {
+        "n": null,
+        "text": "programa hospedeiro."
+      }
+    ],
+    "instruction": "os arquivos com extensão .doc que estivem na área de transferência ESPECÍFICOS que empregada, refere-se à Polícia Rodoviária Federal ou a policial No que concerne ao regime jurídico do servidor público federal, julgue os próximos itens.",
+    "statement": "Anulado o ato de demissão, o servidor estável será reintegrado ao cargo por ele ocupado anteriormente, exceto se o cargo estiver ocupado, hipótese em que ficará em disponibilidade até aproveitamento posterior em cargo de atribuições e vencimentos compatíveis.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-058",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Administrativo",
+    "number": 58,
+    "question_type": "true_false",
+    "support_text": "Chrome, julgue os itens subsequentes, a respeito de redes de e não necessita de um programa hospedeiro para se propagar, programa hospedeiro.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Chrome, julgue os itens subsequentes, a respeito de redes de"
+      },
+      {
+        "n": null,
+        "text": "e não necessita de um programa hospedeiro para se propagar,"
+      },
+      {
+        "n": null,
+        "text": "programa hospedeiro."
+      }
+    ],
+    "instruction": "os arquivos com extensão .doc que estivem na área de transferência ESPECÍFICOS que empregada, refere-se à Polícia Rodoviária Federal ou a policial No que concerne ao regime jurídico do servidor público federal, julgue os próximos itens.",
+    "statement": "O servidor público federal investido em mandato eletivo municipal somente será afastado do cargo se não houver compatibilidade de horário, sendo-lhe facultado, em caso de afastamento, optar pela sua remuneração.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-059",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Administrativo",
+    "number": 59,
+    "question_type": "true_false",
+    "support_text": "Chrome, julgue os itens subsequentes, a respeito de redes de e não necessita de um programa hospedeiro para se propagar, programa hospedeiro.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Chrome, julgue os itens subsequentes, a respeito de redes de"
+      },
+      {
+        "n": null,
+        "text": "e não necessita de um programa hospedeiro para se propagar,"
+      },
+      {
+        "n": null,
+        "text": "programa hospedeiro."
+      }
+    ],
+    "instruction": "os arquivos com extensão .doc que estivem na área de transferência ESPECÍFICOS que empregada, refere-se à Polícia Rodoviária Federal ou a policial No que concerne ao regime jurídico do servidor público federal, julgue os próximos itens.",
+    "statement": "Não é possível a aplicação de penalidade a servidor inativo, ainda que a infração funcional tenha sido praticada anteriormente à sua aposentadoria.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-060",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Administrativo",
+    "number": 60,
+    "question_type": "true_false",
+    "support_text": "Chrome, julgue os itens subsequentes, a respeito de redes de e não necessita de um programa hospedeiro para se propagar, programa hospedeiro.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "Chrome, julgue os itens subsequentes, a respeito de redes de"
+      },
+      {
+        "n": null,
+        "text": "e não necessita de um programa hospedeiro para se propagar,"
+      },
+      {
+        "n": null,
+        "text": "programa hospedeiro."
+      }
+    ],
+    "instruction": "os arquivos com extensão .doc que estivem na área de transferência ESPECÍFICOS que empregada, refere-se à Polícia Rodoviária Federal ou a policial No que concerne ao regime jurídico do servidor público federal, julgue os próximos itens.",
+    "statement": "A nomeação para cargo de provimento efetivo será realizada mediante prévia habilitação em concurso público de provas ou de provas e títulos ou, em algumas situações excepcionais, por livre escolha da autoridade competente.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-061",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Administrativo",
+    "number": 61,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere ao regime jurídico administrativo, julgue os itens subsecutivos.",
+    "statement": "Somente são considerados atos de improbidade administrativa aqueles que causem lesão ao patrimônio público ou importem enriquecimento ilícito.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-062",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Administrativo",
+    "number": 62,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere ao regime jurídico administrativo, julgue os itens subsecutivos.",
+    "statement": "A administração não pode estabelecer, unilateralmente, obrigações aos particulares, mas apenas aos seus servidores e aos concessionários, permissionários e delegatários de serviços públicos.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-063",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Penal",
+    "number": 63,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com relação aos princípios, institutos e dispositivos da parte geral do Código Penal (CP), julgue os itens seguintes.",
+    "statement": "Havendo conflito aparente de normas, aplica-se o princípio da subsidiariedade, que incide no caso de a norma descrever várias formas de realização da figura típica, bastando a realização de uma delas para que se configure o crime.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-064",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Penal",
+    "number": 64,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com relação aos princípios, institutos e dispositivos da parte geral do Código Penal (CP), julgue os itens seguintes.",
+    "statement": "Considere a seguinte situação hipotética. Joaquim, plenamente capaz, desferiu diversos golpes de facão contra Manoel, com o intuito de matá-lo, mas este, tendo sido socorrido e levado ao hospital, sobreviveu. Nessa situação hipotética, Joaquim responderá pela prática de homicídio tentado, com pena reduzida levando-se em conta a sanção prevista para o homicídio consumado.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-065",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Penal",
+    "number": 65,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com relação aos princípios, institutos e dispositivos da parte geral do Código Penal (CP), julgue os itens seguintes.",
+    "statement": "O princípio da legalidade é parâmetro fixador do conteúdo das normas penais incriminadoras, ou seja, os tipos penais de tal natureza somente podem ser criados por meio de lei em sentido estrito.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-066",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Penal",
+    "number": 66,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com relação aos princípios, institutos e dispositivos da parte geral do Código Penal (CP), julgue os itens seguintes.",
+    "statement": "A extra-atividade da lei penal constitui exceção à regra geral de aplicação da lei vigente à época dos fatos.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-067",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Penal",
+    "number": 67,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com relação aos princípios, institutos e dispositivos da parte geral do Código Penal (CP), julgue os itens seguintes.",
+    "statement": "Considere que um indivíduo penalmente capaz, em total estado de embriaguez, decorrente de caso fortuito, atropele um pedestre, causando-lhe a morte. Nessa situação, a embriaguez não excluía imputabilidade penal do agente.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-068",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Penal",
+    "number": 68,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com relação aos princípios, institutos e dispositivos da parte geral do Código Penal (CP), julgue os itens seguintes.",
+    "statement": "O ordenamento jurídico brasileiro prevê a possibilidade de ocorrência de tipicidade sem antijuridicidade, assim como de antijuridicidade sem culpabilidade.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-069",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Penal",
+    "number": 69,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com relação aos princípios, institutos e dispositivos da parte geral do Código Penal (CP), julgue os itens seguintes.",
+    "statement": "Em relação ao concurso de pessoas, o CP adota a teoria monista, segundo a qual todos os que contribuem para a prática de uma mesma infração penal cometem um único crime, distinguindo-se, entretanto, os autores do delito dos partícipes.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-070",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Penal",
+    "number": 70,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere aos delitos previstos na parte especial do CP, julgue os itens de 70 a 74 .",
+    "statement": "Considere a seguinte situação hipotética. Pedro e Marcus, penalmente responsáveis, foram flagrados pela polícia enquanto subtraíam de Antônio, mediante ameaça com o emprego de arma de fogo, um aparelho celular e a importância de R$ 300,00. Pedro, que portava o celular da vítima, foi preso, mas Marcus conseguiu fugir com a importância subtraída. Nessa situação hipotética, Pedro e Marcus, em conluio, praticaram o crime de roubo tentado.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-071",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Penal",
+    "number": 71,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere aos delitos previstos na parte especial do CP, julgue os itens de 70 a 74 .",
+    "statement": "Considere a seguinte situação hipotética. Aproveitando-se da facilidade do cargo por ele exercido em determinado órgão público, Artur, servidor público, em conluio com Maria, penalmente responsável, subtraiu dinheiro da repartição pública onde trabalha. Maria, que recebeu parte do dinheiro subtraído, desconhecia ser Artur funcionário público. Nessa situação hipotética, Artur cometeu o crime de peculato e Maria, o delito de furto.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-072",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Penal",
+    "number": 72,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere aos delitos previstos na parte especial do CP, julgue os itens de 70 a 74 .",
+    "statement": "O crime de concussão configura-se com a exigência, por funcionário público, de vantagem indevida, ao passo que, para a configuração do crime de corrupção passiva, basta que ele solicite ou receba a vantagem, ou, ainda, aceite promessa de recebê-la.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-073",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Penal",
+    "number": 73,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere aos delitos previstos na parte especial do CP, julgue os itens de 70 a 74 .",
+    "statement": "Em se tratando do crime de furto mediante fraude, a vítima, ludibriada, entrega, voluntariamente, a coisa ao agente. No crime de estelionato, a fraude é apenas uma forma de reduzir a vigilância exercida pela vítima sobre a coisa, de forma a permitir a sua retirada.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-074",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Penal",
+    "number": 74,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere aos delitos previstos na parte especial do CP, julgue os itens de 70 a 74 .",
+    "statement": "Considera-se crime hediondo o homicídio culposo na condução de veículo automotor, quando comprovada a embriaguez do condutor.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-075",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Processual Penal",
+    "number": 75,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que concerne às disposições preliminares do Código de Processo Penal (CPP), ao inquérito policial e à ação penal, julgue os próximos itens.",
+    "statement": "Tratando-se de lei processual penal, não se admite, salvo para beneficiar o réu, a aplicação analógica.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-076",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Processual Penal",
+    "number": 76,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que concerne às disposições preliminares do Código de Processo Penal (CPP), ao inquérito policial e à ação penal, julgue os próximos itens.",
+    "statement": "Após regular instrução processual, mesmo que se convença da falta de prova de autoria do crime que inicialmente atribuíra ao acusado, não poderá o Ministério Público desistir da ação penal.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-077",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Processual Penal",
+    "number": 77,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que concerne às disposições preliminares do Código de Processo Penal (CPP), ao inquérito policial e à ação penal, julgue os próximos itens.",
+    "statement": "O Ministério Público pode oferecer a denúncia ainda que não disponha do inquérito relatado pela autoridade policial.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-078",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Processual Penal",
+    "number": 78,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que concerne às disposições preliminares do Código de Processo Penal (CPP), ao inquérito policial e à ação penal, julgue os próximos itens.",
+    "statement": "É condicionada à representação da vítima a ação penal por crime de dano praticado contra ônibus de transporte coletivo pertencente a empresa concessionária de serviço público.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-079",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Processual Penal",
+    "number": 79,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "A respeito das espécies de prisão e do habeas corpus, julgue os itens que se seguem.",
+    "statement": "O habeas corpus pode ser impetrado, perante qualquer instância do Poder Judiciário, por qualquer pessoa do povo em favor de outrem, podendo, ainda, a autoridade judicial competente concedê-lo de ofício.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-080",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Processual Penal",
+    "number": 80,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "A respeito das espécies de prisão e do habeas corpus, julgue os itens que se seguem.",
+    "statement": "O juiz poderá substituir a prisão preventiva por prisão domiciliar sempre que a agente for gestante.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-081",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Processual Penal",
+    "number": 81,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "A respeito das espécies de prisão e do habeas corpus, julgue os itens que se seguem.",
+    "statement": "A prisão temporária só poderá ser decretada mediante representação da autoridade policial ou a requerimento do Ministério Público, vedada sua decretação de ofício pelo juiz.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-082",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Processual Penal",
+    "number": 82,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com base no disposto no CPP e na jurisprudência do Superior Tribunal de Justiça, julgue os seguintes itens.",
+    "statement": "A prova declarada inadmissível pela autoridade judicial por ter sido obtida por meios ilícitos deve ser juntada em autos apartados dos principais, não podendo servir de fundamento à condenação do réu.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-083",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Processual Penal",
+    "number": 83,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com base no disposto no CPP e na jurisprudência do Superior Tribunal de Justiça, julgue os seguintes itens.",
+    "statement": "Em processo por crime de responsabilidade de funcionário público, o juiz pode rejeitar a denúncia oferecida pelo Ministério Público caso se convença, após análise dos documentos apresentados pelo acusado em resposta à denúncia, da inexistência do crime apurado.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-084",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direito Processual Penal",
+    "number": 84,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com base no disposto no CPP e na jurisprudência do Superior Tribunal de Justiça, julgue os seguintes itens.",
+    "statement": "Compete à justiça federal processar e julgar a contravenção penal praticada em detrimento de bens e serviços da União.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-085",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação Especial",
+    "number": 85,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que concerne ao abuso de autoridade e ao Estatuto do Desarmamento, julgue os itens a seguir.",
+    "statement": "Supondo que determinado cidadão seja responsável pela segurança de estrangeiros em visita ao Brasil e necessite de porte de arma, a concessão da respectiva autorização será de competência do ministro da Justiça.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-086",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação Especial",
+    "number": 86,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que concerne ao abuso de autoridade e ao Estatuto do Desarmamento, julgue os itens a seguir.",
+    "statement": "Considere que um PRF aborde o condutor de um veículo por este trafegar acima da velocidade permitida em rodovia federal. Nessa situação, se demorar em autuar o condutor, o policial poderá responder por abuso de autoridade, ainda que culposamente.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-087",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação Especial",
+    "number": 87,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "A respeito das contravenções penais e da lei que institui o Sistema Nacional de Políticas Públicas sobre Drogas, julgue os itens subsequentes.",
+    "statement": "Caso uma pessoa injete em seu próprio organismo substância entorpecente e, em seguida, seja encontrada por policiais, ainda que os agentes não encontrem substâncias entorpecentes em poder dessa pessoa, ela estará sujeita às penas de advertência, prestação de serviço à comunidade ou medida educativa de comparecimento a programa ou curso educativo.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-088",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação Especial",
+    "number": 88,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "A respeito das contravenções penais e da lei que institui o Sistema Nacional de Políticas Públicas sobre Drogas, julgue os itens subsequentes.",
+    "statement": "Considere que determinado cidadão esteja usando publicamente uniforme de PRF, função pública que ele não exerce. Nessa situação, para que esse cidadão responda por contravenção penal, é necessário que sua conduta cause efetivo prejuízo para o Estado ou para outra pessoa.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-089",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação Especial",
+    "number": 89,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Julgue os itens seguintes, relativos à lei do crime organizado e a crimes resultantes de preconceitos de raça e cor.",
+    "statement": "Constitui crime o fato de determinado clube social recusar a admissão de um cidadão em razão de preconceito de raça, salvo se o respectivo estatuto atribuir à diretoria a faculdade de recusar propostas de admissão, sem declinação de motivos.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-090",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação Especial",
+    "number": 90,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Julgue os itens seguintes, relativos à lei do crime organizado e a crimes resultantes de preconceitos de raça e cor.",
+    "statement": "Durante o inquérito policial, é necessária a autorização judicial para que um agente policial se infiltre em organização criminosa com fins investigativos.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-091",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação Especial",
+    "number": 91,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Acerca do Estatuto do Idoso e dos juizados especiais criminais, julgue os itens subsecutivos.",
+    "statement": "Os atos processuais dos juizados especiais criminais poderão ser realizados nos finais de semana, à exceção dos domingos e feriados.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-092",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação Especial",
+    "number": 92,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Acerca do Estatuto do Idoso e dos juizados especiais criminais, julgue os itens subsecutivos.",
+    "statement": "Se alguém deixar de prestar assistência a idoso, quando for possível fazê-lo sem risco pessoal, em situação de iminente perigo, cometerá, em tese, crime de menor potencial ofensivo.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-093",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação Especial",
+    "number": 93,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com fundamento na lei que cria mecanismos para coibir a violência doméstica e familiar contra a mulher — Lei Maria da Penha — e na Lei dos Crimes Ambientais, julgue os próximos itens.",
+    "statement": "Responderá por crime contra a flora o indivíduo que cortar árvore em floresta considerada de preservação permanente, independentemente de ter permissão para cortá-la, e, caso a tenha, quem lhe concedeu a permissão também estará sujeito às penalidades do respectivo crime.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-094",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação Especial",
+    "number": 94,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com fundamento na lei que cria mecanismos para coibir a violência doméstica e familiar contra a mulher — Lei Maria da Penha — e na Lei dos Crimes Ambientais, julgue os próximos itens.",
+    "statement": "Considerando que, inconformado com o término do namoro de mais de vinte anos, José tenha agredido sua ex-namorada Maria, com quem não coabitava, ele estará sujeito à aplicação da lei de combate à violência doméstica e familiar contra a mulher, conhecida como Lei Maria da Penha.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-095",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação Especial",
+    "number": 95,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com fundamento na legislação que define os crimes de tortura e de tráfico de pessoas, julgue os itens a seguir.",
+    "statement": "O crime de tráfico de pessoas poderá ser caracterizado ainda que haja consentimento da vítima.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-096",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação Especial",
+    "number": 96,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com fundamento na legislação que define os crimes de tortura e de tráfico de pessoas, julgue os itens a seguir.",
+    "statement": "Para que um cidadão seja processado e julgado por crime de tortura, é prescindível que esse crime deixe vestígios de ordem física.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-097",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direitos Humanos e Cidadania",
+    "number": 97,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que concerne às práticas policiais no espaço público e à administração institucional de conflitos no espaço público, julgue os itens seguintes.",
+    "statement": "Ainda que, durante manifestação que resulte no bloqueio de rodovia federal, os manifestantes entrem em conflito com motoristas que trafeguem nessa rodovia, o PRF responsável pela segurança no local não poderá efetuar, a título de advertência, disparos de arma de fogo para o alto.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-098",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direitos Humanos e Cidadania",
+    "number": 98,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que concerne às práticas policiais no espaço público e à administração institucional de conflitos no espaço público, julgue os itens seguintes.",
+    "statement": "Caso um veículo em movimento desrespeite bloqueio feito pela PRF em determinada rodovia federal, ainda que esse fato não represente risco imediato de morte ou de lesão grave aos agentes de segurança pública ou a terceiros, o PRF que estiver atuando no bloqueio poderá, para paralisar o veículo, empregar arma de fogo.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-099",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direitos Humanos e Cidadania",
+    "number": 99,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Acerca dos direitos de cidadania e do pluralismo jurídico, julgue os itens que se seguem.",
+    "statement": "No Brasil, o pluralismo jurídico configura-se, por exemplo, quando da aplicação de regras criadas por membros de organizações criminosas, distintas das regras jurídicas estabelecidas pelo Estado.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-100",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direitos Humanos e Cidadania",
+    "number": 100,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Acerca dos direitos de cidadania e do pluralismo jurídico, julgue os itens que se seguem.",
+    "statement": "Os direitos de cidadania são, no Estado democrático de direito, todos aqueles relativos à dignidade do cidadão, como sujeito de prestações estatais, e à participação ativa na vida social, política e econômica do Estado.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-101",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direitos Humanos e Cidadania",
+    "number": 101,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Considerando o disposto na Constituição Federal de 1988 (CF), julgue os itens a seguir, relativos aos direitos humanos.",
+    "statement": "A possibilidade de extensão aos estrangeiros que estejam no Brasil, mas que não residam no país, dos direitos individuais previstos na CF deve-se ao princípio da primazia dos direitos humanos nas relações internacionais do Brasil.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-102",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direitos Humanos e Cidadania",
+    "number": 102,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Considerando o disposto na Constituição Federal de 1988 (CF), julgue os itens a seguir, relativos aos direitos humanos.",
+    "statement": "Equivalem às normas constitucionais originárias os tratados internacionais sobre direitos humanos aprovados, em cada casa do Congresso Nacional, em dois turnos, por três quintos dos votos dos respectivos membros.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-103",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direitos Humanos e Cidadania",
+    "number": 103,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere à fundamentação dos direitos humanos e à sua afirmação histórica, julgue os itens subsecutivos.",
+    "statement": "A expressão direitos humanos de primeira geração refere-se aos direitos sociais, culturais e econômicos.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-104",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direitos Humanos e Cidadania",
+    "number": 104,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "No que se refere à fundamentação dos direitos humanos e à sua afirmação histórica, julgue os itens subsecutivos.",
+    "statement": "Conforme a teoria positivista, os direitos humanos fundamentam-se em uma ordem superior, universal, imutável e inderrogável.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-105",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direitos Humanos e Cidadania",
+    "number": 105,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Julgue os próximos itens, relativos aos direitos humanos, à responsabilidade do Estado e à Política Nacional de Direitos Humanos.",
+    "statement": "A aplicação das normas de direito internacional humanitário e de direito internacional dos refugiados impossibilita a aplicação das normas básicas do direito internacional dos direitos humanos.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-106",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direitos Humanos e Cidadania",
+    "number": 106,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Julgue os próximos itens, relativos aos direitos humanos, à responsabilidade do Estado e à Política Nacional de Direitos Humanos.",
+    "statement": "A Política Nacional de Direitos Humanos contempla medidas voltadas à proteção dos direitos civis, tais como os projetos que tratam da parceria entre pessoas do mesmo sexo e da obrigatoriedade de atendimento do aborto legal pela rede pública de saúde.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-107",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direitos Humanos e Cidadania",
+    "number": 107,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Julgue os próximos itens, relativos aos direitos humanos, à responsabilidade do Estado e à Política Nacional de Direitos Humanos.",
+    "statement": "Caso o Poder Judiciário, ao fundamentar decisão em lei ou norma constitucional interna, descumpra normas internacionais de direitos humanos, o Estado não poderá ser responsabilizado no plano internacional por essa decisão.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-108",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Direitos Humanos e Cidadania",
+    "number": 108,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Julgue os próximos itens, relativos aos direitos humanos, à responsabilidade do Estado e à Política Nacional de Direitos Humanos.",
+    "statement": "O sistema global de proteção dos direitos humanos foi instaurado pela Carta Internacional dos Direitos Humanos.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-109",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação da PRF",
+    "number": 109,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com base na legislação da PRF, julgue os itens que se seguem.",
+    "statement": "Considere a seguinte situação hipotética. Durante uma abordagem de rotina feita pela PRF em determinada rodovia federal, foram apreendidos aproximadamente cem quilos de entorpecentes, entre crack, haxixe e cocaína. O motorista, único ocupante do veículo onde estavam as drogas, confessou a prática do delito, tendo afirmado, ainda, que adquirira as drogas para revendê-las e que as estava transportando para um depósito em local seguro. Nessa situação, cabe à chefia do distrito regional da PRF do estado em que ocorreu a apreensão formalizar o auto de prisão em flagrante do autor do delito e comunicar a prisão à autoridade judiciária competente.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-110",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação da PRF",
+    "number": 110,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com base na legislação da PRF, julgue os itens que se seguem.",
+    "statement": "Compete à PRF o patrulhamento das rodovias federais privatizadas, mesmo tendo havido, com o processo de concessão, a transferência a particulares das atividades administrativas referentes aos trechos terceirizados.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-111",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação da PRF",
+    "number": 111,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com base na legislação da PRF, julgue os itens que se seguem.",
+    "statement": "Se, durante a execução de obra ao longo de uma rodovia federal, a empresa responsável pela obra interromper a circulação de veículos e a movimentação de cargas em uma das faixas de rolamento sem a prévia permissão do órgão de trânsito competente, a PRF deverá interditar a obra e aplicar as penalidades civis e multas decorrentes da infração cometida pela empresa.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-112",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação da PRF",
+    "number": 112,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com base na legislação da PRF, julgue os itens que se seguem.",
+    "statement": "Comete infração de trânsito gravíssima, punível com multa, o condutor que não reduz a velocidade do veículo de forma compatível com a segurança do trânsito, quando se aproxima de passeatas, manifestações populares e aglomerações.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-113",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação da PRF",
+    "number": 113,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com base na legislação da PRF, julgue os itens que se seguem.",
+    "statement": "A autoridade de trânsito, na esfera de suas atribuições, poderá aplicar, quando cabível, penalidade consistente na frequência obrigatória em curso de reciclagem, sem prejuízo das punições originárias de ilícitos penais decorrentes de crimes de trânsito.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-114",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Legislação da PRF",
+    "number": 114,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Com base na legislação da PRF, julgue os itens que se seguem.",
+    "statement": "É permitido ao PRF portar arma de fogo somente em serviço, sendo a licença apenas de caráter funcional.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-115",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Física",
+    "number": 115,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Considerando que um veículo com massa igual a 1.000 kg se mova em linha reta com velocidade constante e igual a 72 km/h, e considerando, ainda, que a aceleração da gravidade seja igual a m/s² , julgue os itens a seguir.",
+    "statement": "Quando o freio for acionado, para que o veículo pare, a sua energia cinética e o trabalho da força de atrito, em módulo, deverão ser iguais.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-116",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Física",
+    "number": 116,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Considerando que um veículo com massa igual a 1.000 kg se mova em linha reta com velocidade constante e igual a 72 km/h, e considerando, ainda, que a aceleração da gravidade seja igual a m/s² , julgue os itens a seguir.",
+    "statement": "Antes de iniciar o processo de frenagem, a energia mecânica do veículo era igual a 200.000 J.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-118",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Física",
+    "number": 118,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Considerando que um corpo de massa igual a 1,0 kg oscile em movimento harmônico simples de acordo com a equação x(t) = 6,0cos[3πt + π/3], em que t é o tempo, em segundos, e x(t) é dada em metros, julgue os itens que se seguem.",
+    "statement": "A força resultante que atua no corpo é expressa por F(t) = −(3π)² x(t).",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-119",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Física",
+    "number": 119,
+    "question_type": "true_false",
+    "support_text": null,
+    "support_lines": [],
+    "instruction": "Considerando que um corpo de massa igual a 1,0 kg oscile em movimento harmônico simples de acordo com a equação x(t) = 6,0cos[3πt + π/3], em que t é o tempo, em segundos, e x(t) é dada em metros, julgue os itens que se seguem.",
+    "statement": "O período do movimento é igual a 0,5 s.",
+    "answer": "E",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  },
+  {
+    "id": "prf-2013-120",
+    "exam_slug": "prf-2013",
+    "organization": "Polícia Rodoviária Federal",
+    "organization_acronym": "PRF",
+    "position": "Policial Rodoviário Federal",
+    "exam_board": "CESPE",
+    "exam_board_label": "CESPE/UnB",
+    "year": 2013,
+    "applied_at": "2013-08-11",
+    "booklet": "DPRF13_001_01",
+    "block": "Conhecimentos Específicos",
+    "subject": "Física",
+    "number": 120,
+    "question_type": "true_false",
+    "support_text": "O fenômeno de redução na frequência do som emitido pela buzina de um veículo em movimento, observado por um ouvinte, é denominado efeito Doppler. Essa diferença na frequência deve-se ao deslocamento no número de oscilações por segundo que atinge o ouvido do ouvinte. Os instrumentos utilizados pela PRF para o controle de velocidade se baseiam nesse efeito.",
+    "support_lines": [
+      {
+        "n": null,
+        "text": "O fenômeno de redução na frequência do som emitido pela buzina"
+      },
+      {
+        "n": null,
+        "text": "de um veículo em movimento, observado por um ouvinte, é"
+      },
+      {
+        "n": null,
+        "text": "denominado efeito Doppler. Essa diferença na frequência deve-se"
+      },
+      {
+        "n": null,
+        "text": "ao deslocamento no número de oscilações por segundo que atinge"
+      },
+      {
+        "n": null,
+        "text": "o ouvido do ouvinte. Os instrumentos utilizados pela PRF para o"
+      },
+      {
+        "n": null,
+        "text": "controle de velocidade se baseiam nesse efeito. A respeito do efeito"
+      }
+    ],
+    "instruction": "A respeito do efeito Doppler, julgue o item abaixo.",
+    "statement": "Considere que um PRF, em uma viatura que se desloca com velocidade igual a 90 km/h, se aproxime do local de um acidente onde já se encontra uma ambulância parada, cuja sirene esteja emitindo som com frequência de 1.000 Hz. Nesse caso, se a velocidade do som no ar for igual a 340 m/s, a frequência do som da sirene ouvido pelo policial será superior a 1.025 Hz.",
+    "answer": "C",
+    "annulled": false,
+    "needs_figure": false,
+    "needs_review": false,
+    "source_exam_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/DPRF13_001_01.pdf",
+    "source_answer_url": "http://www.cespe.unb.br/concursos/dprf_13/arquivos/Gab_definitivo_DPRF13_001_01.PDF",
+    "figures": []
+  }
+]

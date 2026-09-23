@@ -21,6 +21,7 @@ export function HeroCarousel({ banners }: { banners: CampaignBanner[] }) {
     setRatios((current) => current[banner.id] === ratio ? current : { ...current, [banner.id]: ratio });
   };
   return <section className="hero-wrap"><div className="container"><div className="hero-banner-shell">
+    <span className="hero-glow" aria-hidden="true"><i /><i /><i /><i /></span>
     <Link className="hero-banner" style={ratios[banner.id] ? { aspectRatio: String(ratios[banner.id]) } : undefined} data-overlay={Boolean(banner.callout || banner.ctaLabel)} href={banner.href} aria-label={`${banner.name}: acessar campanha`}>
       <picture>{banner.mobileUrl && <source media="(max-width: 800px)" srcSet={banner.mobileUrl}/>}<img className="hero-image" src={banner.desktopUrl} alt={banner.name} onLoad={resizeToArtwork}/></picture>
       {(banner.callout || banner.ctaLabel) && <div className="hero-campaign-content">{banner.callout && <strong>{banner.callout}</strong>}{banner.ctaLabel && <span className="gold-button">{banner.ctaLabel}</span>}</div>}
