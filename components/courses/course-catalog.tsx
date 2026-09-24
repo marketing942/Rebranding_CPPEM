@@ -22,7 +22,8 @@ import {
   UserRoundCheck,
   X,
 } from "lucide-react";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { Suspense, useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { aplicar, CoursePagination, CourseSidebar, CourseToolbar, POR_PAGINA, type Filtros } from "@/components/courses/course-filters";
 import type { CourseAnswer, CourseProduct } from "@/types/content";
 
@@ -32,13 +33,24 @@ type CardOrigin = { left: number; top: number; width: number; height: number };
 const COM_FICHA = ["Curso online", "Curso unificado", "Preparação presencial", "Plano de Combate"];
 const abreFicha = (produto: CourseProduct) => COM_FICHA.includes(produto.type);
 
+// Le ?busca=&tipo=&carreira= que o menu da loja manda. Fica isolado num Suspense
+// para que so ele renderize no cliente: a grade continua no HTML estatico.
+function ParametrosDaLoja({ aoLer }: { aoLer: (valores: { busca: string | null; tipo: string | null; carreira: string | null }) => void }) {
+  const parametros = useSearchParams();
+  const busca = parametros.get("busca");
+  const tipo = parametros.get("tipo");
+  const carreira = parametros.get("carreira");
+  useEffect(() => { aoLer({ busca, tipo, carreira }); }, [aoLer, busca, tipo, carreira]);
+  return null;
+}
+
 function AnswerBadge({ value }: { value: CourseAnswer }) {
   return <span className="course-answer" data-answer={value}>{value}</span>;
 }
 
 export function CourseCatalog({ products, activeSlug }: { products: CourseProduct[]; activeSlug?: string }) {
   const [selected, setSelected] = useState<CourseProduct | null>(null);
-  const [filtros, setFiltros] = useState<Filtros>({ tipo: null, carreira: null, faixa: null, ordem: "rel", pagina: 1 });
+  const [filtros, setFiltros] = useState<Filtros>({ busca: "", tipo: null, carreira: null, faixa: null, ordem: "rel", pagina: 1 });
   const [origin, setOrigin] = useState<CardOrigin | null>(null);
   const [showScrollHint, setShowScrollHint] = useState(false);
   const previewRef = useRef<HTMLElement>(null);
@@ -92,6 +104,23 @@ export function CourseCatalog({ products, activeSlug }: { products: CourseProduc
     };
   }, [selected]);
 
+  const lerDaUrl = useCallback(({ busca, tipo, carreira }: { busca: string | null; tipo: string | null; carreira: string | null }) => {
+    if (!busca && !tipo && !carreira) return;
+    setFiltros((atual) => ({ ...atual, busca: busca ?? atual.busca, tipo, carreira, pagina: 1 }));
+  }, []);
+
+  // mantem o endereco alinhado com a tela para o aluno poder compartilhar
+  const primeiraSincronia = useRef(true);
+  useEffect(() => {
+    if (primeiraSincronia.current) { primeiraSincronia.current = false; return; }
+    const parametros = new URLSearchParams();
+    if (filtros.busca.trim()) parametros.set("busca", filtros.busca.trim());
+    if (filtros.tipo) parametros.set("tipo", filtros.tipo);
+    if (filtros.carreira) parametros.set("carreira", filtros.carreira);
+    const consulta = parametros.toString();
+    window.history.replaceState(null, "", consulta ? `?${consulta}` : window.location.pathname);
+  }, [filtros.busca, filtros.tipo, filtros.carreira]);
+
   const openCourse = (course: CourseProduct, element: HTMLElement) => {
     const rect = element.getBoundingClientRect();
     setOrigin({ left: rect.left, top: rect.top, width: rect.width, height: rect.height });
@@ -107,7 +136,7 @@ export function CourseCatalog({ products, activeSlug }: { products: CourseProduc
     });
   };
 
-  const temFiltro = Boolean(filtros.tipo || filtros.carreira || filtros.faixa);
+  const temFiltro = Boolean(filtros.busca.trim() || filtros.tipo || filtros.carreira || filtros.faixa);
   const filtrados = aplicar(products, filtros);
   const visiveis = filtrados.slice((filtros.pagina - 1) * POR_PAGINA, filtros.pagina * POR_PAGINA);
 
@@ -128,6 +157,8 @@ export function CourseCatalog({ products, activeSlug }: { products: CourseProduc
   ] : [];
 
   return <>
+    <Suspense fallback={null}><ParametrosDaLoja aoLer={lerDaUrl} /></Suspense>
+
     <div className="course-hub">
       <CourseSidebar produtos={products} filtros={filtros} aoMudar={setFiltros} activeSlug={activeSlug} />
 
@@ -137,7 +168,7 @@ export function CourseCatalog({ products, activeSlug }: { products: CourseProduc
         {visiveis.length ? <div className="course-catalog-grid" data-dimmed={Boolean(selected)}>
           {visiveis.map((product) => {
             const corpo = <span className="course-select-body">
-              <small>{product.type}{product.acronym ? ` Â· ${product.acronym}` : ""}</small>
+              <small>{product.type}{product.acronym ? ` · ${product.acronym}` : ""}</small>
               <strong>{product.name}</strong>
               {product.delivery && <span>{product.delivery}</span>}
               {product.description && <p>{product.description}</p>}
@@ -152,11 +183,11 @@ export function CourseCatalog({ products, activeSlug }: { products: CourseProduc
         </div> : <div className="course-empty-state">
           <SearchX size={34} aria-hidden="true" /><h2>Nada encontrado com esses filtros.</h2>
           <p>{temFiltro
-            ? "Tente remover um dos filtros da barra lateral para ver mais itens."
-            : "Assim que uma preparaÃ§Ã£o for publicada no Notion, ela aparecerÃ¡ aqui automaticamente."}</p>
+            ? "Tente outra palavra ou remova um dos filtros da barra lateral."
+            : "Assim que uma preparação for publicada no Notion, ela aparecerá aqui automaticamente."}</p>
           {temFiltro
-            ? <button className="ghost-button" type="button" onClick={() => setFiltros({ ...filtros, tipo: null, carreira: null, faixa: null, pagina: 1 })}>Limpar filtros</button>
-            : <Link className="ghost-button" href="/cursos">Ver todas as preparaÃ§Ãµes</Link>}
+            ? <button className="ghost-button" type="button" onClick={() => setFiltros({ ...filtros, busca: "", tipo: null, carreira: null, faixa: null, pagina: 1 })}>Limpar filtros</button>
+            : <Link className="ghost-button" href="/cursos">Ver todas as preparações</Link>}
         </div>}
 
         <CoursePagination total={filtrados.length} pagina={filtros.pagina}

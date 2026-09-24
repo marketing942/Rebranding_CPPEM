@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { X } from "lucide-react";
+import { Search, X } from "lucide-react";
 import { courseCategories } from "@/lib/course-categories";
 import type { CourseProduct } from "@/types/content";
 
-export type Filtros = { tipo: string | null; carreira: string | null; faixa: string | null; ordem: string; pagina: number };
+export type Filtros = { busca: string; tipo: string | null; carreira: string | null; faixa: string | null; ordem: string; pagina: number };
 
 export const POR_PAGINA = 24;
 
@@ -36,8 +36,19 @@ export function valorDe(preco: string) {
   return Number.isFinite(numero) && numero > 0 ? numero : null;
 }
 
+// a busca ignora acento: quem digita "policia" tem que achar "Polícia"
+export const normalizar = (valor: string) => valor.normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase();
+
 export function aplicar(produtos: CourseProduct[], filtros: Filtros) {
   let lista = produtos;
+  const termo = normalizar(filtros.busca.trim());
+  if (termo) {
+    const partes = termo.split(/\s+/);
+    lista = lista.filter((p) => {
+      const alvo = normalizar([p.name, p.acronym, p.career, p.type, p.description].filter(Boolean).join(" "));
+      return partes.every((parte) => alvo.includes(parte));
+    });
+  }
   if (filtros.tipo) lista = lista.filter((p) => p.type === filtros.tipo);
   if (filtros.carreira) lista = lista.filter((p) => p.career === filtros.carreira);
   if (filtros.faixa) {
@@ -63,7 +74,7 @@ export function CourseSidebar({ produtos, filtros, aoMudar, activeSlug }: {
 }) {
   // a contagem de cada opção considera os outros filtros já marcados
   const conta = (teste: (p: CourseProduct) => boolean, ignorar: "tipo" | "carreira" | "faixa") => {
-    let base = produtos;
+    let base = aplicar(produtos, { ...filtros, tipo: null, carreira: null, faixa: null, ordem: "rel", pagina: 1 });
     if (filtros.tipo && ignorar !== "tipo") base = base.filter((p) => p.type === filtros.tipo);
     if (filtros.carreira && ignorar !== "carreira") base = base.filter((p) => p.career === filtros.carreira);
     if (filtros.faixa && ignorar !== "faixa") {
@@ -81,6 +92,18 @@ export function CourseSidebar({ produtos, filtros, aoMudar, activeSlug }: {
     .sort((a, b) => b.total - a.total);
 
   return <aside className="course-sidebar" aria-label="Filtros do catálogo">
+    <div className="course-sidebar-block course-sidebar-search">
+      <h2>Buscar</h2>
+      <div className="course-search-field">
+        <Search size={15} aria-hidden="true" />
+        <input type="search" value={filtros.busca} placeholder="Curso, material ou sigla"
+          aria-label="Buscar no catálogo"
+          onChange={(evento) => aoMudar({ ...filtros, busca: evento.target.value, pagina: 1 })} />
+        {filtros.busca && <button type="button" aria-label="Limpar busca"
+          onClick={() => aoMudar({ ...filtros, busca: "", pagina: 1 })}><X size={14} /></button>}
+      </div>
+    </div>
+
     <div className="course-sidebar-block">
       <h2>Categorias</h2>
       <ul>
@@ -129,8 +152,8 @@ export function CourseSidebar({ produtos, filtros, aoMudar, activeSlug }: {
       })}</ul>
     </div>
 
-    {(filtros.tipo || filtros.carreira || filtros.faixa) && <button className="course-sidebar-clear" type="button"
-      onClick={() => aoMudar({ ...filtros, tipo: null, carreira: null, faixa: null, pagina: 1 })}>
+    {(filtros.busca || filtros.tipo || filtros.carreira || filtros.faixa) && <button className="course-sidebar-clear" type="button"
+      onClick={() => aoMudar({ ...filtros, busca: "", tipo: null, carreira: null, faixa: null, pagina: 1 })}>
       <X size={13} aria-hidden="true" /> Limpar filtros
     </button>}
   </aside>;
@@ -141,7 +164,7 @@ export function CourseToolbar({ total, filtros, aoMudar }: {
   filtros: Filtros;
   aoMudar: (filtros: Filtros) => void;
 }) {
-  const marcados = ([["tipo", filtros.tipo], ["carreira", filtros.carreira], ["faixa", filtros.faixa]] as const)
+  const marcados = ([["busca", filtros.busca.trim()], ["tipo", filtros.tipo], ["carreira", filtros.carreira], ["faixa", filtros.faixa]] as const)
     .filter(([, valor]) => valor);
   return <>
     <div className="course-toolbar">
@@ -157,8 +180,8 @@ export function CourseToolbar({ total, filtros, aoMudar }: {
     </div>
     {marcados.length > 0 && <div className="course-toolbar-tags">
       {marcados.map(([campo, valor]) => <span className="course-tag" key={campo}>
-        {valor}
-        <button type="button" aria-label={`Remover filtro ${valor}`} onClick={() => aoMudar({ ...filtros, [campo]: null, pagina: 1 })}>×</button>
+        {campo === "busca" ? `“${valor}”` : valor}
+        <button type="button" aria-label={`Remover filtro ${valor}`} onClick={() => aoMudar({ ...filtros, [campo]: campo === "busca" ? "" : null, pagina: 1 })}>×</button>
       </span>)}
     </div>}
   </>;

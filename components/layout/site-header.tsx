@@ -14,6 +14,11 @@ export async function SiteHeader() {
     .sort((a, b) => (a.menuOrder ?? Number.MAX_SAFE_INTEGER) - (b.menuOrder ?? Number.MAX_SAFE_INTEGER))
     .slice(0, 5);
   const featuredMaterials = markedMaterials.length > 0 ? markedMaterials : materials.slice(0, 1);
+  // o menu mostra quantos itens existem em cada prateleira da loja
+  const storeCounts = products.reduce<Record<string, number>>((contagem, product) => {
+    contagem[product.type] = (contagem[product.type] ?? 0) + 1;
+    return contagem;
+  }, {});
 
-  return <SiteHeaderClient featuredCourses={featuredCourses} featuredMaterials={featuredMaterials} ecosystemItems={ecosystemItems} />;
+  return <SiteHeaderClient featuredCourses={featuredCourses} featuredMaterials={featuredMaterials} ecosystemItems={ecosystemItems} storeCounts={storeCounts} storeTotal={products.length} />;
 }

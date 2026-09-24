@@ -3,7 +3,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BookOpen, ChevronDown, ChevronLeft, ChevronRight, FileText, GraduationCap, MapPin, Menu, ShieldCheck, ShoppingBag, Sparkles, Target, University, Users, X } from "lucide-react";
+import { ArrowRight, BookOpen, ChevronDown, ChevronLeft, ChevronRight, FileText, GraduationCap, MapPin, Menu, Package, Search, ShieldCheck, ShoppingBag, Sparkles, Target, University, Users, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { courseCategories } from "@/lib/course-categories";
 import type { Product } from "@/types/content";
@@ -20,7 +20,28 @@ const free = [
 
 const ecosystemIcons = { Alvo: Target, Graduação: GraduationCap, Diploma: University, Local: MapPin, Escudo: ShieldCheck, Loja: ShoppingBag, Estrela: Sparkles } as const;
 
-export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystemItems }: { featuredCourses: Product[]; featuredMaterials: FreeMaterial[]; ecosystemItems: EcosystemItem[] }) {
+// as colunas do menu repetem os grupos da vitrine para o aluno reconhecer o caminho
+const storeColumns: Array<{ titulo: string; icon: typeof BookOpen; itens: Array<{ rotulo: string; tipo: string }> }> = [
+  { titulo: "Preparação", icon: GraduationCap, itens: [
+    { rotulo: "Cursos online", tipo: "Curso online" },
+    { rotulo: "Cursos unificados", tipo: "Curso unificado" },
+    { rotulo: "Disciplinas isoladas", tipo: "Curso isolado" },
+    { rotulo: "Presencial", tipo: "Preparação presencial" },
+    { rotulo: "Plano de Combate", tipo: "Plano de Combate" },
+  ] },
+  { titulo: "Material de estudo", icon: BookOpen, itens: [
+    { rotulo: "Resumos bizurados", tipo: "Resumo bizurado" },
+    { rotulo: "Cadernos de questões", tipo: "Caderno de questões" },
+    { rotulo: "Vade mecum", tipo: "Vade mecum" },
+    { rotulo: "E-books e ferramentas", tipo: "E-book e ferramentas" },
+  ] },
+  { titulo: "Leve tudo", icon: Package, itens: [
+    { rotulo: "Combos", tipo: "Combo" },
+    { rotulo: "Vestuário e acessórios", tipo: "Vestuário e acessórios" },
+  ] },
+];
+
+export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystemItems, storeCounts, storeTotal }: { featuredCourses: Product[]; featuredMaterials: FreeMaterial[]; ecosystemItems: EcosystemItem[]; storeCounts: Record<string, number>; storeTotal: number }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileCoursesOpen, setMobileCoursesOpen] = useState(false);
   const [mobileFreeOpen, setMobileFreeOpen] = useState(false);
@@ -98,12 +119,31 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
           {featuredCourses.length > 1 && <div className="courses-feature-controls"><button type="button" onClick={showPrevious} aria-label="Destaque anterior" tabIndex={coursesOpen ? undefined : -1}><ChevronLeft size={16} /></button><span>{featuredIndex + 1} / {featuredCourses.length}</span><button type="button" onClick={showNext} aria-label="Próximo destaque" tabIndex={coursesOpen ? undefined : -1}><ChevronRight size={16} /></button></div>}
         </div>
         <div className="courses-mega-content">
-          <div className="courses-mega-heading"><div><span className="eyebrow">Cursos por carreira</span><h2>Escolha sua <span className="gold">missão.</span></h2></div><Link href="/cursos" onClick={() => setCoursesOpen(false)} tabIndex={coursesOpen ? undefined : -1}>Ver todas as preparações <ArrowRight size={15} /></Link></div>
-          <div className="courses-path-grid" data-single="true">
-            <div className="courses-online-path">
-              <div className="courses-path-label"><Users size={16} aria-hidden="true" /><span>Cursos online por carreira</span></div>
-              <div className="courses-category-grid">{courseCategories.map((category, index) => <Link href={`/cursos/${category.slug}`} key={category.slug} onClick={() => setCoursesOpen(false)} tabIndex={coursesOpen ? undefined : -1}><span>{String(index + 1).padStart(2, "0")}</span><strong>{category.label}</strong><ArrowRight size={16} /></Link>)}</div>
-            </div>
+          <div className="courses-mega-heading">
+            <div><span className="eyebrow">Loja CPPEM</span><h2>O que você precisa <span className="gold">hoje?</span></h2></div>
+            <Link href="/cursos" onClick={() => setCoursesOpen(false)} tabIndex={coursesOpen ? undefined : -1}>Ver a loja completa{storeTotal ? ` (${storeTotal})` : ""} <ArrowRight size={15} /></Link>
+          </div>
+
+          <form className="courses-mega-search" action="/cursos" role="search" onSubmit={() => setCoursesOpen(false)}>
+            <Search size={16} aria-hidden="true" />
+            <input type="search" name="busca" placeholder="Buscar curso, resumo bizurado, vade mecum..." aria-label="Buscar na loja" tabIndex={coursesOpen ? undefined : -1} />
+            <button className="gold-button" type="submit" tabIndex={coursesOpen ? undefined : -1}>Buscar</button>
+          </form>
+
+          <div className="courses-store-grid">
+            {storeColumns.map(({ titulo, icon: Icon, itens }) => <div className="courses-store-column" key={titulo}>
+              <div className="courses-path-label"><Icon size={16} aria-hidden="true" /><span>{titulo}</span></div>
+              <ul>{itens.map(({ rotulo, tipo }) => <li key={rotulo}>
+                <Link href={`/cursos?tipo=${encodeURIComponent(tipo)}`} onClick={() => setCoursesOpen(false)} tabIndex={coursesOpen ? undefined : -1}>
+                  <strong>{rotulo}</strong>{storeCounts[tipo] ? <em>{storeCounts[tipo]}</em> : null}
+                </Link>
+              </li>)}</ul>
+            </div>)}
+          </div>
+
+          <div className="courses-store-careers">
+            <div className="courses-path-label"><Users size={16} aria-hidden="true" /><span>Comprar por carreira</span></div>
+            <div>{courseCategories.map((category) => <Link href={`/cursos/${category.slug}`} key={category.slug} onClick={() => setCoursesOpen(false)} tabIndex={coursesOpen ? undefined : -1}>{category.label}</Link>)}</div>
           </div>
         </div>
       </div>
@@ -145,7 +185,11 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
     <nav className="mobile-panel" data-open={mobileOpen} aria-label="Navegação móvel">
       <Link href="/quem-somos" onClick={closeMobile}>Quem somos</Link>
       <button className="mobile-course-trigger" type="button" aria-expanded={mobileCoursesOpen} onClick={() => setMobileCoursesOpen((value) => !value)}>Cursos <ChevronDown size={16} /></button>
-      <div className="mobile-course-links" data-open={mobileCoursesOpen}><Link href="/cursos" onClick={closeMobile}>Todos os cursos online</Link>{courseCategories.map((category) => <Link href={`/cursos/${category.slug}`} key={category.slug} onClick={closeMobile}>{category.label}</Link>)}</div>
+      <div className="mobile-course-links" data-open={mobileCoursesOpen}>
+        <Link href="/cursos" onClick={closeMobile}>Ver a loja completa{storeTotal ? ` (${storeTotal})` : ""}</Link>
+        {storeColumns.flatMap(({ itens }) => itens).map(({ rotulo, tipo }) => <Link href={`/cursos?tipo=${encodeURIComponent(tipo)}`} key={rotulo} onClick={closeMobile}>{rotulo}{storeCounts[tipo] ? ` (${storeCounts[tipo]})` : ""}</Link>)}
+        {courseCategories.map((category) => <Link href={`/cursos/${category.slug}`} key={category.slug} onClick={closeMobile}>{category.label}</Link>)}
+      </div>
       {primaryAfterCourses.map(([label, href]) => <Link href={href} key={label} onClick={closeMobile}>{label}</Link>)}
       <button className="mobile-course-trigger" type="button" aria-expanded={mobileEcosystemOpen} onClick={() => setMobileEcosystemOpen((value) => !value)}>Ecossistema CPPEM <ChevronDown size={16} /></button>
       <div className="mobile-course-links" data-open={mobileEcosystemOpen}>{ecosystemItems.map((item) => <Link href={item.href} target={item.newTab ? "_blank" : undefined} rel={item.newTab ? "noreferrer" : undefined} key={item.id} onClick={closeMobile}>{item.name}</Link>)}</div>
