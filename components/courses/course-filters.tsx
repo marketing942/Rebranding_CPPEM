@@ -1,9 +1,11 @@
 "use client";
 
-import { SlidersHorizontal, X } from "lucide-react";
+import Link from "next/link";
+import { X } from "lucide-react";
+import { courseCategories } from "@/lib/course-categories";
 import type { CourseProduct } from "@/types/content";
 
-export type Filtros = { tipo: string | null; faixa: string | null; ordem: string; pagina: number };
+export type Filtros = { tipo: string | null; carreira: string | null; faixa: string | null; ordem: string; pagina: number };
 
 export const POR_PAGINA = 24;
 
@@ -23,20 +25,21 @@ export const FAIXAS: Array<{ rotulo: string; teste: (valor: number) => boolean }
   { rotulo: "R$ 500 ou mais", teste: (v) => v >= 500 },
 ];
 
-export function valorDe(preco: string) {
-  const numero = Number(preco.replace(/[^\d,]/g, "").replace(",", "."));
-  return Number.isFinite(numero) && numero > 0 ? numero : null;
-}
-
 // "relevância" é a ordem em que o aluno decide: preparação primeiro, depois o
 // que complementa. Sem isso o catálogo abre com vade mecum e camiseta.
 const PESO = ["Curso online", "Curso unificado", "Preparação presencial", "Plano de Combate", "Combo",
   "Resumo bizurado", "Caderno de questões", "Vade mecum", "Curso isolado", "E-book e ferramentas",
   "Vestuário e acessórios", "Evento", "Outros"];
 
+export function valorDe(preco: string) {
+  const numero = Number(preco.replace(/[^\d,]/g, "").replace(",", "."));
+  return Number.isFinite(numero) && numero > 0 ? numero : null;
+}
+
 export function aplicar(produtos: CourseProduct[], filtros: Filtros) {
   let lista = produtos;
   if (filtros.tipo) lista = lista.filter((p) => p.type === filtros.tipo);
+  if (filtros.carreira) lista = lista.filter((p) => p.career === filtros.carreira);
   if (filtros.faixa) {
     const faixa = FAIXAS.find((f) => f.rotulo === filtros.faixa);
     lista = lista.filter((p) => { const v = valorDe(p.price); return v !== null && faixa!.teste(v); });
@@ -52,22 +55,99 @@ export function aplicar(produtos: CourseProduct[], filtros: Filtros) {
     || a.name.localeCompare(b.name, "pt-BR"));
 }
 
-export function CourseFilters({ produtos, filtros, aoMudar }: {
+export function CourseSidebar({ produtos, filtros, aoMudar, activeSlug }: {
   produtos: CourseProduct[];
   filtros: Filtros;
   aoMudar: (filtros: Filtros) => void;
+  activeSlug?: string;
 }) {
-  const total = aplicar(produtos, filtros).length;
-  const conta = (teste: (p: CourseProduct) => boolean) => produtos.filter(teste).length;
-  const alterna = (campo: "tipo" | "faixa", valor: string) =>
+  // a contagem de cada opção considera os outros filtros já marcados
+  const conta = (teste: (p: CourseProduct) => boolean, ignorar: "tipo" | "carreira" | "faixa") => {
+    let base = produtos;
+    if (filtros.tipo && ignorar !== "tipo") base = base.filter((p) => p.type === filtros.tipo);
+    if (filtros.carreira && ignorar !== "carreira") base = base.filter((p) => p.career === filtros.carreira);
+    if (filtros.faixa && ignorar !== "faixa") {
+      const faixa = FAIXAS.find((f) => f.rotulo === filtros.faixa);
+      base = base.filter((p) => { const v = valorDe(p.price); return v !== null && faixa!.teste(v); });
+    }
+    return base.filter(teste).length;
+  };
+  const alterna = (campo: "tipo" | "carreira" | "faixa", valor: string) =>
     aoMudar({ ...filtros, [campo]: filtros[campo] === valor ? null : valor, pagina: 1 });
 
-  return <div className="course-filters">
-    <div className="course-filters-head">
-      <span className="course-filters-title"><SlidersHorizontal size={15} aria-hidden="true" /> Filtrar catálogo</span>
-      <span className="course-filters-count"><b>{total}</b> item(ns)</span>
-      <label className="course-filters-order">
-        Ordenar
+  const carreiras = [...new Set(produtos.map((p) => p.career).filter((c): c is string => Boolean(c)))]
+    .map((carreira) => ({ carreira, total: conta((p) => p.career === carreira, "carreira") }))
+    .filter(({ total }) => total > 0)
+    .sort((a, b) => b.total - a.total);
+
+  return <aside className="course-sidebar" aria-label="Filtros do catálogo">
+    <div className="course-sidebar-block">
+      <h2>Categorias</h2>
+      <ul>
+        {GRUPOS.map(({ grupo, tipos }) => {
+          const disponiveis = tipos.map((tipo) => ({ tipo, total: conta((p) => p.type === tipo, "tipo") }))
+            .filter(({ total }) => total > 0);
+          if (!disponiveis.length) return null;
+          return <li key={grupo}>
+            <span className="course-sidebar-group">{grupo}</span>
+            <ul>{disponiveis.map(({ tipo, total }) => <li key={tipo}>
+              <button type="button" aria-pressed={filtros.tipo === tipo} onClick={() => alterna("tipo", tipo)}>
+                <span>{tipo}</span><em>{total}</em>
+              </button>
+            </li>)}</ul>
+          </li>;
+        })}
+      </ul>
+    </div>
+
+    <div className="course-sidebar-block">
+      <h2>Carreira</h2>
+      {activeSlug
+        ? <ul>
+            <li><Link href="/cursos">Todas as carreiras</Link></li>
+            {courseCategories.map((categoria) => <li key={categoria.slug}>
+              <Link href={`/cursos/${categoria.slug}`} aria-current={activeSlug === categoria.slug ? "page" : undefined}>{categoria.label}</Link>
+            </li>)}
+          </ul>
+        : <ul>{carreiras.map(({ carreira, total }) => <li key={carreira}>
+            <button type="button" aria-pressed={filtros.carreira === carreira} onClick={() => alterna("carreira", carreira)}>
+              <span>{carreira}</span><em>{total}</em>
+            </button>
+          </li>)}</ul>}
+    </div>
+
+    <div className="course-sidebar-block">
+      <h2>Filtrar por preço</h2>
+      <ul>{FAIXAS.map(({ rotulo, teste }) => {
+        const total = conta((p) => { const v = valorDe(p.price); return v !== null && teste(v); }, "faixa");
+        if (!total) return null;
+        return <li key={rotulo}>
+          <button type="button" aria-pressed={filtros.faixa === rotulo} onClick={() => alterna("faixa", rotulo)}>
+            <span>{rotulo}</span><em>{total}</em>
+          </button>
+        </li>;
+      })}</ul>
+    </div>
+
+    {(filtros.tipo || filtros.carreira || filtros.faixa) && <button className="course-sidebar-clear" type="button"
+      onClick={() => aoMudar({ ...filtros, tipo: null, carreira: null, faixa: null, pagina: 1 })}>
+      <X size={13} aria-hidden="true" /> Limpar filtros
+    </button>}
+  </aside>;
+}
+
+export function CourseToolbar({ total, filtros, aoMudar }: {
+  total: number;
+  filtros: Filtros;
+  aoMudar: (filtros: Filtros) => void;
+}) {
+  const marcados = ([["tipo", filtros.tipo], ["carreira", filtros.carreira], ["faixa", filtros.faixa]] as const)
+    .filter(([, valor]) => valor);
+  return <>
+    <div className="course-toolbar">
+      <span className="course-toolbar-count"><b>{total}</b> item(ns) encontrado(s)</span>
+      <label className="course-toolbar-order">
+        Ordenar por
         <select value={filtros.ordem} onChange={(evento) => aoMudar({ ...filtros, ordem: evento.target.value, pagina: 1 })}>
           <option value="rel">Relevância</option>
           <option value="menor">Menor preço</option>
@@ -75,35 +155,13 @@ export function CourseFilters({ produtos, filtros, aoMudar }: {
         </select>
       </label>
     </div>
-
-    <div className="course-filters-groups">
-      {GRUPOS.map(({ grupo, tipos }) => {
-        const disponiveis = tipos.filter((tipo) => conta((p) => p.type === tipo) > 0);
-        if (!disponiveis.length) return null;
-        return <div className="course-filters-group" key={grupo}>
-          <small>{grupo}</small>
-          <div>{disponiveis.map((tipo) => <button type="button" key={tipo} aria-pressed={filtros.tipo === tipo} onClick={() => alterna("tipo", tipo)}>
-            {tipo}<em>{conta((p) => p.type === tipo)}</em>
-          </button>)}</div>
-        </div>;
-      })}
-      <div className="course-filters-group">
-        <small>Preço</small>
-        <div>{FAIXAS.map(({ rotulo, teste }) => {
-          const quantos = conta((p) => { const v = valorDe(p.price); return v !== null && teste(v); });
-          if (!quantos) return null;
-          return <button type="button" key={rotulo} aria-pressed={filtros.faixa === rotulo} onClick={() => alterna("faixa", rotulo)}>
-            {rotulo}<em>{quantos}</em>
-          </button>;
-        })}</div>
-      </div>
-    </div>
-
-    {(filtros.tipo || filtros.faixa) && <button className="course-filters-clear" type="button"
-      onClick={() => aoMudar({ ...filtros, tipo: null, faixa: null, pagina: 1 })}>
-      <X size={13} aria-hidden="true" /> Limpar filtros
-    </button>}
-  </div>;
+    {marcados.length > 0 && <div className="course-toolbar-tags">
+      {marcados.map(([campo, valor]) => <span className="course-tag" key={campo}>
+        {valor}
+        <button type="button" aria-label={`Remover filtro ${valor}`} onClick={() => aoMudar({ ...filtros, [campo]: null, pagina: 1 })}>×</button>
+      </span>)}
+    </div>}
+  </>;
 }
 
 export function CoursePagination({ total, pagina, aoIr }: { total: number; pagina: number; aoIr: (pagina: number) => void }) {

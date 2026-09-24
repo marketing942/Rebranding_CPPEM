@@ -23,8 +23,7 @@ import {
   X,
 } from "lucide-react";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { courseCategories } from "@/lib/course-categories";
-import { aplicar, CourseFilters, CoursePagination, POR_PAGINA, type Filtros } from "@/components/courses/course-filters";
+import { aplicar, CoursePagination, CourseSidebar, CourseToolbar, POR_PAGINA, type Filtros } from "@/components/courses/course-filters";
 import type { CourseAnswer, CourseProduct } from "@/types/content";
 
 type CardOrigin = { left: number; top: number; width: number; height: number };
@@ -39,7 +38,7 @@ function AnswerBadge({ value }: { value: CourseAnswer }) {
 
 export function CourseCatalog({ products, activeSlug }: { products: CourseProduct[]; activeSlug?: string }) {
   const [selected, setSelected] = useState<CourseProduct | null>(null);
-  const [filtros, setFiltros] = useState<Filtros>({ tipo: null, faixa: null, ordem: "rel", pagina: 1 });
+  const [filtros, setFiltros] = useState<Filtros>({ tipo: null, carreira: null, faixa: null, ordem: "rel", pagina: 1 });
   const [origin, setOrigin] = useState<CardOrigin | null>(null);
   const [showScrollHint, setShowScrollHint] = useState(false);
   const previewRef = useRef<HTMLElement>(null);
@@ -108,6 +107,7 @@ export function CourseCatalog({ products, activeSlug }: { products: CourseProduc
     });
   };
 
+  const temFiltro = Boolean(filtros.tipo || filtros.carreira || filtros.faixa);
   const filtrados = aplicar(products, filtros);
   const visiveis = filtrados.slice((filtros.pagina - 1) * POR_PAGINA, filtros.pagina * POR_PAGINA);
 
@@ -128,40 +128,41 @@ export function CourseCatalog({ products, activeSlug }: { products: CourseProduc
   ] : [];
 
   return <>
-    <nav className="course-category-nav" aria-label="Filtrar cursos por carreira">
-      <Link href="/cursos" data-active={!activeSlug}>Todos</Link>
-      {courseCategories.map((category) => <Link href={`/cursos/${category.slug}`} data-active={activeSlug === category.slug} key={category.slug}>{category.shortLabel}<span>{category.label}</span></Link>)}
-    </nav>
+    <div className="course-hub">
+      <CourseSidebar produtos={products} filtros={filtros} aoMudar={setFiltros} activeSlug={activeSlug} />
 
-    <CourseFilters produtos={products} filtros={filtros} aoMudar={setFiltros} />
+      <div className="course-hub-main">
+        <CourseToolbar total={filtrados.length} filtros={filtros} aoMudar={setFiltros} />
 
-    {visiveis.length ? <div className="course-catalog-grid" data-dimmed={Boolean(selected)}>
-      {visiveis.map((product) => {
-        const corpo = <span className="course-select-body">
-          <small>{product.type}{product.acronym ? ` · ${product.acronym}` : ""}</small>
-          <strong>{product.name}</strong>
-          {product.delivery && <span>{product.delivery}</span>}
-          {product.description && <p>{product.description}</p>}
-          {product.price && <b>{product.price}{product.oldPrice && <del>{product.oldPrice}</del>}</b>}
-          <span className="gold-button">{abreFicha(product) ? "Ver detalhes" : "Ver na loja"} <ArrowRight size={15} /></span>
-        </span>;
-        const media = <span className="course-select-media"><img src={product.imageUrl} alt="" /></span>;
-        return abreFicha(product)
-          ? <button className="course-select-card" type="button" onClick={(event) => openCourse(product, event.currentTarget)} key={product.id}>{media}{corpo}</button>
-          : <a className="course-select-card" href={product.href} target="_blank" rel="noreferrer" key={product.id}>{media}{corpo}</a>;
-      })}
-    </div> : <div className="course-empty-state">
-      <SearchX size={34} aria-hidden="true" /><h2>Nada encontrado com esses filtros.</h2>
-      <p>{filtros.tipo || filtros.faixa
-        ? "Tente remover um dos filtros para ver mais itens desta carreira."
-        : "Assim que uma preparação for publicada no Notion, ela aparecerá aqui automaticamente."}</p>
-      {filtros.tipo || filtros.faixa
-        ? <button className="ghost-button" type="button" onClick={() => setFiltros({ ...filtros, tipo: null, faixa: null, pagina: 1 })}>Limpar filtros</button>
-        : <Link className="ghost-button" href="/cursos">Ver todas as preparações</Link>}
-    </div>}
+        {visiveis.length ? <div className="course-catalog-grid" data-dimmed={Boolean(selected)}>
+          {visiveis.map((product) => {
+            const corpo = <span className="course-select-body">
+              <small>{product.type}{product.acronym ? ` Â· ${product.acronym}` : ""}</small>
+              <strong>{product.name}</strong>
+              {product.delivery && <span>{product.delivery}</span>}
+              {product.description && <p>{product.description}</p>}
+              {product.price && <b>{product.price}{product.oldPrice && <del>{product.oldPrice}</del>}</b>}
+              <span className="gold-button">{abreFicha(product) ? "Ver detalhes" : "Ver na loja"} <ArrowRight size={15} /></span>
+            </span>;
+            const media = <span className="course-select-media"><img src={product.imageUrl} alt="" /></span>;
+            return abreFicha(product)
+              ? <button className="course-select-card" type="button" onClick={(event) => openCourse(product, event.currentTarget)} key={product.id}>{media}{corpo}</button>
+              : <a className="course-select-card" href={product.href} target="_blank" rel="noreferrer" key={product.id}>{media}{corpo}</a>;
+          })}
+        </div> : <div className="course-empty-state">
+          <SearchX size={34} aria-hidden="true" /><h2>Nada encontrado com esses filtros.</h2>
+          <p>{temFiltro
+            ? "Tente remover um dos filtros da barra lateral para ver mais itens."
+            : "Assim que uma preparaÃ§Ã£o for publicada no Notion, ela aparecerÃ¡ aqui automaticamente."}</p>
+          {temFiltro
+            ? <button className="ghost-button" type="button" onClick={() => setFiltros({ ...filtros, tipo: null, carreira: null, faixa: null, pagina: 1 })}>Limpar filtros</button>
+            : <Link className="ghost-button" href="/cursos">Ver todas as preparaÃ§Ãµes</Link>}
+        </div>}
 
-    <CoursePagination total={filtrados.length} pagina={filtros.pagina}
-      aoIr={(pagina) => { setFiltros({ ...filtros, pagina }); window.scrollTo({ top: 0, behavior: "smooth" }); }} />
+        <CoursePagination total={filtrados.length} pagina={filtros.pagina}
+          aoIr={(pagina) => { setFiltros({ ...filtros, pagina }); window.scrollTo({ top: 0, behavior: "smooth" }); }} />
+      </div>
+    </div>
 
     {selected && <div className="course-detail-overlay" onMouseDown={(event) => { if (event.target === event.currentTarget) setSelected(null); }}>
       <div className="course-detail-dialog" role="dialog" aria-modal="true" aria-labelledby="course-detail-title">
