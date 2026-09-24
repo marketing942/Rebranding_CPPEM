@@ -1,5 +1,7 @@
 import "server-only";
+import { unstable_cache } from "next/cache";
 import { notion } from "@/lib/notion/client";
+import { semDuplicar } from "@/lib/notion/inflight";
 import { isSafeWebUrl, plainText, readCheckbox, readNumber, readSelect, readUrl, resolveDataSourceId } from "@/lib/notion/properties";
 import type { CampaignBanner, Product } from "@/types/content";
 
@@ -18,7 +20,7 @@ function dateLimit(value: unknown, end: boolean): number | null {
   return Number.isNaN(timestamp) ? null : timestamp;
 }
 
-export async function getNotionBanners(): Promise<CampaignBanner[] | null> {
+async function lerBanners(): Promise<CampaignBanner[] | null> {
   const databaseId = process.env.NOTION_BANNERS_DATABASE_ID;
   if (!notion || !databaseId) return null;
 
@@ -71,7 +73,7 @@ export async function getNotionBanners(): Promise<CampaignBanner[] | null> {
   }
 }
 
-export async function getNotionProducts(): Promise<Product[] | null> {
+async function lerProdutos(): Promise<Product[] | null> {
   const databaseId = process.env.NOTION_DATABASE_ID;
   if (!notion || !databaseId) return null;
 
@@ -112,3 +114,15 @@ export async function getNotionProducts(): Promise<Product[] | null> {
     return [];
   }
 }
+
+export const getNotionBanners = unstable_cache(
+  () => semDuplicar("notion-banners", lerBanners),
+  ["notion-banners"],
+  { revalidate: 300, tags: ["banners"] },
+);
+
+export const getNotionProducts = unstable_cache(
+  () => semDuplicar("notion-products", lerProdutos),
+  ["notion-products"],
+  { revalidate: 300, tags: ["vitrine"] },
+);

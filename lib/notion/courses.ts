@@ -1,5 +1,7 @@
 import "server-only";
+import { unstable_cache } from "next/cache";
 import { notion } from "@/lib/notion/client";
+import { semDuplicar } from "@/lib/notion/inflight";
 import { getNotionProducts } from "@/lib/notion/homepage";
 import { isSafeWebUrl, plainText, readCheckbox, readNumber, readRelationIds, readSelect, readUrl, resolveDataSourceId } from "@/lib/notion/properties";
 import type { CourseAnswer, CourseProduct } from "@/types/content";
@@ -17,7 +19,7 @@ function lines(value: string): string[] {
   return value.split(/\r?\n|;/).map((item) => item.trim()).filter(Boolean);
 }
 
-export async function getNotionCourses(): Promise<CourseProduct[] | null> {
+async function lerCursos(): Promise<CourseProduct[] | null> {
   const databaseId = process.env.NOTION_COURSES_DATABASE_ID;
   if (!notion || !databaseId) return null;
 
@@ -94,3 +96,11 @@ export async function getNotionCourses(): Promise<CourseProduct[] | null> {
     return [];
   }
 }
+
+// o catalogo inteiro sao 4 requisicoes ao Notion; sem cache cada pagina de
+// curso ou concurso refazia todas e a integracao batia no limite de 3 req/s
+export const getNotionCourses = unstable_cache(
+  () => semDuplicar("notion-courses", lerCursos),
+  ["notion-courses"],
+  { revalidate: 300, tags: ["cursos"] },
+);

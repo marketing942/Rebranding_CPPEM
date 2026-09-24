@@ -1,5 +1,7 @@
 import "server-only";
+import { unstable_cache } from "next/cache";
 import { notion } from "@/lib/notion/client";
+import { semDuplicar } from "@/lib/notion/inflight";
 import { plainText, readCheckbox, readRelationIds, readSelect, readUrl, resolveDataSourceId } from "@/lib/notion/properties";
 import { contestStatuses, type Contest, type ContestStatus, type CourseProduct } from "@/types/content";
 
@@ -34,21 +36,41 @@ function lines(value: string): string[] {
   return value.split(/\r?\n|;/).map((item) => item.trim()).filter(Boolean);
 }
 
-export async function getNotionContests(courses: CourseProduct[]): Promise<Contest[] | null> {
+async function lerPaginas(): Promise<Array<{ id: string; properties?: Record<string, unknown> }>> {
   const databaseId = process.env.NOTION_CONTESTS_DATABASE_ID;
-  if (!notion || !databaseId) return null;
+  if (!notion || !databaseId) return [];
+  const dataSourceId = await resolveDataSourceId(databaseId, notion);
+  if (!dataSourceId) return [];
 
-  try {
-    const dataSourceId = await resolveDataSourceId(databaseId, notion);
-    if (!dataSourceId) return [];
+  const pages = [];
+  let cursor: string | undefined;
+  do {
     const response = await notion.dataSources.query({
       data_source_id: dataSourceId,
       filter: { property: "Publicado", checkbox: { equals: true } },
       page_size: 100,
+      start_cursor: cursor,
     });
+    pages.push(...response.results);
+    cursor = response.has_more ? (response.next_cursor ?? undefined) : undefined;
+  } while (cursor);
+  return pages as Array<{ id: string; properties?: Record<string, unknown> }>;
+}
 
+// as fichas de concurso sao lidas uma vez e reaproveitadas por todas as
+// paginas; o vinculo com os cursos continua fora do cache porque depende deles
+const paginasConcursos = unstable_cache(
+  () => semDuplicar("notion-contests", lerPaginas),
+  ["notion-contests"],
+  { revalidate: 300, tags: ["concursos"] },
+);
+
+export async function getNotionContests(courses: CourseProduct[]): Promise<Contest[] | null> {
+  if (!notion || !process.env.NOTION_CONTESTS_DATABASE_ID) return null;
+
+  try {
     const contests: Contest[] = [];
-    for (const page of response.results) {
+    for (const page of await paginasConcursos()) {
       const properties = (page as { properties?: Record<string, unknown> }).properties;
       if (!properties || !readCheckbox(properties.Publicado)) continue;
 
