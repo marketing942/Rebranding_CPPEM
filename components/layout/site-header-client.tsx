@@ -11,7 +11,7 @@ import type { FreeMaterial } from "@/types/free-content";
 import type { EcosystemItem } from "@/types/ecosystem";
 
 const primaryAfterCourses = [
-  ["Concursos", "/concursos"], ["Notícias", "/noticias"], ["Parceiros", "/parceiros"], ["Indique", "https://viewer.cppem.com.br/indica-o-cppem-concursos"],
+  ["Concursos", "/concursos"], ["Notícias", "/noticias"], ["Parceiros", "/parceiros"], ["Indique", "https://indica.cppem.com.br"],
 ] as const;
 const free = [
   { label: "Editais verticalizados", href: "/editais", description: "Transforme o conteúdo programático em uma rota clara de estudo.", icon: FileText },
