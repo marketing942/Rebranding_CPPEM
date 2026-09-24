@@ -10,6 +10,7 @@ import { HomeContestExplorerServer } from "@/components/home/home-contest-explor
 import { NewsCard } from "@/components/news/news-card";
 import { AnimatedStat } from "@/components/about/animated-stat";
 import { AboutHowItWorks } from "@/components/about/about-how-it-works";
+import { AboutTicker } from "@/components/about/about-ticker";
 import { getBanners, getContests, getNews, getProducts } from "@/lib/data";
 import { approvedStudentImages } from "@/lib/mock-data";
 
@@ -21,12 +22,13 @@ export default async function HomePage() {
   return <div className="page-shell"><SiteHeader/><main>
     <HeroCarousel banners={banners}/>
 
+    <AboutTicker/>
+
     <section className="section section-alt home-proof-section">
       <div className="container home-proof-head">
         <div className="section-heading">
           <span className="eyebrow">Prova social</span>
           <h2 className="display-title">Quem se prepara, <span className="gold">avança.</span></h2>
-          <p className="section-copy">Aprovações reais de quem seguiu o método até vestir a farda.</p>
         </div>
         <div className="home-proof-stats">
           <AnimatedStat prefix="+" start={1000} end={14000} label="alunos aprovados"/>
@@ -36,6 +38,7 @@ export default async function HomePage() {
       </div>
       <StudentProof images={approvedStudentImages}/>
     </section>
+    
 
     <AboutHowItWorks/>
 

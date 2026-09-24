@@ -84,7 +84,7 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
         <Link className="nav-link" href="/glossario">Glossário</Link>
         <button className="nav-link nav-dropdown-trigger" type="button" aria-expanded={freeOpen} aria-controls="free-mega-menu" onClick={() => freeOpen ? setFreeOpen(false) : openFree()} onMouseEnter={openFree} onFocus={openFree}>Gratuitos <ChevronDown size={14} aria-hidden="true" /></button>
       </nav>
-      <div className="header-actions"><Link className="header-action" href="https://cppem.lojaintegrada.com.br">Loja</Link><Link className="header-action" href="https://mentoriaexito.tutory.com.br/login.php">Login</Link><Link className="gold-button" href="/plano-de-combate">Plano de combate</Link></div>
+      <div className="header-actions"><Link className="header-action" href="https://mentoriaexito.tutory.com.br/login.php">Login</Link><Link className="gold-button" href="/plano-de-combate">Plano de combate</Link></div>
       <button className="mobile-toggle" type="button" aria-label={mobileOpen ? "Fechar menu" : "Abrir menu"} aria-expanded={mobileOpen} onClick={() => setMobileOpen((value) => !value)}>{mobileOpen ? <X size={22} /> : <Menu size={22} />}</button>
     </div>
 
@@ -99,19 +99,11 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
         </div>
         <div className="courses-mega-content">
           <div className="courses-mega-heading"><div><span className="eyebrow">Cursos por carreira</span><h2>Escolha sua <span className="gold">missão.</span></h2></div><Link href="/cursos" onClick={() => setCoursesOpen(false)} tabIndex={coursesOpen ? undefined : -1}>Ver todas as preparações <ArrowRight size={15} /></Link></div>
-          <div className="courses-path-grid">
+          <div className="courses-path-grid" data-single="true">
             <div className="courses-online-path">
               <div className="courses-path-label"><Users size={16} aria-hidden="true" /><span>Cursos online por carreira</span></div>
               <div className="courses-category-grid">{courseCategories.map((category, index) => <Link href={`/cursos/${category.slug}`} key={category.slug} onClick={() => setCoursesOpen(false)} tabIndex={coursesOpen ? undefined : -1}><span>{String(index + 1).padStart(2, "0")}</span><strong>{category.label}</strong><ArrowRight size={16} /></Link>)}</div>
             </div>
-            <Link href="/presencial" className="courses-presential-path" onClick={() => setCoursesOpen(false)} tabIndex={coursesOpen ? undefined : -1}>
-              <span className="courses-presential-icon"><MapPin size={24} aria-hidden="true" /></span>
-              <small>CPPEM Caruaru</small>
-              <strong>Presencial</strong>
-              <p>Aulas, acompanhamento e rotina de preparação dentro da sala.</p>
-              <span className="courses-presential-tags"><i>Carreiras policiais</i><i>PMPE</i></span>
-              <b>Conhecer o presencial <ArrowRight size={16} aria-hidden="true" /></b>
-            </Link>
           </div>
         </div>
       </div>
@@ -119,13 +111,6 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
 
     <div className="courses-mega ecosystem-mega" id="ecosystem-mega-menu" data-open={ecosystemOpen} aria-hidden={!ecosystemOpen}>
       <div className="container ecosystem-mega-grid">
-        <div className="courses-mega-feature">
-          {featured ? <Link href={featured.href} className="courses-feature-card" tabIndex={ecosystemOpen ? undefined : -1} onClick={() => setEcosystemOpen(false)}>
-            <img src={featured.menuImageUrl || featured.imageUrl} alt="" /><span className="courses-feature-overlay" />
-            <span className="courses-feature-copy"><small>Preparação em destaque</small><strong>{featured.name}</strong><span>Conhecer agora <ArrowRight size={15} /></span></span>
-          </Link> : <Link href="/cursos" className="courses-feature-empty" tabIndex={ecosystemOpen ? undefined : -1} onClick={() => setEcosystemOpen(false)}><Image src="/brand/emblema-leao.webp" alt="" width={112} height={112} /><strong>Encontre sua próxima preparação</strong><span>Ver todos os cursos <ArrowRight size={15} /></span></Link>}
-          {featuredCourses.length > 1 && <div className="courses-feature-controls"><button type="button" onClick={showPrevious} aria-label="Destaque anterior" tabIndex={ecosystemOpen ? undefined : -1}><ChevronLeft size={16} /></button><span>{featuredIndex + 1} / {featuredCourses.length}</span><button type="button" onClick={showNext} aria-label="Próximo destaque" tabIndex={ecosystemOpen ? undefined : -1}><ChevronRight size={16} /></button></div>}
-        </div>
         <div className="ecosystem-mega-content">
           <div className="ecosystem-mega-heading"><span>Escolha seu próximo passo</span><strong>Do estudo à carreira.</strong></div>
           <div className="ecosystem-mega-links">{ecosystemItems.map((item) => {
@@ -160,14 +145,14 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
     <nav className="mobile-panel" data-open={mobileOpen} aria-label="Navegação móvel">
       <Link href="/quem-somos" onClick={closeMobile}>Quem somos</Link>
       <button className="mobile-course-trigger" type="button" aria-expanded={mobileCoursesOpen} onClick={() => setMobileCoursesOpen((value) => !value)}>Cursos <ChevronDown size={16} /></button>
-      <div className="mobile-course-links" data-open={mobileCoursesOpen}><Link href="/cursos" onClick={closeMobile}>Todos os cursos online</Link><Link href="/presencial" onClick={closeMobile}>Presencial em Caruaru</Link>{courseCategories.map((category) => <Link href={`/cursos/${category.slug}`} key={category.slug} onClick={closeMobile}>{category.label}</Link>)}</div>
+      <div className="mobile-course-links" data-open={mobileCoursesOpen}><Link href="/cursos" onClick={closeMobile}>Todos os cursos online</Link>{courseCategories.map((category) => <Link href={`/cursos/${category.slug}`} key={category.slug} onClick={closeMobile}>{category.label}</Link>)}</div>
       {primaryAfterCourses.map(([label, href]) => <Link href={href} key={label} onClick={closeMobile}>{label}</Link>)}
       <button className="mobile-course-trigger" type="button" aria-expanded={mobileEcosystemOpen} onClick={() => setMobileEcosystemOpen((value) => !value)}>Ecossistema CPPEM <ChevronDown size={16} /></button>
       <div className="mobile-course-links" data-open={mobileEcosystemOpen}>{ecosystemItems.map((item) => <Link href={item.href} target={item.newTab ? "_blank" : undefined} rel={item.newTab ? "noreferrer" : undefined} key={item.id} onClick={closeMobile}>{item.name}</Link>)}</div>
       <Link href="/glossario" onClick={closeMobile}>Glossário</Link>
       <button className="mobile-course-trigger" type="button" aria-expanded={mobileFreeOpen} onClick={() => setMobileFreeOpen((value) => !value)}>Gratuitos <ChevronDown size={16} /></button>
       <div className="mobile-course-links" data-open={mobileFreeOpen}>{free.map(({ label, href }) => <Link href={href} key={label} onClick={closeMobile}>{label}</Link>)}</div>
-      <Link href="https://cppem.lojaintegrada.com.br">Loja</Link><Link href="https://mentoriaexito.tutory.com.br/login.php">Login</Link><Link className="gold-button" href="/plano-de-combate">Plano de combate</Link>
+      <Link href="https://mentoriaexito.tutory.com.br/login.php">Login</Link><Link className="gold-button" href="/plano-de-combate">Plano de combate</Link>
     </nav>
   </header>;
 }

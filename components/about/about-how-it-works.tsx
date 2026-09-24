@@ -23,15 +23,15 @@ export function AboutHowItWorks() {
     <div className="container about-how-rows">
       <article className="about-how-row" data-side="right">
         <div className="about-how-copy">
-          <span className="about-how-step">01 · A casa</span>
-          <h3>A estrutura que já formou <span className="gold">mais de 14 mil aprovados.</span></h3>
-          <p>Sete anos de estrada preparando candidato para carreira policial, com unidade presencial em Caruaru e a plataforma aberta para quem estuda de qualquer cidade. O mesmo método, a mesma cobrança e o mesmo acompanhamento nos dois formatos.</p>
+          <span className="about-how-step">01 · A plataforma</span>
+          <h3>Todo o estudo em um <span className="gold">só lugar.</span></h3>
+          <p>A mesma plataforma que já acompanhou mais de 14 mil aprovados: aula, PDF, questão, simulado e painel de evolução reunidos por disciplina. Abre no computador e no celular, e guarda de onde você parou.</p>
           <ul className="about-how-list">
-            <li><Users size={16} /> Turmas presenciais e preparação a distância</li>
-            <li><MapPin size={16} /> Unidade própria em Caruaru–PE</li>
-            <li><CalendarCheck2 size={16} /> Plataforma no computador e no celular</li>
+            <li><CalendarCheck2 size={16} /> Missão do dia definida, sem decidir por onde começar</li>
+            <li><Crosshair size={16} /> Aulas, PDFs, questões e simulados por disciplina</li>
+            <li><Users size={16} /> Painel de desempenho acompanhando sua evolução</li>
           </ul>
-          <Link className="ghost-button" href="/presencial">Conhecer o presencial <ArrowRight size={16} /></Link>
+          <Link className="ghost-button" href="/cursos">Ver as preparações <ArrowRight size={16} /></Link>
         </div>
         <div className="about-how-visual">
           <div className="about-how-devices about-how-devices-render">
@@ -57,19 +57,18 @@ export function AboutHowItWorks() {
       <article className="about-how-row about-how-row-reverse" data-side="left">
         <div className="about-how-copy">
           <span className="about-how-step">02 · A rota</span>
-          <h3>Um cronograma montado para a <span className="gold">sua semana.</span></h3>
-          <p>Nada de plano genérico. O cronograma é construído a partir do seu concurso, do tempo que você tem e do ponto em que está hoje — e se reorganiza quando a vida atrapalha, em vez de deixar você acumulando atraso.</p>
+          <h3>Uma rotina de sala em <span className="gold">Caruaru.</span></h3>
+          <p>No presencial o cronograma não depende da sua força de vontade: a turma tem horário, o professor está na sua frente e a semana já vem montada. Quem estuda em casa acumula atraso sozinho — aqui a sala puxa você junto.</p>
           <ul className="about-how-list">
-            <li><CalendarCheck2 size={16} /> Missão do dia definida, sem decidir por onde começar</li>
-            <li><Crosshair size={16} /> Revisão e simulado no calendário, não no improviso</li>
-            <li><Users size={16} /> Mentoria individual para corrigir a rota junto com você</li>
+            <li><MapPin size={16} /> Unidade própria em Caruaru–PE</li>
+            <li><Users size={16} /> Professor e monitores para tirar dúvida na hora</li>
+            <li><CalendarCheck2 size={16} /> Aulas gravadas e plataforma inclusas na vaga</li>
           </ul>
-          <Link className="ghost-button" href="/plano-de-combate">Ver o Plano de Combate <ArrowRight size={16} /></Link>
+          <Link className="ghost-button" href="/presencial">Conhecer o presencial <ArrowRight size={16} /></Link>
         </div>
         <div className="about-how-visual">
           <div className="about-how-window">
-            <div className="about-platform-bar" aria-hidden="true"><span /><span /><span /><strong>Cronograma da semana</strong></div>
-            <Image src="/images/cronograma.png" alt="Cronograma CPPEM com a missão da semana, horas estudadas e plano de ação" width={1280} height={720} />
+            <Image src="/images/bannerpresencial.png" alt="Turma do CPPEM durante aula presencial na unidade de Caruaru" width={1916} height={821} />
           </div>
         </div>
       </article>
