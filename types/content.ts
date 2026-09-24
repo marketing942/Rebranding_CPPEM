@@ -34,6 +34,8 @@ export type Product = {
 export type CourseAnswer = "Sim" | "Não" | "A confirmar";
 
 export type CourseProduct = Product & {
+  type: string;
+  delivery: string;
   contestStatus: string;
   openings: string;
   salary: string;

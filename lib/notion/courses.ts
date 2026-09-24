@@ -24,14 +24,23 @@ export async function getNotionCourses(): Promise<CourseProduct[] | null> {
   try {
     const dataSourceId = await resolveDataSourceId(databaseId, notion);
     if (!dataSourceId) return [];
-    const response = await notion.dataSources.query({
-      data_source_id: dataSourceId,
-      filter: { property: "Status", select: { equals: "Ativo" } },
-    });
+    // o catálogo passou de 200 itens: sem paginar, o Notion devolve só os 100 primeiros
+    const pages = [];
+    let cursor: string | undefined;
+    do {
+      const response = await notion.dataSources.query({
+        data_source_id: dataSourceId,
+        filter: { property: "Status", select: { equals: "Ativo" } },
+        page_size: 100,
+        start_cursor: cursor,
+      });
+      pages.push(...response.results);
+      cursor = response.has_more ? (response.next_cursor ?? undefined) : undefined;
+    } while (cursor);
 
     const relatedProducts = (await getNotionProducts()) ?? [];
     const courses: CourseProduct[] = [];
-    for (const page of response.results) {
+    for (const page of pages) {
       const properties = (page as { properties?: Record<string, unknown> }).properties;
       if (!properties) continue;
       const name = plainText((properties.Nome as { title?: unknown })?.title);
@@ -44,8 +53,10 @@ export async function getNotionCourses(): Promise<CourseProduct[] | null> {
         id: (page as { id: string }).id,
         slug: (page as { id: string }).id.replaceAll("-", ""),
         name,
-        category: readSelect(properties.Modalidade) || "Curso CPPEM",
+        category: readSelect(properties.Tipo) || readSelect(properties.Modalidade) || "Curso CPPEM",
         modality: readSelect(properties.Modalidade),
+        type: readSelect(properties.Tipo) || "Curso online",
+        delivery: readSelect(properties.Entrega) || "Digital",
         description: plainText((properties["Descrição Curta"] as { rich_text?: unknown })?.rich_text),
         price: plainText((properties.Preço as { rich_text?: unknown })?.rich_text),
         oldPrice: plainText((properties["Preço antigo"] as { rich_text?: unknown })?.rich_text) || null,

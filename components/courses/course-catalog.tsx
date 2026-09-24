@@ -24,9 +24,14 @@ import {
 } from "lucide-react";
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { courseCategories } from "@/lib/course-categories";
+import { aplicar, CourseFilters, CoursePagination, POR_PAGINA, type Filtros } from "@/components/courses/course-filters";
 import type { CourseAnswer, CourseProduct } from "@/types/content";
 
 type CardOrigin = { left: number; top: number; width: number; height: number };
+
+// só preparação tem ficha com dados do concurso; material vai direto para a loja
+const COM_FICHA = ["Curso online", "Curso unificado", "Preparação presencial", "Plano de Combate"];
+const abreFicha = (produto: CourseProduct) => COM_FICHA.includes(produto.type);
 
 function AnswerBadge({ value }: { value: CourseAnswer }) {
   return <span className="course-answer" data-answer={value}>{value}</span>;
@@ -34,6 +39,7 @@ function AnswerBadge({ value }: { value: CourseAnswer }) {
 
 export function CourseCatalog({ products, activeSlug }: { products: CourseProduct[]; activeSlug?: string }) {
   const [selected, setSelected] = useState<CourseProduct | null>(null);
+  const [filtros, setFiltros] = useState<Filtros>({ tipo: null, faixa: null, ordem: "rel", pagina: 1 });
   const [origin, setOrigin] = useState<CardOrigin | null>(null);
   const [showScrollHint, setShowScrollHint] = useState(false);
   const previewRef = useRef<HTMLElement>(null);
@@ -102,6 +108,9 @@ export function CourseCatalog({ products, activeSlug }: { products: CourseProduc
     });
   };
 
+  const filtrados = aplicar(products, filtros);
+  const visiveis = filtrados.slice((filtros.pagina - 1) * POR_PAGINA, filtros.pagina * POR_PAGINA);
+
   const primaryDetails = selected ? [
     { label: "Nº de vagas", value: selected.openings, Icon: BriefcaseBusiness },
     { label: "Salário", value: selected.salary, Icon: Banknote },
@@ -124,23 +133,35 @@ export function CourseCatalog({ products, activeSlug }: { products: CourseProduc
       {courseCategories.map((category) => <Link href={`/cursos/${category.slug}`} data-active={activeSlug === category.slug} key={category.slug}>{category.shortLabel}<span>{category.label}</span></Link>)}
     </nav>
 
-    {products.length ? <div className="course-catalog-grid" data-dimmed={Boolean(selected)}>
-      {products.map((product) => <button className="course-select-card" type="button" onClick={(event) => openCourse(product, event.currentTarget)} key={product.id}>
-        <span className="course-select-media"><img src={product.imageUrl} alt="" /></span>
-        <span className="course-select-body">
-          <small>{product.acronym || product.career}</small>
+    <CourseFilters produtos={products} filtros={filtros} aoMudar={setFiltros} />
+
+    {visiveis.length ? <div className="course-catalog-grid" data-dimmed={Boolean(selected)}>
+      {visiveis.map((product) => {
+        const corpo = <span className="course-select-body">
+          <small>{product.type}{product.acronym ? ` · ${product.acronym}` : ""}</small>
           <strong>{product.name}</strong>
-          {product.modality && <span>{product.modality}</span>}
+          {product.delivery && <span>{product.delivery}</span>}
           {product.description && <p>{product.description}</p>}
           {product.price && <b>{product.price}{product.oldPrice && <del>{product.oldPrice}</del>}</b>}
-          <span className="gold-button">Ver detalhes <ArrowRight size={15} /></span>
-        </span>
-      </button>)}
+          <span className="gold-button">{abreFicha(product) ? "Ver detalhes" : "Ver na loja"} <ArrowRight size={15} /></span>
+        </span>;
+        const media = <span className="course-select-media"><img src={product.imageUrl} alt="" /></span>;
+        return abreFicha(product)
+          ? <button className="course-select-card" type="button" onClick={(event) => openCourse(product, event.currentTarget)} key={product.id}>{media}{corpo}</button>
+          : <a className="course-select-card" href={product.href} target="_blank" rel="noreferrer" key={product.id}>{media}{corpo}</a>;
+      })}
     </div> : <div className="course-empty-state">
-      <SearchX size={34} aria-hidden="true" /><h2>Novas preparações em organização.</h2>
-      <p>Ainda não há um curso ativo nesta carreira. Assim que uma preparação for publicada no Notion, ela aparecerá aqui automaticamente.</p>
-      <Link className="ghost-button" href="/cursos">Ver todas as preparações</Link>
+      <SearchX size={34} aria-hidden="true" /><h2>Nada encontrado com esses filtros.</h2>
+      <p>{filtros.tipo || filtros.faixa
+        ? "Tente remover um dos filtros para ver mais itens desta carreira."
+        : "Assim que uma preparação for publicada no Notion, ela aparecerá aqui automaticamente."}</p>
+      {filtros.tipo || filtros.faixa
+        ? <button className="ghost-button" type="button" onClick={() => setFiltros({ ...filtros, tipo: null, faixa: null, pagina: 1 })}>Limpar filtros</button>
+        : <Link className="ghost-button" href="/cursos">Ver todas as preparações</Link>}
     </div>}
+
+    <CoursePagination total={filtrados.length} pagina={filtros.pagina}
+      aoIr={(pagina) => { setFiltros({ ...filtros, pagina }); window.scrollTo({ top: 0, behavior: "smooth" }); }} />
 
     {selected && <div className="course-detail-overlay" onMouseDown={(event) => { if (event.target === event.currentTarget) setSelected(null); }}>
       <div className="course-detail-dialog" role="dialog" aria-modal="true" aria-labelledby="course-detail-title">
