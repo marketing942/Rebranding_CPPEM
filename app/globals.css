@@ -220,6 +220,13 @@ button,input,select,textarea { font: inherit; }
 .home-preparation-card strong { display:block; font:700 .88rem/1.2 var(--font-display); text-transform:uppercase; }
 .home-preparation-card small { display:block; margin-top:.25rem; color:var(--gold-pale); }
 .home-map-list-cta { width:100%; margin-top:1rem; }
+/* prova social da home: título à esquerda e os números ao lado */
+.home-proof-head { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.05fr); align-items:center; gap:clamp(1.8rem,5vw,4.5rem); }
+.home-proof-stats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:.8rem; }
+.home-proof-section .testimonials-viewport,.home-proof-section .proof-strip { margin-top:clamp(2rem,4vw,3rem); }
+@media (max-width:900px) { .home-proof-head{grid-template-columns:1fr;gap:1.8rem} }
+@media (max-width:650px) { .home-proof-stats{grid-template-columns:1fr} }
+
 .news-grid { display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:1rem; margin-top:2.2rem; }
 .news-story { position:relative; min-width:0; overflow:hidden; border:1px solid var(--border); border-radius:.8rem; background:var(--surface); transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease; }
 .news-story:hover { transform:translateY(-3px); border-color:var(--border-active); box-shadow:0 22px 60px rgba(0,0,0,.32); }
