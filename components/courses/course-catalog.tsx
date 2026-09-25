@@ -173,7 +173,7 @@ export function CourseCatalog({ products, activeSlug }: { products: CourseProduc
               {product.delivery && <span>{product.delivery}</span>}
               {product.description && <p>{product.description}</p>}
               {product.price && <b>{product.price}{product.oldPrice && <del>{product.oldPrice}</del>}</b>}
-              <span className="gold-button">{abreFicha(product) ? "Ver detalhes" : "Ver na loja"} <ArrowRight size={15} /></span>
+              <span className="gold-button">{abreFicha(product) ? "Ver detalhes" : product.checkoutUrl ? "Comprar agora" : "Ver na loja"} <ArrowRight size={15} /></span>
             </span>;
             const media = <span className="course-select-media"><img src={product.imageUrl} alt="" /></span>;
             return abreFicha(product)
@@ -204,7 +204,7 @@ export function CourseCatalog({ products, activeSlug }: { products: CourseProduc
             <h2>{selected.name}</h2>
             <span>{selected.modality}</span>
             {selected.price && <strong>{selected.price}{selected.oldPrice && <del>{selected.oldPrice}</del>}</strong>}
-            <Link className="gold-button" href={selected.href}>Conhecer preparação <ArrowRight size={16} /></Link>
+            <Link className="gold-button" href={selected.href}>{selected.checkoutUrl ? "Comprar agora" : "Conhecer preparação"} <ArrowRight size={16} /></Link>
           </div>
         </article>
 

@@ -46,10 +46,14 @@ async function lerCursos(): Promise<CourseProduct[] | null> {
       const properties = (page as { properties?: Record<string, unknown> }).properties;
       if (!properties) continue;
       const name = plainText((properties.Nome as { title?: unknown })?.title);
-      const href = readUrl(properties.Link);
+      const storeHref = readUrl(properties.Link);
+      // item digital vai direto ao checkout; fisico precisa do frete da loja
+      const delivery = readSelect(properties.Entrega) || "Digital";
+      const checkoutUrl = delivery === "Digital" ? readUrl(properties.Checkout) : "";
+      const href = checkoutUrl && isSafeWebUrl(checkoutUrl) ? checkoutUrl : storeHref;
       const imageUrl = readUrl(properties.Imagem);
       const relatedIds = new Set(readRelationIds(properties["Preparações extras"]));
-      if (readSelect(properties.Status) !== "Ativo" || !name || !href || !isSafeWebUrl(imageUrl)) continue;
+      if (readSelect(properties.Status) !== "Ativo" || !name || !storeHref || !isSafeWebUrl(imageUrl)) continue;
 
       courses.push({
         id: (page as { id: string }).id,
@@ -58,7 +62,8 @@ async function lerCursos(): Promise<CourseProduct[] | null> {
         category: readSelect(properties.Tipo) || readSelect(properties.Modalidade) || "Curso CPPEM",
         modality: readSelect(properties.Modalidade),
         type: readSelect(properties.Tipo) || "Curso online",
-        delivery: readSelect(properties.Entrega) || "Digital",
+        delivery,
+        checkoutUrl: href === checkoutUrl ? checkoutUrl : null,
         description: plainText((properties["Descrição Curta"] as { rich_text?: unknown })?.rich_text),
         price: plainText((properties.Preço as { rich_text?: unknown })?.rich_text),
         oldPrice: plainText((properties["Preço antigo"] as { rich_text?: unknown })?.rich_text) || null,

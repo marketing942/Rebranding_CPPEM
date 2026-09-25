@@ -25,7 +25,7 @@ export default async function HomePage() {
     <AboutTicker/>
 
     <section className="section section-alt home-proof-section">
-      <div className="container home-proof-head">
+      <div className="container home-proof-head"> 
         <div className="section-heading">
           <span className="eyebrow">Prova social</span>
           <h2 className="display-title">Quem se prepara, <span className="gold">avança.</span></h2>
@@ -38,7 +38,7 @@ export default async function HomePage() {
       </div>
       <StudentProof images={approvedStudentImages}/>
     </section>
-    
+
 
     <AboutHowItWorks/>
 

@@ -8,7 +8,6 @@ import { getVerticalizedNotices } from "@/lib/notion/free-content";
 
 export const metadata: Metadata = { title: "Editais verticalizados", description: "Editais verticalizados gratuitos para organizar sua preparação tópico a tópico.", alternates: { canonical: "/editais" } };
 export const dynamic = "force-dynamic";
-
 export default async function NoticesPage() {
   const notices = await getVerticalizedNotices();
   return <div className="page-shell"><SiteHeader /><main>

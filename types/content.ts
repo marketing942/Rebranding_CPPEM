@@ -36,6 +36,8 @@ export type CourseAnswer = "Sim" | "Não" | "A confirmar";
 export type CourseProduct = Product & {
   type: string;
   delivery: string;
+  /** Preenchido so quando o item e digital: href ja aponta para ca. */
+  checkoutUrl: string | null;
   contestStatus: string;
   openings: string;
   salary: string;
