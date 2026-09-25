@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { CronogramaDevices } from "@/components/about/cronograma-devices";
 import Link from "next/link";
 import { ArrowRight, BrainCircuit, CalendarCheck2, Crosshair, ShieldCheck, Star, Users } from "lucide-react";
 
@@ -67,10 +68,7 @@ export function AboutHowItWorks() {
           <Link className="ghost-button" href="/plano-de-combate">Ver o Plano de Combate <ArrowRight size={16} /></Link>
         </div>
         <div className="about-how-visual">
-          <div className="about-how-window">
-            <div className="about-platform-bar" aria-hidden="true"><span /><span /><span /><strong>Cronograma da semana</strong></div>
-            <Image src="/images/cronograma.png" alt="Cronograma CPPEM com a missão da semana, horas estudadas e plano de ação" width={1280} height={720} />
-          </div>
+          <CronogramaDevices />
         </div>
       </article>
 
