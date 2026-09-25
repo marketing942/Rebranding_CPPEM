@@ -127,9 +127,9 @@ export function CourseSidebar({ produtos, filtros, aoMudar, activeSlug }: {
       <h2>Carreira</h2>
       {activeSlug
         ? <ul>
-            <li><Link href="/cursos">Todas as carreiras</Link></li>
+            <li><Link href="/produtos">Todas as carreiras</Link></li>
             {courseCategories.map((categoria) => <li key={categoria.slug}>
-              <Link href={`/cursos/${categoria.slug}`} aria-current={activeSlug === categoria.slug ? "page" : undefined}>{categoria.label}</Link>
+              <Link href={`/produtos/${categoria.slug}`} aria-current={activeSlug === categoria.slug ? "page" : undefined}>{categoria.label}</Link>
             </li>)}
           </ul>
         : <ul>{carreiras.map(({ carreira, total }) => <li key={carreira}>

@@ -99,7 +99,7 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
       <Link href="/" className="brand-mark" aria-label="CPPEM — página inicial"><Image src="/brand/emblema-leao.webp" alt="" width={50} height={50} priority /></Link>
       <nav className="desktop-nav" aria-label="Navegação principal">
         <Link className="nav-link" href="/quem-somos">Quem somos</Link>
-        <button className="nav-link nav-dropdown-trigger" type="button" aria-expanded={coursesOpen} aria-controls="courses-mega-menu" onClick={() => coursesOpen ? setCoursesOpen(false) : openCourses()} onMouseEnter={openCourses} onFocus={openCourses}>Cursos <ChevronDown size={14} aria-hidden="true" /></button>
+        <button className="nav-link nav-dropdown-trigger" type="button" aria-expanded={coursesOpen} aria-controls="courses-mega-menu" onClick={() => coursesOpen ? setCoursesOpen(false) : openCourses()} onMouseEnter={openCourses} onFocus={openCourses}>Produtos <ChevronDown size={14} aria-hidden="true" /></button>
         {primaryAfterCourses.map(([label, href]) => <Link className="nav-link" href={href} key={label}>{label}</Link>)}
         <button className="nav-link nav-dropdown-trigger" type="button" aria-expanded={ecosystemOpen} aria-controls="ecosystem-mega-menu" onClick={() => ecosystemOpen ? setEcosystemOpen(false) : openEcosystem()} onMouseEnter={openEcosystem} onFocus={openEcosystem}>Ecossistema <ChevronDown size={14} aria-hidden="true" /></button>
         <Link className="nav-link" href="/glossario">Glossário</Link>
@@ -115,16 +115,16 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
           {featured ? <Link href={featured.href} className="courses-feature-card" tabIndex={coursesOpen ? undefined : -1}>
             <img src={featured.menuImageUrl || featured.imageUrl} alt="" /><span className="courses-feature-overlay" />
             <span className="courses-feature-copy"><small>Preparação em destaque</small><strong>{featured.name}</strong><span>Conhecer agora <ArrowRight size={15} /></span></span>
-          </Link> : <Link href="/cursos" className="courses-feature-empty" tabIndex={coursesOpen ? undefined : -1}><Image src="/brand/emblema-leao.webp" alt="" width={112} height={112} /><strong>Encontre sua próxima preparação</strong><span>Ver todos os cursos <ArrowRight size={15} /></span></Link>}
+          </Link> : <Link href="/produtos" className="courses-feature-empty" tabIndex={coursesOpen ? undefined : -1}><Image src="/brand/emblema-leao.webp" alt="" width={112} height={112} /><strong>Encontre sua próxima preparação</strong><span>Ver todos os cursos <ArrowRight size={15} /></span></Link>}
           {featuredCourses.length > 1 && <div className="courses-feature-controls"><button type="button" onClick={showPrevious} aria-label="Destaque anterior" tabIndex={coursesOpen ? undefined : -1}><ChevronLeft size={16} /></button><span>{featuredIndex + 1} / {featuredCourses.length}</span><button type="button" onClick={showNext} aria-label="Próximo destaque" tabIndex={coursesOpen ? undefined : -1}><ChevronRight size={16} /></button></div>}
         </div>
         <div className="courses-mega-content">
           <div className="courses-mega-heading">
             <div><span className="eyebrow">Loja CPPEM</span><h2>O que você precisa <span className="gold">hoje?</span></h2></div>
-            <Link href="/cursos" onClick={() => setCoursesOpen(false)} tabIndex={coursesOpen ? undefined : -1}>Ver a loja completa{storeTotal ? ` (${storeTotal})` : ""} <ArrowRight size={15} /></Link>
+            <Link href="/produtos" onClick={() => setCoursesOpen(false)} tabIndex={coursesOpen ? undefined : -1}>Ver a loja completa{storeTotal ? ` (${storeTotal})` : ""} <ArrowRight size={15} /></Link>
           </div>
 
-          <form className="courses-mega-search" action="/cursos" role="search" onSubmit={() => setCoursesOpen(false)}>
+          <form className="courses-mega-search" action="/produtos" role="search" onSubmit={() => setCoursesOpen(false)}>
             <Search size={16} aria-hidden="true" />
             <input type="search" name="busca" placeholder="Buscar curso, resumo bizurado, vade mecum..." aria-label="Buscar na loja" tabIndex={coursesOpen ? undefined : -1} />
             <button className="gold-button" type="submit" tabIndex={coursesOpen ? undefined : -1}>Buscar</button>
@@ -134,7 +134,7 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
             {storeColumns.map(({ titulo, icon: Icon, itens }) => <div className="courses-store-column" key={titulo}>
               <div className="courses-path-label"><Icon size={16} aria-hidden="true" /><span>{titulo}</span></div>
               <ul>{itens.map(({ rotulo, tipo }) => <li key={rotulo}>
-                <Link href={`/cursos?tipo=${encodeURIComponent(tipo)}`} onClick={() => setCoursesOpen(false)} tabIndex={coursesOpen ? undefined : -1}>
+                <Link href={`/produtos?tipo=${encodeURIComponent(tipo)}`} onClick={() => setCoursesOpen(false)} tabIndex={coursesOpen ? undefined : -1}>
                   <strong>{rotulo}</strong>{storeCounts[tipo] ? <em>{storeCounts[tipo]}</em> : null}
                 </Link>
               </li>)}</ul>
@@ -143,7 +143,7 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
 
           <div className="courses-store-careers">
             <div className="courses-path-label"><Users size={16} aria-hidden="true" /><span>Comprar por carreira</span></div>
-            <div>{courseCategories.map((category) => <Link href={`/cursos/${category.slug}`} key={category.slug} onClick={() => setCoursesOpen(false)} tabIndex={coursesOpen ? undefined : -1}>{category.label}</Link>)}</div>
+            <div>{courseCategories.map((category) => <Link href={`/produtos/${category.slug}`} key={category.slug} onClick={() => setCoursesOpen(false)} tabIndex={coursesOpen ? undefined : -1}>{category.label}</Link>)}</div>
           </div>
         </div>
       </div>
@@ -184,11 +184,11 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
 
     <nav className="mobile-panel" data-open={mobileOpen} aria-label="Navegação móvel">
       <Link href="/quem-somos" onClick={closeMobile}>Quem somos</Link>
-      <button className="mobile-course-trigger" type="button" aria-expanded={mobileCoursesOpen} onClick={() => setMobileCoursesOpen((value) => !value)}>Cursos <ChevronDown size={16} /></button>
+      <button className="mobile-course-trigger" type="button" aria-expanded={mobileCoursesOpen} onClick={() => setMobileCoursesOpen((value) => !value)}>Produtos <ChevronDown size={16} /></button>
       <div className="mobile-course-links" data-open={mobileCoursesOpen}>
-        <Link href="/cursos" onClick={closeMobile}>Ver a loja completa{storeTotal ? ` (${storeTotal})` : ""}</Link>
-        {storeColumns.flatMap(({ itens }) => itens).map(({ rotulo, tipo }) => <Link href={`/cursos?tipo=${encodeURIComponent(tipo)}`} key={rotulo} onClick={closeMobile}>{rotulo}{storeCounts[tipo] ? ` (${storeCounts[tipo]})` : ""}</Link>)}
-        {courseCategories.map((category) => <Link href={`/cursos/${category.slug}`} key={category.slug} onClick={closeMobile}>{category.label}</Link>)}
+        <Link href="/produtos" onClick={closeMobile}>Ver a loja completa{storeTotal ? ` (${storeTotal})` : ""}</Link>
+        {storeColumns.flatMap(({ itens }) => itens).map(({ rotulo, tipo }) => <Link href={`/produtos?tipo=${encodeURIComponent(tipo)}`} key={rotulo} onClick={closeMobile}>{rotulo}{storeCounts[tipo] ? ` (${storeCounts[tipo]})` : ""}</Link>)}
+        {courseCategories.map((category) => <Link href={`/produtos/${category.slug}`} key={category.slug} onClick={closeMobile}>{category.label}</Link>)}
       </div>
       {primaryAfterCourses.map(([label, href]) => <Link href={href} key={label} onClick={closeMobile}>{label}</Link>)}
       <button className="mobile-course-trigger" type="button" aria-expanded={mobileEcosystemOpen} onClick={() => setMobileEcosystemOpen((value) => !value)}>Ecossistema CPPEM <ChevronDown size={16} /></button>

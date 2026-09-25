@@ -54,7 +54,7 @@ export default function AboutPage() {
               <span className="sr-only"> mentalidade, disciplina e técnica.</span>
             </h1>
             <p className="about-lead">Preparação estratégica para concursos policiais, unindo direcionamento, constância e domínio técnico em cada etapa da jornada.</p>
-            <div className="about-actions"><Link className="gold-button" href="/cursos">Conheça as preparações <ArrowRight size={17}/></Link><Link className="ghost-button" href="/concursos">Explore os concursos</Link></div>
+            <div className="about-actions"><Link className="gold-button" href="/produtos">Conheça as preparações <ArrowRight size={17}/></Link><Link className="ghost-button" href="/concursos">Explore os concursos</Link></div>
           </div>
 
           <div className="about-mark-stage" aria-hidden="true">

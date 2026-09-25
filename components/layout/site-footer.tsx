@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const columns = [
   { title:"Navegar", links:[["Quem somos","/quem-somos"],["Concursos","/concursos"],["Notícias","/noticias"],["Parceiros","/parceiros"]] },
-  { title:"Preparações", links:[["Cursos","/cursos"],["Plano de combate","/plano-de-combate"],["Presencial","/presencial"],["Loja","https://cppem.lojaintegrada.com.br"]] },
+  { title:"Preparações", links:[["Produtos","/produtos"],["Plano de combate","/plano-de-combate"],["Presencial","/presencial"],["Loja","https://cppem.lojaintegrada.com.br"]] },
   { title:"Conteúdo gratuito", links:[["Glossário","/glossario"],["Editais verticalizados","/editais"],["Materiais gratuitos","/materiais-gratuitos"],["Instagram","https://instagram.com/cppem"]] },
 ] as const;
 

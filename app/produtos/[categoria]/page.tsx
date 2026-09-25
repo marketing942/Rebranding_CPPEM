@@ -13,18 +13,18 @@ export function generateStaticParams() {
   return courseCategories.map((category) => ({ categoria: category.slug }));
 }
 
-export async function generateMetadata({ params }: PageProps<"/cursos/[categoria]">): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps<"/produtos/[categoria]">): Promise<Metadata> {
   const { categoria: slug } = await params;
   const category = getCourseCategory(slug);
   if (!category) return {};
   return {
     title: `Cursos para ${category.label}`,
     description: category.description,
-    alternates: { canonical: `/cursos/${category.slug}` },
+    alternates: { canonical: `/produtos/${category.slug}` },
   };
 }
 
-export default async function CourseCategoryPage({ params }: PageProps<"/cursos/[categoria]">) {
+export default async function CourseCategoryPage({ params }: PageProps<"/produtos/[categoria]">) {
   const { categoria: slug } = await params;
   const category = getCourseCategory(slug);
   if (!category) notFound();

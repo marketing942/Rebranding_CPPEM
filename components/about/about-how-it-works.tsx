@@ -32,7 +32,7 @@ export function AboutHowItWorks() {
             <li><Crosshair size={16} /> Aulas, PDFs, questões e simulados por disciplina</li>
             <li><Users size={16} /> Painel de desempenho acompanhando sua evolução</li>
           </ul>
-          <Link className="ghost-button" href="/cursos">Ver as preparações <ArrowRight size={16} /></Link>
+          <Link className="ghost-button" href="/produtos">Ver as preparações <ArrowRight size={16} /></Link>
         </div>
         <div className="about-how-visual">
           <div className="about-how-devices about-how-devices-render">

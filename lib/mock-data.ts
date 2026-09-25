@@ -4,12 +4,12 @@ export const fallbackProducts: Product[] = [
   {
     id: "p1", slug: "combo-pmpe-cbmpe", name: "Combo PMPE + CBMPE", category: "Carreiras militares",
     modality: "Online • 12 meses", description: "Preparação integrada com aulas, questões, simulados e direção de estudos.",
-    price: "12x de R$ 61", oldPrice: "R$ 997", imageUrl: "/images/card01.webp", href: "/cursos/combo-pmpe-cbmpe", featured: true,
+    price: "12x de R$ 61", oldPrice: "R$ 997", imageUrl: "/images/card01.webp", href: "/produtos/combo-pmpe-cbmpe", featured: true,
   },
   {
     id: "p2", slug: "combo-pcpe-pppe", name: "Combo PCPE + PPPE", category: "Civil e penal",
     modality: "Online • 12 meses", description: "Conteúdo objetivo para quem quer disputar duas grandes oportunidades em Pernambuco.",
-    price: "12x de R$ 61", oldPrice: "R$ 997", imageUrl: "/images/card02.webp", href: "/cursos/combo-pcpe-pppe",
+    price: "12x de R$ 61", oldPrice: "R$ 997", imageUrl: "/images/card02.webp", href: "/produtos/combo-pcpe-pppe",
   },
   {
     id: "p3", slug: "plano-de-combate", name: "Plano de Combate", category: "Preparação contínua",

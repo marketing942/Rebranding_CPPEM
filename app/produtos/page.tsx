@@ -5,9 +5,9 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { getCourseProducts } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Cursos para concursos policiais",
+  title: "Produtos para concursos policiais",
   description: "Conheça as preparações, cursos e materiais do CPPEM organizados por carreira policial.",
-  alternates: { canonical: "/cursos" },
+  alternates: { canonical: "/produtos" },
 };
 export const revalidate = 300;
 

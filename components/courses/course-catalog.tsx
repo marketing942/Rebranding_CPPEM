@@ -187,7 +187,7 @@ export function CourseCatalog({ products, activeSlug }: { products: CourseProduc
             : "Assim que uma preparação for publicada no Notion, ela aparecerá aqui automaticamente."}</p>
           {temFiltro
             ? <button className="ghost-button" type="button" onClick={() => setFiltros({ ...filtros, busca: "", tipo: null, carreira: null, faixa: null, pagina: 1 })}>Limpar filtros</button>
-            : <Link className="ghost-button" href="/cursos">Ver todas as preparações</Link>}
+            : <Link className="ghost-button" href="/produtos">Ver todas as preparações</Link>}
         </div>}
 
         <CoursePagination total={filtrados.length} pagina={filtros.pagina}
