@@ -19,7 +19,6 @@ const nextConfig: NextConfig = {
       { source: "/material-gratuito", destination: "/materiais-gratuitos", permanent: true },
       // Destinos que podem mudar ficam como temporarios: redirect permanente
       // fica gravado no navegador e nao da para voltar atras depois.
-      { source: "/qg", destination: "/materiais-gratuitos", permanent: false },
       { source: "/login", destination: "https://plataforma.cppem.com.br", permanent: false },
       { source: "/loja", destination: "https://cppem.lojaintegrada.com.br", permanent: false },
       { source: "/faculdade-ead", destination: "https://contato.unicive.cppem.com.br/", permanent: false },

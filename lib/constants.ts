@@ -47,3 +47,9 @@ export const statusOrder: Record<ContestStatus, number> = {
 export function whatsappHref(message: string) {
   return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 }
+
+/**
+ * Grupo da comunidade gratuita (QG CPPEM) no WhatsApp, o mesmo do site anterior.
+ * Quando o grupo lotar, troque so aqui: formulario e botoes da pagina /qg leem daqui.
+ */
+export const qgWhatsappGroupUrl = "https://chat.whatsapp.com/BxOuisctuqV3UWT9ldASe4";

@@ -20,7 +20,7 @@ const free = [
   { label: "Materiais gratuitos", href: "/materiais-gratuitos", description: "Cadernos, questões e ferramentas para acelerar sua evolução.", icon: BookOpen },
 ] as const;
 
-const ecosystemIcons = { Alvo: Target, Graduação: GraduationCap, Diploma: University, Local: MapPin, Escudo: ShieldCheck, Loja: ShoppingBag, Estrela: Sparkles } as const;
+const ecosystemIcons = { Comunidade: Users, Alvo: Target, Graduação: GraduationCap, Diploma: University, Local: MapPin, Escudo: ShieldCheck, Loja: ShoppingBag, Estrela: Sparkles } as const;
 
 // as colunas do menu repetem os grupos da vitrine para o aluno reconhecer o caminho
 const storeColumns: Array<{ titulo: string; icon: typeof BookOpen; itens: Array<{ rotulo: string; tipo: string }> }> = [

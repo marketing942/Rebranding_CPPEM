@@ -58,4 +58,12 @@ async function fetchEcosystemItems(): Promise<EcosystemItem[]> {
   }
 }
 
-export const getEcosystemItems = unstable_cache(fetchEcosystemItems, ["ecosystem-items"], { revalidate: 300, tags: ["ecosystem"] });
+const getNotionEcosystemItems = unstable_cache(fetchEcosystemItems, ["ecosystem-items"], { revalidate: 300, tags: ["ecosystem"] });
+
+// A comunidade e pagina do proprio site: entra fixa, sempre primeiro, sem depender do Notion
+const qgItem: EcosystemItem = { id: "qg-cppem", name: "QG CPPEM", description: "Comunidade gratuita no WhatsApp: materiais, editais e lives.", href: "/qg", category: "Comunidade", icon: "Comunidade", label: "Grátis", featured: true, order: 0, newTab: false };
+
+export async function getEcosystemItems(): Promise<EcosystemItem[]> {
+  const items = await getNotionEcosystemItems();
+  return [qgItem, ...items.filter((item) => item.href !== "/qg")];
+}
