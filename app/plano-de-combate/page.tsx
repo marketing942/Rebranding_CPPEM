@@ -30,6 +30,7 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { approvedStudentImages } from "@/lib/mock-data";
 import { AboutTicker } from "@/components/about/about-ticker";
 import { AboutHowItWorks } from "@/components/about/about-how-it-works";
+import "./combate-mobile.css";
 
 export const metadata: Metadata = {
   title: "Plano de Combate",

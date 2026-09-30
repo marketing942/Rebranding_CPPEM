@@ -1,0 +1,21 @@
+/* Plano de Combate no celular: tudo dentro da tela, com 16px de respiro nas laterais */
+@media (max-width:720px) {
+  .combat-page .container { width:calc(100% - 32px); }
+  /* containers aninhados (plataforma, comparativo) nao descontam a margem de novo */
+  .combat-page .container .container,
+  .combat-page .container .about-comparison-panel { width:100%; }
+
+  /* cronograma / rendimento: a tela da plataforma encolhe em vez de ter 760px fixos */
+  .combat-page .combat-story-visual { margin-inline:0; overflow:hidden; }
+  .combat-page .combat-story-panel .combat-platform-screen { width:100%; max-width:100%; }
+  .combat-page .story-card-top-left,
+  .combat-page .story-card-bottom-left { left:0; }
+  .combat-page .story-card-top-right,
+  .combat-page .story-card-middle-right,
+  .combat-page .story-card-bottom-right { right:0; }
+  .combat-page .combat-story-panel .combat-platform-card { width:calc(50% - 6px); max-width:170px; }
+
+  /* planos: um embaixo do outro, sem carrossel saindo da tela */
+  .combat-page .combat-plans-grid { display:grid; grid-template-columns:minmax(0,1fr); overflow:visible; margin-inline:0; padding:0; scroll-snap-type:none; }
+  .combat-page .combat-plan-card { width:100%; min-width:0; flex:none; }
+}
