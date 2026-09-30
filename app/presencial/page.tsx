@@ -9,6 +9,7 @@ import { SiteHeader } from "@/components/layout/site-header";
 import { PresencialLeadForm } from "@/components/presencial/presencial-lead-form";
 import { PresencialBenefits } from "@/components/presencial/presencial-benefits";
 import { approvedStudentImages } from "@/lib/mock-data";
+import { WhatsappLink } from "@/components/tracking/whatsapp-link";
 
 export const metadata: Metadata = {
   title: "Curso Presencial em Caruaru",
@@ -81,7 +82,7 @@ export default function PresencialPage() {
       <div className="presencial-class-grid">{classes.map((course, index) => <article className="presencial-class-card" key={course.name}>
         <div className="presencial-card-number">0{index + 1}</div><span className="presencial-card-tag">{course.tag}</span><h3>{course.name}</h3><p>{course.description}</p>
         <ul>{course.targets.map((target) => <li key={target}><Target size={14} /> {target}</li>)}</ul>
-        <a className="gold-button" href={whatsappHref}>Quero a turma {course.name} <ArrowRight size={17} /></a>
+        <WhatsappLink className="gold-button" href={whatsappHref} leadSource="turmas_turmas">Quero a turma {course.name} <ArrowRight size={17} /></WhatsappLink>
       </article>)}</div>
     </div></section>
 

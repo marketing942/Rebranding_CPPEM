@@ -4,6 +4,7 @@ import { useActionState, useEffect, useRef } from "react";
 import { ArrowDownToLine, CheckCircle2, X } from "lucide-react";
 import { submitDownloadLead, type DownloadLeadState } from "@/app/materiais-gratuitos/actions";
 import type { FreeMaterial } from "@/types/free-content";
+import { PIXELX_LEAD, track } from "@/lib/tracking";
 
 function directDownloadUrl(href: string) {
   try {
@@ -18,6 +19,11 @@ export function DownloadModal({ item, onClose, source }: { item: FreeMaterial | 
   const [state, action, pending] = useActionState<DownloadLeadState | null, FormData>(submitDownloadLead, null);
   const downloaded = useRef<string | null>(null);
   const open = Boolean(item);
+  const prefixo = source === "edital_verticalizado" ? "edital" : "material";
+
+  useEffect(() => {
+    if (item) track(`${prefixo}_modal_open`, { item_name: item.name });
+  }, [item, prefixo]);
   const url = item ? directDownloadUrl(item.href) : "";
 
   useEffect(() => {
@@ -31,13 +37,14 @@ export function DownloadModal({ item, onClose, source }: { item: FreeMaterial | 
   useEffect(() => {
     if (!state?.success || !item || downloaded.current === item.id) return;
     downloaded.current = item.id;
+    track(`${prefixo}_download`, { item_name: item.name });
     const frame = document.createElement("iframe");
     frame.hidden = true;
     frame.src = url;
     document.body.appendChild(frame);
     const timer = window.setTimeout(() => frame.remove(), 60_000);
     return () => window.clearTimeout(timer);
-  }, [state?.success, item, url]);
+  }, [state?.success, item, url, prefixo]);
 
   return <div className="download-modal" data-open={open} role="dialog" aria-modal="true" aria-label="Liberar download">
     <button className="download-backdrop" type="button" onClick={onClose} aria-label="Fechar" />
@@ -46,7 +53,7 @@ export function DownloadModal({ item, onClose, source }: { item: FreeMaterial | 
       <span className="download-icon">{state?.success ? <CheckCircle2 /> : <ArrowDownToLine />}</span>
       <span className="eyebrow">Conteúdo CPPEM</span>
       <h2>{item?.name ?? ""}</h2>
-      {!state?.success ? <form action={action} className="download-form IPEyzyfmJhKQEYIXAlZH">
+      {!state?.success ? <form action={action} className={`download-form ${PIXELX_LEAD}`}>
         <input type="hidden" name="source" value={source} />
         <label>Nome<input name="name" autoComplete="name" required placeholder="Seu nome completo" /></label>
         <small>{state?.fieldErrors?.name?.[0]}</small>

@@ -1,0 +1,69 @@
+services:
+  web:
+    # PRODUÇÃO (VPS): usa a imagem pronta do GHCR — a VPS não builda nada.
+    image: ghcr.io/cppemsistemas/site-cppem:latest
+
+    # DEV LOCAL: comente a linha `image` acima e descomente o bloco abaixo
+    # para buildar na sua máquina.
+    # build:
+    #   context: .
+    #   args:
+    #     NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL}
+    #     # Supabase não é mais build-arg: é lido em runtime (ver environment).
+
+    ports:
+      - "3000:3000"
+    # ⚠️ Só chega ao processo o que estiver LISTADO aqui.
+    #
+    # Definir a variável no Portainer a torna disponível para a interpolação
+    # ${...} deste arquivo — ela NÃO entra no container sozinha. Foi assim que
+    # o diretório de parceiros ficou vazio com a env "configurada": ela existia
+    # no stack, mas não nesta lista. Ao adicionar uma variável nova no código,
+    # adicione em três lugares: .env.example, .env.local e aqui.
+    environment:
+      # --- Notion: token e um ID por seção do site --------------------------
+      NOTION_TOKEN:                  ${NOTION_TOKEN}
+      # Vitrine da home
+      NOTION_DATABASE_ID:            ${NOTION_DATABASE_ID}
+      # Biblioteca de materiais gratuitos (/gratuito)
+      NOTION_MATERIAIS_DATABASE_ID:  ${NOTION_MATERIAIS_DATABASE_ID}
+      # Editais verticalizados (/editais)
+      NOTION_EDITAIS_DATABASE_ID:    ${NOTION_EDITAIS_DATABASE_ID}
+      # Diretório de parceiros (/parceiros)
+      NOTION_PARCEIROS_DATABASE_ID:  ${NOTION_PARCEIROS_DATABASE_ID}
+      # Banners de campanha do topo da home
+      NOTION_BANNERS_DATABASE_ID:    ${NOTION_BANNERS_DATABASE_ID}
+      # bases novas do site reformulado: sem elas o catalogo, os concursos e o
+      # menu Ecossistema saem vazios
+      NOTION_COURSES_DATABASE_ID:    ${NOTION_COURSES_DATABASE_ID}
+      NOTION_CONTESTS_DATABASE_ID:   ${NOTION_CONTESTS_DATABASE_ID}
+      NOTION_ECOSYSTEM_DATABASE_ID:  ${NOTION_ECOSYSTEM_DATABASE_ID}
+      NOTION_PARCEIROS_TOKEN:        ${NOTION_PARCEIROS_TOKEN}
+
+      # --- Supabase ---------------------------------------------------------
+      # Grava leads e propostas de parceiro: as tabelas têm RLS sem policy de
+      # escrita, então o service role é obrigatório.
+      SUPABASE_SERVICE_ROLE_KEY:     ${SUPABASE_SERVICE_ROLE_KEY}
+      # Público (URL + chave anon/publishable), lidos em RUNTIME. Podem ser
+      # definidos no Portainer sem rebuild da imagem. O código aceita
+      # SUPABASE_ANON_KEY ou, na falta dela, SUPABASE_PUBLISHABLE_KEY.
+      SUPABASE_URL:                  ${SUPABASE_URL}
+      SUPABASE_ANON_KEY:             ${SUPABASE_ANON_KEY}
+      SUPABASE_PUBLISHABLE_KEY:      ${SUPABASE_PUBLISHABLE_KEY}
+
+      # --- Rocket.Chat ------------------------------------------------------
+      # Avisa a equipe quando chega proposta de parceiro. Sem ela o cadastro é
+      # gravado normalmente, mas ninguém é notificado — o único sinal é um
+      # warn no log.
+      ROCKETCHAT_WEBHOOK_URL:        ${ROCKETCHAT_WEBHOOK_URL}
+    restart: unless-stopped
+
+    # Teto de recursos: impede este site de sufocar os outros da VPS.
+    # Next standalone em produção consome ~80–150 MB. 256M dá folga segura.
+    deploy:
+      resources:
+        limits:
+          memory: 256M
+          cpus: "0.50"
+        reservations:
+          memory: 96M

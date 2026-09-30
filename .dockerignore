@@ -1,0 +1,24 @@
+# Build / deps (refeitos dentro do container)
+node_modules
+.next
+tsconfig.tsbuildinfo
+
+# Git e segredos
+.git
+.gitignore
+.env*
+
+# Ferramentas de dev / IA (não vão pro build)
+.claude
+.kilo
+
+# Docs e meta
+*.md
+Dockerfile
+.dockerignore
+compose.yml
+
+# pastas locais deste projeto
+.vercel
+*.log
+tmp-*

@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // imagem Docker enxuta: o build gera um servidor Node autocontido
+  output: "standalone",
   async redirects() {
     return [
       { source: "/gratuito", destination: "/materiais-gratuitos", permanent: true },

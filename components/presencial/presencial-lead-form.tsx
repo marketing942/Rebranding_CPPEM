@@ -3,6 +3,7 @@
 import { ArrowRight, CheckCircle2, LoaderCircle } from "lucide-react";
 import { useActionState, useEffect } from "react";
 import { submitPresencialLead, type PresencialLeadState } from "@/app/presencial/actions";
+import { pixelContact, trackWhatsapp } from "@/lib/tracking";
 
 const WHATSAPP_URL = "https://api.whatsapp.com/send/?phone=558173105354&text=Gostaria+de+Saber+mais+sobre+os+Planos+Presenciais&type=phone_number&app_absent=0";
 const initialState: PresencialLeadState = {};
@@ -12,6 +13,9 @@ export function PresencialLeadForm() {
 
   useEffect(() => {
     if (!state.success) return;
+    // redirect por JS nao tem clique marcado: o Contact do PixelX vai na mao
+    trackWhatsapp("turmas");
+    void pixelContact();
     const timeout = window.setTimeout(() => window.location.assign(WHATSAPP_URL), 350);
     return () => window.clearTimeout(timeout);
   }, [state.success]);

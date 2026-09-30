@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { Inter, Oxanium, Rajdhani } from "next/font/google";
 import "./globals.css";
 import { WhatsappFloat } from "@/components/layout/whatsapp-float";
@@ -28,5 +29,11 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
-  return <html lang="pt-BR" className={`${inter.variable} ${oxanium.variable} ${rajdhani.variable}`}><body>{children}<WhatsappFloat /></body></html>;
+  return <html lang="pt-BR" className={`${inter.variable} ${oxanium.variable} ${rajdhani.variable}`}><body>
+    {/* mesmo container e mesmo servidor do site anterior: as tags do GTM seguem valendo */}
+    <GoogleTagManager gtmScriptUrl="https://sgtm.cppem.com.br/metrics/" />
+    {children}
+    <WhatsappFloat />
+    <noscript><iframe src="https://sgtm.cppem.com.br/metrics/ns.html?id=GTM-PJ379FLQ" height="0" width="0" style={{ display: "none", visibility: "hidden" }} /></noscript>
+  </body></html>;
 }

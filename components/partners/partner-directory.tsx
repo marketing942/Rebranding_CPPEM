@@ -4,6 +4,7 @@
 import { useMemo, useState, type FocusEvent } from "react";
 import { ArrowUpRight, BadgePercent, Camera, MessageCircle, Search } from "lucide-react";
 import { normalizePartnerKey, partnerInitials, type Partner, type PartnerCategory } from "@/lib/partners";
+import { PIXELX_CONTACT, trackWhatsapp } from "@/lib/tracking";
 
 export function PartnerDirectory({ partners, categories }: { partners: Partner[]; categories: PartnerCategory[] }) {
   const [query, setQuery] = useState("");
@@ -64,7 +65,7 @@ export function PartnerDirectory({ partners, categories }: { partners: Partner[]
             <div className="partner-benefit-heading"><BadgePercent size={18} aria-hidden="true" /><span>Benefício CPPEM</span></div>
             <p>{partner.benefit || "Consulte as condições diretamente com o parceiro."}</p>
             <div className="partner-actions">
-              {partner.whatsappUrl && <a href={partner.whatsappUrl} target="_blank" rel="noreferrer" tabIndex={open ? 0 : -1}><MessageCircle size={16} />WhatsApp</a>}
+              {partner.whatsappUrl && <a className={PIXELX_CONTACT} href={partner.whatsappUrl} target="_blank" rel="noreferrer" tabIndex={open ? 0 : -1} onClick={() => trackWhatsapp("parceiros")}><MessageCircle size={16} />WhatsApp</a>}
               {partner.instagramUrl && <a href={partner.instagramUrl} target="_blank" rel="noreferrer" tabIndex={open ? 0 : -1}><Camera size={16} />Instagram</a>}
             </div>
           </div>

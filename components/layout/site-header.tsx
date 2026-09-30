@@ -1,3 +1,4 @@
+import { connection } from "next/server";
 import { SiteHeaderClient } from "@/components/layout/site-header-client";
 import { getCourseProducts } from "@/lib/data";
 import { getFreeMaterials } from "@/lib/notion/free-content";
@@ -5,6 +6,11 @@ import { getEcosystemItems } from "@/lib/notion/ecosystem";
 import { getFaixaDestaque } from "@/components/layout/contest-strip";
 
 export async function SiteHeader() {
+  // Toda pagina publica passa por aqui, entao isto vale para o site inteiro:
+  // a pagina e montada no acesso, nao no build. No Docker o build roda sem as
+  // credenciais do Notion e congelaria o menu, a faixa e as vitrines vazios ate
+  // o primeiro recalculo. Os dados seguem em cache de 5 minutos.
+  await connection();
   const [products, materials, ecosystemItems, faixa] = await Promise.all([getCourseProducts(), getFreeMaterials(), getEcosystemItems(), getFaixaDestaque()]);
   const featuredCourses = products
     .filter((product) => product.menuFeatured)

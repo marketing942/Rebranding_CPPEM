@@ -7,12 +7,14 @@ import remarkGfm from "remark-gfm";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { statusLabels, whatsappHref } from "@/lib/constants";
-import { getContestBySlug, getContestRedirect, getContests } from "@/lib/data";
+import { getContestBySlug, getContestRedirect } from "@/lib/data";
 import { formatDate } from "@/lib/utils";
+import { WhatsappLink } from "@/components/tracking/whatsapp-link";
 
-export async function generateStaticParams() {
-  return (await getContests()).map((contest) => ({ slug: contest.slug }));
-}
+// Montada no acesso. Com generateStaticParams, um build sem Notion (o do Docker)
+// nao gerava nenhuma ficha e o Next tratava a rota como estatica: a primeira
+// visita a um concurso quebrava com erro 500 ao ler a requisicao no cabecalho.
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const contest = await getContestBySlug((await params).slug);
@@ -63,7 +65,7 @@ export default async function ContestDetailPage({ params }: { params: Promise<{ 
 
       <aside className="detail-sidebar">
         <div className="detail-panel"><h2>Informação verificada</h2><p className="map-hint">Última verificação</p><strong>{formatDate(contest.lastVerifiedAt)}</strong><p><a className="ghost-button" style={{ width: "100%" }} href={contest.sourceUrl} target="_blank" rel="noreferrer">Consultar {contest.sourceLabel}</a></p></div>
-        {preparations.length ? <div className="detail-panel" style={{ borderColor: "var(--border-active)" }}><span className="product-category">Prepare-se com o CPPEM</span><h2 style={{ marginTop: 8 }}>{preparations.length} preparação(ões) disponível(is)</h2><p className="product-description">Cursos vinculados oficialmente a este concurso.</p><a className="gold-button" style={{ width: "100%" }} href="#preparacoes">Ver preparações</a></div> : <div className="detail-panel"><h2>Ainda sem preparação específica</h2><p className="product-description">Fale com nossa equipe e receba orientação sobre a melhor preparação disponível.</p><a className="whatsapp-button" style={{ width: "100%" }} href={whatsappHref(`Olá! Vim pelo site do CPPEM e quero saber sobre uma preparação para o concurso ${contest.acronym} — ${contest.title}.`)} target="_blank" rel="noreferrer">Falar no WhatsApp</a></div>}
+        {preparations.length ? <div className="detail-panel" style={{ borderColor: "var(--border-active)" }}><span className="product-category">Prepare-se com o CPPEM</span><h2 style={{ marginTop: 8 }}>{preparations.length} preparação(ões) disponível(is)</h2><p className="product-description">Cursos vinculados oficialmente a este concurso.</p><a className="gold-button" style={{ width: "100%" }} href="#preparacoes">Ver preparações</a></div> : <div className="detail-panel"><h2>Ainda sem preparação específica</h2><p className="product-description">Fale com nossa equipe e receba orientação sobre a melhor preparação disponível.</p><WhatsappLink leadSource="concurso" className="whatsapp-button" style={{ width: "100%" }} href={whatsappHref(`Olá! Vim pelo site do CPPEM e quero saber sobre uma preparação para o concurso ${contest.acronym} — ${contest.title}.`)} target="_blank" rel="noreferrer">Falar no WhatsApp</WhatsappLink></div>}
       </aside>
     </div>
 
