@@ -3,18 +3,24 @@ import Image from "next/image";
 import {
   ArrowDown,
   ArrowRight,
+  BrainCircuit,
   CalendarCheck2,
+  ChartNoAxesCombined,
+  Check,
   CheckCircle2,
   ClipboardCheck,
+  Crosshair,
   Crown,
   FileText,
   Layers,
+  Map,
   Medal,
   MessageCircle,
   PlayCircle,
   ShieldCheck,
   Target,
   Users,
+  X,
 } from "lucide-react";
 import { AnimatedStat } from "@/components/about/animated-stat";
 import { CombatPlatformStory } from "@/components/combat/combat-platform-story";
@@ -22,6 +28,8 @@ import { StudentProof } from "@/components/home/student-proof";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { approvedStudentImages } from "@/lib/mock-data";
+import { AboutTicker } from "@/components/about/about-ticker";
+import { AboutHowItWorks } from "@/components/about/about-how-it-works";
 
 export const metadata: Metadata = {
   title: "Plano de Combate",
@@ -36,6 +44,23 @@ const methodFeatures = [
   { icon: Users, title: "Mentoria especializada", copy: "Professores e mentores ajudam a corrigir a rota antes que uma dificuldade vire atraso." },
   { icon: MessageCircle, title: "Comunidade em missão", copy: "Você avança ao lado de alunos que perseguem o mesmo objetivo e entendem o processo." },
   { icon: ClipboardCheck, title: "Simulados e correções", copy: "Desempenho acompanhado por dados para transformar erros em decisões de estudo." },
+] as const;
+
+const comparisonRows = [
+  ["Direção clara do que estudar", "Plano guiado", "Aluno segue perdido", "Só entrega a aula", "Conteúdo espalhado"],
+  ["Acompanhamento de mentor", "Mentoria contínua", "Você por conta", "Sem acompanhamento", "Ninguém te guia"],
+  ["Cronograma de revisões e simulados", "Estruturado para a prova", "Fica a seu critério", "Raro ou inexistente", "Você monta sozinho"],
+  ["Método e didática próprios", "Didática própria", "Padrão de mercado", "Só a aula do day", "Cada fonte é diferente"],
+  ["Preparação de TAF e psicotécnico", "Dentro da trilha", "Não oferece", "Por fora, se houver", "Você se vira"],
+  ["Metas, ranking e constância", "Plataforma própria", "Sem sistema de constância", "Nada além da aula", "Sem constância"],
+] as const;
+
+const platformFeatures = [
+  { position: "missions", title: "Missões diárias", description: "Organize o que estudar em cada etapa da preparação.", Icon: CalendarCheck2 },
+  { position: "plan", title: "Plano de combate", description: "Siga um cronograma alinhado ao seu objetivo e à sua rotina.", Icon: Map },
+  { position: "arsenal", title: "Arsenal de fogo", description: "Encontre aulas, PDFs, simulados e materiais por disciplina.", Icon: Crosshair },
+  { position: "summaries", title: "Resumos e mapas mentais", description: "Revise conteúdos com anotações e recursos visuais.", Icon: BrainCircuit },
+  { position: "performance", title: "Desempenho operacional", description: "Acompanhe acertos, erros e a evolução dos seus estudos.", Icon: ChartNoAxesCombined },
 ] as const;
 
 const plans = [
@@ -163,6 +188,9 @@ export default function PlanoDeCombatePage() {
       <a className="combat-scroll-cue" href="#cronograma" aria-label="Ir para a próxima seção"><ArrowDown size={20}/></a>
     </section>
 
+      <AboutTicker />
+      <AboutHowItWorks />
+
     <section className="combat-work-section" id="cronograma"><div className="container">
       <div className="combat-section-heading combat-centered-heading">
         <span className="eyebrow">Seu plano. Sua rotina.</span>
@@ -171,12 +199,55 @@ export default function PlanoDeCombatePage() {
       </div>
 
       <CombatPlatformStory />
+
+      <section className="about-platform-section">
+        <div className="container about-platform-heading">
+          <span className="eyebrow">Ecossistema CPPEM</span>
+          <h2 className="display-title">Uma plataforma completa para organizar sua <span className="gold">preparação.</span></h2>
+          <p className="section-copy">Estratégia, conteúdo e acompanhamento reunidos em um único ambiente para você saber o que estudar, como evoluir e onde concentrar seus esforços.</p>
+        </div>
+
+        <div className="container about-platform-stage">
+          <div className="about-platform-window">
+            <div className="about-platform-bar" aria-hidden="true"><span/><span/><span/><strong>Painel do aluno CPPEM</strong></div>
+            <Image className="about-platform-image" src="/images/plataforma-cppem2.png" alt="Painel do aluno CPPEM mostrando briefing da missão, objetivos e funcionalidades da plataforma" width={1599} height={778}/>
+          </div>
+
+          <div className="about-platform-callouts">
+            {platformFeatures.map(({ position, title, description, Icon }) => <article className={`about-platform-callout about-platform-${position}`} key={title}>
+              <span className="about-platform-icon"><Icon size={18}/></span>
+              <div><h3>{title}</h3><p>{description}</p></div>
+            </article>)}
+          </div>
+        </div>
+      </section>
+
+
     </div></section>
 
-    <section className="combat-method-section" id="metodo"><div className="container combat-method-layout">
-      <div className="combat-method-copy"><span className="eyebrow">O que é o Plano de Combate?</span><h2 className="display-title">A melhor forma de estudar <span className="gold">para concurso.</span></h2><p>É uma metodologia de preparação contínua que reúne planejamento, conteúdo e acompanhamento dentro da mesma plataforma. Em vez de decidir todos os dias o que estudar, você executa uma rota construída para o seu objetivo — e ajustada conforme sua evolução.</p><blockquote>“Estudar certo é melhor do que estudar muito.”</blockquote><a className="ghost-button" href="#planos">Ver os planos <ArrowRight size={17}/></a></div>
-      <div className="combat-method-grid">{methodFeatures.map(({icon:Icon,title,copy},index)=><article key={title}><span className="combat-feature-number">0{index+1}</span><div className="combat-feature-icon"><Icon size={22}/></div><h3>{title}</h3><p>{copy}</p></article>)}</div>
-    </div></section>
+<section className="about-comparison-section">
+        <div className="container about-comparison-heading">
+          <span className="eyebrow">Por que o CPPEM</span>
+          <h2 className="display-title"><span className="gold">CPPEM</span> vs. o caminho comum</h2>
+          <p className="section-copy">A diferença entre estudar muito e estudar certo até vestir a farda.</p>
+        </div>
+
+        <div className="container about-comparison-panel">
+          <div className="about-comparison-scroll">
+            <table className="about-comparison-table">
+              <thead><tr><th>O que você precisa</th><th className="about-cppem-column">CPPEM</th><th>Cursinhos online</th><th>Cursinhos presenciais</th><th>Material da internet</th></tr></thead>
+              <tbody>{comparisonRows.map(([criterion, cppem, online, inPerson, internet]) => <tr key={criterion}>
+                <th scope="row">{criterion}</th>
+                <td className="about-cppem-cell"><span className="about-compare-mark about-compare-yes"><Check size={15}/></span>{cppem}</td>
+                <td><span className="about-compare-mark about-compare-no"><X size={15}/></span>{online}</td>
+                <td><span className="about-compare-mark about-compare-no"><X size={15}/></span>{inPerson}</td>
+                <td><span className="about-compare-mark about-compare-no"><X size={15}/></span>{internet}</td>
+              </tr>)}</tbody>
+            </table>
+          </div>
+          <p className="about-comparison-hint">Arraste para o lado para comparar todas as colunas.</p>
+        </div>
+      </section>
 
     <section className="combat-mentor-section"><div className="container combat-mentor-layout">
       <div className="combat-mentor-portrait"><Image src="/images/plano-combate/everton-mentor.jpg" alt="Everton Mota, mentor do Plano de Combate" width={1000} height={1250} sizes="(max-width: 980px) 90vw, 440px"/></div>
