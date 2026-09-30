@@ -101,7 +101,7 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
       <Link href="/" className="brand-mark" aria-label="CPPEM — página inicial"><Image src="/brand/emblema-leao.webp" alt="" width={50} height={50} priority /></Link>
       <nav className="desktop-nav" aria-label="Navegação principal">
         <Link className="nav-link" href="/quem-somos">Quem somos</Link>
-        <button className="nav-link nav-dropdown-trigger" type="button" aria-expanded={coursesOpen} aria-controls="courses-mega-menu" onClick={() => coursesOpen ? setCoursesOpen(false) : openCourses()} onMouseEnter={openCourses} onFocus={openCourses}>Produtos <ChevronDown size={14} aria-hidden="true" /></button>
+        <Link className="nav-link nav-dropdown-trigger" href="/produtos" aria-haspopup="true" aria-expanded={coursesOpen} aria-controls="courses-mega-menu" onClick={() => setCoursesOpen(false)} onMouseEnter={openCourses} onFocus={openCourses}>Produtos <ChevronDown size={14} aria-hidden="true" /></Link>
         {primaryAfterCourses.map(([label, href]) => <Link className="nav-link" href={href} key={label}>{label}</Link>)}
         <button className="nav-link nav-dropdown-trigger" type="button" aria-expanded={ecosystemOpen} aria-controls="ecosystem-mega-menu" onClick={() => ecosystemOpen ? setEcosystemOpen(false) : openEcosystem()} onMouseEnter={openEcosystem} onFocus={openEcosystem}>Ecossistema <ChevronDown size={14} aria-hidden="true" /></button>
         <Link className="nav-link" href="/glossario">Glossário</Link>

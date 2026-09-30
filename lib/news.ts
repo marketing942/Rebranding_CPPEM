@@ -52,6 +52,16 @@ function makeExcerpt(content: string) {
   return plain.length > 170 ? `${plain.slice(0, 167).trimEnd()}…` : plain;
 }
 
+/** Link para uma notícia do próprio CPPEM (cppem.com.br/noticias/...). */
+function isOwnNewsUrl(url: string) {
+  try {
+    const { hostname, pathname } = new URL(url);
+    return (hostname === "cppem.com.br" || hostname === "www.cppem.com.br") && pathname.startsWith("/noticias/");
+  } catch {
+    return false;
+  }
+}
+
 function normalizeNewsRow(row: RawNewsRow): NewsArticle {
   const id = String(row.id ?? "");
   const title = pickString(row, "titulo", "title") ?? "Notícia CPPEM";
@@ -60,7 +70,11 @@ function normalizeNewsRow(row: RawNewsRow): NewsArticle {
   // A identidade editorial usa uma única capa institucional. A imagem recebida
   // pelo agregador permanece no banco para auditoria, mas não é exibida no site.
   const imageUrl = FALLBACK_IMAGE;
-  const linkUrl = pickString(row, "link", "url");
+  // O n8n grava em `link` o endereço da própria notícia em cppem.com.br. Com o
+  // site novo nesse domínio, isso deixa de ser "fonte externa": seria um botão
+  // de fonte original apontando para a página em que o leitor já está.
+  const linkBruto = pickString(row, "link", "url");
+  const linkUrl = linkBruto && !isOwnNewsUrl(linkBruto) ? linkBruto : null;
   const publishedAt = pickString(row, "publicado_em", "published_at", "created_at");
   const words = stripMarkup(content).split(/\s+/).filter(Boolean).length;
 
