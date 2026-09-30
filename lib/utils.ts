@@ -10,7 +10,11 @@ export function formatDate(value: string) {
 }
 
 export function sortContests(items: Contest[]) {
-  return [...items].sort((a, b) => statusOrder[a.status] - statusOrder[b.status] || b.lastVerifiedAt.localeCompare(a.lastVerifiedAt));
+  // o concurso marcado como destaque no Notion abre a lista; depois vale o
+  // estagio do certame e, por ultimo, quem foi verificado mais recentemente
+  return [...items].sort((a, b) => Number(Boolean(b.strip)) - Number(Boolean(a.strip))
+    || statusOrder[a.status] - statusOrder[b.status]
+    || b.lastVerifiedAt.localeCompare(a.lastVerifiedAt));
 }
 
 export function normalizeSearch(value: string) {

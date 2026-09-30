@@ -89,6 +89,8 @@ export async function getNotionContests(courses: CourseProduct[]): Promise<Conte
         if (matchedCourse) relatedCourses.push(matchedCourse);
       }
       const sourceUrl = readUrl(properties["Fonte oficial"]);
+      const naFaixa = readCheckbox(properties["Destaque na faixa"]);
+      const textoFaixa = plainText((properties["Texto da faixa"] as { rich_text?: unknown })?.rich_text);
 
       contests.push({
         id: (page as { id: string }).id,
@@ -112,6 +114,7 @@ export async function getNotionContests(courses: CourseProduct[]): Promise<Conte
         sourceUrl,
         lastVerifiedAt,
         publishedAt: readDate(properties["Data de publicação"]) || lastVerifiedAt,
+        strip: naFaixa && textoFaixa ? { text: textoFaixa, href: readUrl(properties["Link da faixa"]) || `/concursos/${slug}` } : null,
         product: relatedCourses[0] ?? null,
         products: relatedCourses,
       });

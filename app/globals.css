@@ -1045,3 +1045,14 @@ button,input,select,textarea { font: inherit; }
 
 @media (max-width:520px) { .zap-button{width:50px;height:50px}.zap-bubble{width:min(14rem,58vw)} }
 @media (prefers-reduced-motion:reduce) { .zap-ping{animation:none;opacity:0}.zap-bubble{transition:opacity .2s ease} }
+
+/* faixa do concurso em destaque, acima do cabecalho */
+.contest-strip { position:relative; display:flex; align-items:center; justify-content:center; gap:.5rem; padding:.55rem clamp(2.4rem,6vw,3.2rem) .55rem clamp(.9rem,3vw,1.4rem); border-bottom:1px solid rgba(201,174,122,.34); background:linear-gradient(95deg,rgba(175,146,86,.22),rgba(12,12,15,.96) 55%,rgba(175,146,86,.18)); }
+.contest-strip-link { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:.5rem .75rem; min-height:26px; text-align:center; }
+.contest-strip-tag { display:inline-flex; align-items:center; gap:.35rem; padding:.2rem .55rem; border:1px solid var(--gold); border-radius:999px; color:#17130b; background:linear-gradient(145deg,var(--gold-pale),var(--gold)); font:700 .62rem var(--font-ui); letter-spacing:.12em; text-transform:uppercase; white-space:nowrap; }
+.contest-strip-text { color:var(--text); font:600 .82rem var(--font-ui); }
+.contest-strip-cta { display:inline-flex; align-items:center; gap:.3rem; color:var(--gold-pale); font:700 .72rem var(--font-ui); letter-spacing:.06em; text-transform:uppercase; white-space:nowrap; }
+.contest-strip-link:hover .contest-strip-cta { color:var(--gold-light); }
+.contest-strip>button { position:absolute; top:50%; right:clamp(.5rem,2vw,1rem); display:grid; width:24px; height:24px; place-items:center; padding:0; border:0; border-radius:50%; background:transparent; color:var(--text-muted); cursor:pointer; transform:translateY(-50%); }
+.contest-strip>button:hover { color:var(--text); background:rgba(255,255,255,.08); }
+@media (max-width:640px) { .contest-strip-text{font-size:.76rem}.contest-strip-cta{display:none} }

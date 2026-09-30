@@ -80,6 +80,8 @@ export type Contest = {
   sourceUrl: string;
   lastVerifiedAt: string;
   publishedAt: string;
+  /** Marcado no Notion: vira a faixa de destaque no topo do site. */
+  strip: { text: string; href: string } | null;
   product?: Product | null;
   products?: Product[];
 };

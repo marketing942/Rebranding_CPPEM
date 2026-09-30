@@ -27,7 +27,7 @@ export const fallbackContests: Contest[] = [
     contentMd: "O concurso da **PMPE** integra o novo ciclo de segurança pública de Pernambuco. A preparação antecipada permite construir base nas disciplinas mais recorrentes antes da publicação do edital.",
     requirements: ["Ensino médio para Soldado", "Idade e requisitos físicos conforme edital", "CNH na categoria exigida"],
     stages: ["Prova objetiva", "Exames médicos", "Teste de aptidão física", "Avaliação psicológica e investigação social"],
-    sourceLabel: "Governo de Pernambuco", sourceUrl: "https://www.pe.gov.br/", lastVerifiedAt: "2026-08-22", publishedAt: "2026-08-10", product: fallbackProducts[0],
+    sourceLabel: "Governo de Pernambuco", sourceUrl: "https://www.pe.gov.br/", lastVerifiedAt: "2026-08-22", publishedAt: "2026-08-10", strip: null, product: fallbackProducts[0],
   },
   {
     id: "c2", slug: "pcpe-policia-civil-pernambuco", title: "Polícia Civil de Pernambuco", acronym: "PCPE",
@@ -37,7 +37,7 @@ export const fallbackContests: Contest[] = [
     contentMd: "A autorização abre uma janela importante para iniciar uma preparação consistente para a **PCPE**, especialmente nas disciplinas jurídicas e básicas.",
     requirements: ["Nível superior conforme o cargo", "CNH conforme o futuro edital"],
     stages: ["Prova objetiva", "Prova discursiva", "Exames médicos", "Investigação social", "Curso de formação"],
-    sourceLabel: "Governo de Pernambuco", sourceUrl: "https://www.pe.gov.br/", lastVerifiedAt: "2026-08-22", publishedAt: "2026-08-09", product: fallbackProducts[1],
+    sourceLabel: "Governo de Pernambuco", sourceUrl: "https://www.pe.gov.br/", lastVerifiedAt: "2026-08-22", publishedAt: "2026-08-09", strip: null, product: fallbackProducts[1],
   },
   {
     id: "c3", slug: "pcal-policia-civil-alagoas", title: "Polícia Civil de Alagoas", acronym: "PCAL",
@@ -46,14 +46,14 @@ export const fallbackContests: Contest[] = [
     summary: "Concurso previsto; acompanhe a evolução e os próximos atos oficiais.",
     contentMd: "O próximo concurso da **PCAL** está em acompanhamento editorial. Os dados serão atualizados somente a partir de fontes oficiais.",
     requirements: ["Nível superior conforme o futuro edital"], stages: ["Etapas a confirmar no edital"],
-    sourceLabel: "Governo de Alagoas", sourceUrl: "https://alagoas.al.gov.br/", lastVerifiedAt: "2026-08-18", publishedAt: "2026-08-05", product: null,
+    sourceLabel: "Governo de Alagoas", sourceUrl: "https://alagoas.al.gov.br/", lastVerifiedAt: "2026-08-18", publishedAt: "2026-08-05", strip: null, product: null,
   },
   {
     id: "c4", slug: "pmba-policia-militar-bahia", title: "Polícia Militar da Bahia", acronym: "PMBA",
     organization: "Polícia Militar da Bahia", career: "Polícia Militar", status: "previsto", states: ["BA"], scope: "estadual",
     openings: "A definir", salary: "Conforme novo edital", examBoard: "A definir", positions: ["Soldado"],
     summary: "Oportunidade acompanhada pela equipe editorial do CPPEM.", contentMd: "A página será atualizada conforme novos atos oficiais forem divulgados.",
-    requirements: ["A confirmar"], stages: ["A confirmar"], sourceLabel: "Governo da Bahia", sourceUrl: "https://www.ba.gov.br/", lastVerifiedAt: "2026-08-17", publishedAt: "2026-08-01", product: null,
+    requirements: ["A confirmar"], stages: ["A confirmar"], sourceLabel: "Governo da Bahia", sourceUrl: "https://www.ba.gov.br/", lastVerifiedAt: "2026-08-17", publishedAt: "2026-08-01", strip: null, product: null,
   },
 ];
 

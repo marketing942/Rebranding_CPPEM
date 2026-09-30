@@ -42,7 +42,11 @@ export function BrazilMap({ contests, features, compact = false, selectedState, 
         const active = activeStates.has(state as typeof northeastStates[number]);
         const d = path?.(feature) ?? undefined;
         if (!state || !d) return null;
-        const [cx,cy] = path!.centroid(feature);
+        // servidor e navegador divergem no ultimo digito do centroide e o React
+        // acusa erro de hidratacao: duas casas ja posicionam o rotulo
+        const [cxBruto, cyBruto] = path!.centroid(feature);
+        const cx = Math.round(cxBruto * 100) / 100;
+        const cy = Math.round(cyBruto * 100) / 100;
         return <g key={state}>
           <path d={d} className={`map-state ${active ? "map-state-active" : ""} ${selected === state ? "map-state-selected" : ""}`} role={active ? "button" : undefined} tabIndex={active ? 0 : undefined} aria-label={active ? `${stateNames[state]}, selecionar estado` : `${stateNames[state]}, expansão futura`} aria-pressed={active ? selected === state : undefined} onClick={() => active && selectState(state)} onKeyDown={(event) => { if (active && (event.key === "Enter" || event.key === " ")) { event.preventDefault(); selectState(state); } }}><title>{stateNames[state]}</title></path>
           {active && <text x={cx} y={cy + 3} textAnchor="middle" fill={selected === state ? "#0a0a0b" : "#f0dcb0"} fontSize="9" fontWeight="700" pointerEvents="none">{state}</text>}
