@@ -62,18 +62,22 @@ export function CronogramaDevices() {
       <div className="crono-ipad">
         <Image
           className="crono-ipad-frame"
-          src="/images/cronograma-ipad-3d.png"
+          src="/images/cronograma-ipad-3d.webp"
           alt="iPad exibindo o cronograma semanal personalizado do CPPEM"
           width={1536}
           height={1024}
           sizes="(max-width: 900px) 92vw, 48vw"
+          unoptimized
+          draggable={false}
         />
         <div className="crono-ipad-display">
           <Image
-            src="/images/cronograma-ipad-screen-v2.png"
+            src="/images/cronograma-ipad-screen-v2.webp"
             alt="Cronograma CPPEM com missões, horas estudadas, feedback e plano de ação"
             fill
             sizes="(max-width: 900px) 78vw, 39vw"
+            unoptimized
+            draggable={false}
           />
           <span className="crono-glass-reflection" aria-hidden="true" />
         </div>
@@ -82,11 +86,13 @@ export function CronogramaDevices() {
       <div className="crono-phone">
         <Image
           className="crono-phone-frame"
-          src="/images/cronograma-phone-3d.png"
+          src="/images/cronograma-phone-3d.webp"
           alt="Smartphone exibindo o ajuste de horas do Plano de Combate CPPEM"
           width={1024}
           height={1536}
           sizes="(max-width: 900px) 34vw, 17vw"
+          unoptimized
+          draggable={false}
         />
         <div className="crono-phone-display">
           <Image
@@ -94,6 +100,8 @@ export function CronogramaDevices() {
             alt="Tela do Plano de Combate com a distribuição de horas de estudo por dia"
             fill
             sizes="(max-width: 900px) 26vw, 13vw"
+            unoptimized
+            draggable={false}
           />
           <span className="crono-glass-reflection" aria-hidden="true" />
         </div>

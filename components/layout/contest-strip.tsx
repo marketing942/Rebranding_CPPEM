@@ -1,20 +1,15 @@
 import "server-only";
 import { getContests } from "@/lib/data";
 import { statusLabels } from "@/lib/constants";
-import { ContestStripClient } from "@/components/layout/contest-strip-client";
+
+export type FaixaDestaque = { etiqueta: string; texto: string; href: string };
 
 /**
- * Faixa do concurso em destaque. Quem liga e escreve e a equipe, pelas colunas
- * "Destaque na faixa", "Texto da faixa" e "Link da faixa" da base de concursos:
- * desmarcou, a faixa some do site inteiro sem precisar de deploy.
+ * Concurso marcado em "Destaque na faixa" na base de concursos. A equipe liga,
+ * escreve e escolhe o link pelo Notion: desmarcou, a faixa some do site todo.
  */
-export async function ContestStrip() {
+export async function getFaixaDestaque(): Promise<FaixaDestaque | null> {
   const emDestaque = (await getContests()).find((contest) => contest.strip);
   if (!emDestaque?.strip) return null;
-
-  return <ContestStripClient
-    etiqueta={statusLabels[emDestaque.status]}
-    texto={emDestaque.strip.text}
-    href={emDestaque.strip.href}
-  />;
+  return { etiqueta: statusLabels[emDestaque.status], texto: emDestaque.strip.text, href: emDestaque.strip.href };
 }

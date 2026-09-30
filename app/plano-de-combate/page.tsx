@@ -6,7 +6,9 @@ import {
   CalendarCheck2,
   CheckCircle2,
   ClipboardCheck,
+  Crown,
   FileText,
+  Layers,
   Medal,
   MessageCircle,
   PlayCircle,
@@ -41,11 +43,12 @@ const plans = [
     eyebrow: "Entrada estratégica",
     name: "Operacional",
     description: "Para quem precisa sair da desorganização e começar a executar uma rotina inteligente.",
-    monthlyPrice: "R$ 61,00",
-    fullPrice: "R$ 732 à vista",
+    installment: 61.0,
+    cash: 732,
     href: "https://pxa.cppem.com.br/lt/plano-de-combate-operacional",
     cta: "Quero o Operacional",
     featured: false,
+    ribbon: null,
     features: [
       "Cronograma personalizado e individualizado",
       "Metas diárias com videoaulas, PDFs e questões",
@@ -59,11 +62,12 @@ const plans = [
     eyebrow: "Mais escolhido",
     name: "Tático",
     description: "Para quem quer unir planejamento, conteúdo completo e contato recorrente com os mentores.",
-    monthlyPrice: "R$ 104,02",
-    fullPrice: "R$ 997 à vista",
+    installment: 104.02,
+    cash: 997,
     href: "https://pxa.cppem.com.br/lt/plano-de-combate-tatico",
     cta: "Quero o Tático",
-    featured: true,
+    featured: false,
+    ribbon: null,
     features: [
       "Tudo do Plano Operacional",
       "Mentorias ao vivo mensais",
@@ -77,11 +81,12 @@ const plans = [
     eyebrow: "Arsenal completo",
     name: "Supremo",
     description: "Para quem busca o nível máximo de acompanhamento e materiais estratégicos CPPEM.",
-    monthlyPrice: "R$ 208,35",
-    fullPrice: "R$ 1.997 à vista",
+    installment: 208.35,
+    cash: 1997,
     href: "https://pxa.cppem.com.br/lt/plano-de-combate-supremo",
     cta: "Quero o Supremo",
-    featured: false,
+    featured: true,
+    ribbon: "Nível máximo",
     features: [
       "Tudo dos planos Operacional e Tático",
       "Acesso a matérias extras",
@@ -92,6 +97,53 @@ const plans = [
     ],
   },
 ] as const;
+
+const moeda = (valor: number, casas = 2) => valor.toLocaleString("pt-BR", { minimumFractionDigits: casas, maximumFractionDigits: casas });
+
+// quantos beneficios cada plano herda dos de baixo: conta a partir da propria lista
+const beneficiosHerdados = (indice: number) => plans.slice(0, indice)
+  .reduce((total, plano) => total + plano.features.filter((item) => !item.startsWith("Tudo d")).length, 0);
+
+function PlanCard({ plan }: { plan: (typeof plans)[number] }) {
+  const indice = plans.indexOf(plan);
+  const [heranca, ...proprios] = plan.features;
+  const herda = heranca.startsWith("Tudo d");
+  const parcelado = plan.installment * 12;
+  const economia = parcelado - plan.cash;
+  const desconto = Math.round((economia / parcelado) * 100);
+  const temDesconto = economia >= 1;
+
+  return <article className={`combat-plan-card${plan.featured ? " featured" : ""}`}>
+    {plan.ribbon && <span className="combat-plan-ribbon"><Crown size={13}/>{plan.ribbon}</span>}
+    <small>{plan.eyebrow}</small>
+    <h3>Plano {plan.name}</h3>
+    <p>{plan.description}</p>
+
+    {herda && <div className="combat-plan-inherit">
+      <Layers size={20}/>
+      <span><strong>{heranca}</strong><small>{beneficiosHerdados(indice)} benefícios já inclusos</small></span>
+    </div>}
+
+    <ul>{(herda ? proprios : plan.features).map((feature)=><li key={feature}><CheckCircle2 size={17}/><span>{feature}</span></li>)}</ul>
+
+    <div className="combat-plan-price">
+      {temDesconto
+        ? <span className="combat-plan-discount">{desconto}% OFF à vista</span>
+        : <span className="combat-plan-discount combat-plan-discount-soft">12x sem juros</span>}
+      <span className="combat-plan-installment">12x de</span>
+      <strong>R$ {moeda(plan.installment)}</strong>
+      {temDesconto
+        ? <div className="combat-plan-cash">
+            <del>R$ {moeda(parcelado)} no cartão</del>
+            <b>R$ {moeda(plan.cash, 0)} à vista</b>
+            <em>Economize R$ {moeda(economia, 0)}</em>
+          </div>
+        : <div className="combat-plan-cash"><b>ou R$ {moeda(plan.cash, 0)} à vista</b></div>}
+    </div>
+
+    <a className={plan.featured?"gold-button":"ghost-button"} href={plan.href} target="_blank" rel="noreferrer">{plan.cta}<ArrowRight size={17}/></a>
+  </article>;
+}
 
 export default function PlanoDeCombatePage() {
   return <div className="page-shell combat-page"><SiteHeader /><main>
@@ -139,6 +191,6 @@ export default function PlanoDeCombatePage() {
       ["03","Você deixa de caminhar sem feedback","A equipe identifica desvios e ajuda a ajustar a rota."],
     ].map(([number,title,copy])=><article key={number}><span>{number}</span><div><h3>{title}</h3><p>{copy}</p></div></article>)}</div></div></section>
 
-    <section className="combat-plans-section" id="planos"><div className="container"><div className="combat-centered-heading"><span className="eyebrow">Escolha sua estratégia</span><h2 className="display-title">Três níveis. <span className="gold">Uma missão.</span></h2><p>Entre pelo caminho que combina com a profundidade de acompanhamento que você busca hoje.</p></div><div className="combat-plans-grid">{plans.map((plan)=><article className={`combat-plan-card${plan.featured ? " featured" : ""}`} key={plan.name}>{plan.featured&&<span className="combat-plan-ribbon">Mais escolhido</span>}<small>{plan.eyebrow}</small><h3>Plano {plan.name}</h3><p>{plan.description}</p><ul>{plan.features.map(feature=><li key={feature}><CheckCircle2 size={17}/><span>{feature}</span></li>)}</ul><div className="combat-plan-price"><span>Mensalidade de</span><strong>{plan.monthlyPrice}</strong><small>ou {plan.fullPrice}</small></div><a className={plan.featured?"gold-button":"ghost-button"} href={plan.href} target="_blank" rel="noreferrer">{plan.cta}<ArrowRight size={17}/></a></article>)}</div><p className="combat-plan-note">Os valores e condições exibidos correspondem às ofertas atuais cadastradas no site CPPEM. A confirmação final acontece na página de contratação.</p></div></section>
+    <section className="combat-plans-section" id="planos"><div className="container"><div className="combat-centered-heading"><span className="eyebrow">Escolha sua estratégia</span><h2 className="display-title">Três níveis. <span className="gold">Uma missão.</span></h2><p>Entre pelo caminho que combina com a profundidade de acompanhamento que você busca hoje.</p></div><div className="combat-plans-grid">{plans.map((plan)=><PlanCard plan={plan} key={plan.name}/>)}</div><p className="combat-plan-note">Os valores e condições exibidos correspondem às ofertas atuais cadastradas no site CPPEM. A confirmação final acontece na página de contratação.</p></div></section>
   </main><SiteFooter/></div>;
 }

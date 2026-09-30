@@ -523,15 +523,17 @@ button,input,select,textarea { font: inherit; }
 @keyframes crono-screen-sheen { 0%,22%{left:-45%;opacity:0}35%{opacity:.9}58%,100%{left:125%;opacity:0} }
 
 @media (max-width:900px) {
-  .crono-scene { width:108%; margin-inline:-4%; aspect-ratio:4/3.35; perspective:1100px; }
-  .crono-ipad { top:5%; left:-2%; width:98%; }
-  .crono-phone { top:27%; right:-1%; width:32%; }
-  .crono-chip-status { top:10%; right:1%; }
-  .crono-chip-hours { bottom:8%; left:2%; }
+  .crono-scene { width:100%; margin-inline:0; aspect-ratio:4/3.28; perspective:1100px; }
+  .crono-ipad { top:5%; left:0; width:96%; }
+  .crono-phone { top:27%; right:0; width:31%; }
+  .crono-chip-status { top:10%; right:0; }
+  .crono-chip-hours { bottom:7%; left:1%; }
 }
 @media (max-width:520px) {
-  .crono-scene { width:112%; margin-inline:-6%; aspect-ratio:4/3.6; }
-  .crono-phone { top:29%; right:-4%; width:35%; }
+  .crono-scene { width:100%; margin-inline:0; aspect-ratio:4/3.45; }
+  .crono-ipad { top:6%; left:0; width:97%; }
+  .crono-phone { top:29%; right:0; width:32%; }
+  .crono-chip-hours { bottom:3%; left:0; transform:translate3d(0,6px,80px); }
   .crono-chip-status { display:none; }
 }
 @media (prefers-reduced-motion:reduce) {
@@ -1090,13 +1092,56 @@ button,input,select,textarea { font: inherit; }
 @media (max-width:520px) { .zap-button{width:50px;height:50px}.zap-bubble{width:min(14rem,58vw)} }
 @media (prefers-reduced-motion:reduce) { .zap-ping{animation:none;opacity:0}.zap-bubble{transition:opacity .2s ease} }
 
-/* faixa do concurso em destaque, acima do cabecalho */
-.contest-strip { position:relative; display:flex; align-items:center; justify-content:center; gap:.5rem; padding:.55rem clamp(2.4rem,6vw,3.2rem) .55rem clamp(.9rem,3vw,1.4rem); border-bottom:1px solid rgba(201,174,122,.34); background:linear-gradient(95deg,rgba(175,146,86,.22),rgba(12,12,15,.96) 55%,rgba(175,146,86,.18)); }
-.contest-strip-link { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:.5rem .75rem; min-height:26px; text-align:center; }
-.contest-strip-tag { display:inline-flex; align-items:center; gap:.35rem; padding:.2rem .55rem; border:1px solid var(--gold); border-radius:999px; color:#17130b; background:linear-gradient(145deg,var(--gold-pale),var(--gold)); font:700 .62rem var(--font-ui); letter-spacing:.12em; text-transform:uppercase; white-space:nowrap; }
-.contest-strip-text { color:var(--text); font:600 .82rem var(--font-ui); }
-.contest-strip-cta { display:inline-flex; align-items:center; gap:.3rem; color:var(--gold-pale); font:700 .72rem var(--font-ui); letter-spacing:.06em; text-transform:uppercase; white-space:nowrap; }
-.contest-strip-link:hover .contest-strip-cta { color:var(--gold-light); }
-.contest-strip>button { position:absolute; top:50%; right:clamp(.5rem,2vw,1rem); display:grid; width:24px; height:24px; place-items:center; padding:0; border:0; border-radius:50%; background:transparent; color:var(--text-muted); cursor:pointer; transform:translateY(-50%); }
-.contest-strip>button:hover { color:var(--text); background:rgba(255,255,255,.08); }
-@media (max-width:640px) { .contest-strip-text{font-size:.76rem}.contest-strip-cta{display:none} }
+/* faixa do concurso em destaque: vermelha, pulsando, presa ao cabecalho fixo */
+.contest-strip { position:relative; display:flex; align-items:center; justify-content:center; padding:.5rem clamp(2.4rem,6vw,3.2rem) .5rem clamp(.9rem,3vw,1.4rem); border-top:1px solid rgba(255,255,255,.08); background:linear-gradient(90deg,#6f1414,#b91c1c 50%,#6f1414); background-size:200% 100%; animation:faixa-fundo 6s ease-in-out infinite,faixa-pulso 1.6s ease-in-out infinite; }
+.contest-strip-link { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:.4rem .8rem; min-height:26px; text-align:center; }
+.contest-strip-tag { display:inline-flex; align-items:center; gap:.4rem; padding:.22rem .6rem; border-radius:999px; color:#b91c1c; background:#fff; font:800 .62rem var(--font-ui); letter-spacing:.12em; text-transform:uppercase; white-space:nowrap; box-shadow:0 0 0 0 rgba(255,255,255,.6); animation:faixa-selo 1.6s ease-in-out infinite; }
+.contest-strip-tag::before { content:""; width:7px; height:7px; border-radius:50%; background:#dc2626; animation:faixa-ponto 1s steps(2,start) infinite; }
+.contest-strip-tag svg { display:none; }
+.contest-strip-text { color:#fff; font:700 .84rem var(--font-ui); letter-spacing:.01em; text-shadow:0 1px 2px rgba(0,0,0,.35); }
+.contest-strip-cta { display:inline-flex; align-items:center; gap:.3rem; padding:.2rem .6rem; border:1px solid rgba(255,255,255,.55); border-radius:.35rem; color:#fff; font:800 .7rem var(--font-ui); letter-spacing:.07em; text-transform:uppercase; white-space:nowrap; transition:background .2s ease,color .2s ease; }
+.contest-strip-link:hover .contest-strip-cta { color:#b91c1c; background:#fff; }
+.contest-strip>button { position:absolute; top:50%; right:clamp(.5rem,2vw,1rem); display:grid; width:24px; height:24px; place-items:center; padding:0; border:0; border-radius:50%; background:transparent; color:rgba(255,255,255,.75); cursor:pointer; transform:translateY(-50%); }
+.contest-strip>button:hover { color:#fff; background:rgba(255,255,255,.14); }
+@keyframes faixa-fundo { 0%,100% { background-position:0% 50%; } 50% { background-position:100% 50%; } }
+@keyframes faixa-pulso { 0%,100% { box-shadow:inset 0 0 0 rgba(255,80,80,0),0 6px 18px rgba(185,28,28,.25); } 50% { box-shadow:inset 0 0 22px rgba(255,120,120,.35),0 6px 26px rgba(220,38,38,.55); } }
+@keyframes faixa-selo { 0%,100% { box-shadow:0 0 0 0 rgba(255,255,255,.55); } 60% { box-shadow:0 0 0 7px rgba(255,255,255,0); } }
+@keyframes faixa-ponto { to { visibility:hidden; } }
+@media (max-width:640px) { .contest-strip{padding-block:.45rem}.contest-strip-text{font-size:.74rem}.contest-strip-cta{display:none} }
+@media (prefers-reduced-motion:reduce) { .contest-strip,.contest-strip-tag,.contest-strip-tag::before { animation:none; } }
+
+/* planos: Supremo em primeiro plano, heranca dos planos de baixo e desconto a vista */
+.combat-plans-grid { align-items:end; }
+.combat-plan-card.featured { z-index:1; border-color:var(--gold-light); background:radial-gradient(420px 260px at 50% 0%,rgba(201,174,122,.2),transparent 70%),linear-gradient(150deg,#1d1b17,#111013 72%); box-shadow:0 0 0 1px rgba(201,174,122,.25),0 30px 90px rgba(175,146,86,.22),0 0 60px rgba(175,146,86,.12); transform:translateY(-18px) scale(1.035); }
+.combat-plan-card.featured::before { content:""; position:absolute; inset:-1px; z-index:-1; border-radius:inherit; padding:1px; background:conic-gradient(from var(--giro-borda,0deg),transparent 0 70%,var(--gold-pale) 82%,transparent 94%); -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask-composite:exclude; animation:combat-borda 5s linear infinite; }
+@property --giro-borda { syntax:"<angle>"; initial-value:0deg; inherits:false; }
+@keyframes combat-borda { to { --giro-borda:360deg; } }
+.combat-plan-card.featured h3 { background:linear-gradient(135deg,#fff3d6,var(--gold-pale) 45%,var(--gold)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.combat-plan-ribbon { display:inline-flex; align-items:center; gap:.35rem; background:linear-gradient(145deg,var(--gold-pale),var(--gold)); box-shadow:0 8px 20px rgba(175,146,86,.35); }
+
+.combat-plan-inherit { display:flex; align-items:center; gap:.75rem; margin-top:1.2rem; padding:.85rem .95rem; border:1px solid var(--border-active); border-radius:.6rem; background:linear-gradient(120deg,rgba(175,146,86,.14),rgba(175,146,86,.03)); }
+.combat-plan-inherit>svg { flex:0 0 auto; color:var(--gold-light); }
+.combat-plan-inherit strong { display:block; color:var(--text); font:700 .8rem/1.3 var(--font-ui); letter-spacing:.03em; text-transform:uppercase; }
+.combat-plan-inherit small { display:block; margin-top:.2rem; color:var(--gold-light); font:700 .62rem var(--font-ui); letter-spacing:.1em; text-transform:uppercase; }
+.combat-plan-card.featured .combat-plan-inherit { position:relative; overflow:hidden; border-color:var(--gold-light); background:linear-gradient(120deg,rgba(201,174,122,.3),rgba(175,146,86,.08) 70%); box-shadow:0 10px 30px rgba(175,146,86,.18); }
+.combat-plan-card.featured .combat-plan-inherit>svg { color:var(--gold-pale); filter:drop-shadow(0 0 6px rgba(232,213,168,.6)); }
+.combat-plan-card.featured .combat-plan-inherit strong { color:#fff3d6; font-size:.86rem; }
+.combat-plan-card.featured .combat-plan-inherit::after { content:""; position:absolute; top:0; left:-60%; width:40%; height:100%; background:linear-gradient(100deg,transparent,rgba(255,243,214,.28),transparent); animation:combat-brilho 3.6s ease-in-out infinite; }
+@keyframes combat-brilho { 0%,55% { left:-60%; } 100% { left:130%; } }
+.combat-plan-card ul { margin-top:1.1rem; }
+
+.combat-plan-price { position:relative; padding-top:1.35rem; }
+.combat-plan-price>.combat-plan-discount { position:absolute; top:0; left:50%; padding:.28rem .7rem; border-radius:999px; color:#fff; background:linear-gradient(145deg,#ef4444,#b91c1c); box-shadow:0 6px 16px rgba(239,68,68,.35); font:800 .66rem var(--font-ui); letter-spacing:.1em; text-transform:uppercase; white-space:nowrap; transform:translate(-50%,-50%); }
+.combat-plan-price>.combat-plan-discount-soft { color:#17130b; background:linear-gradient(145deg,var(--gold-pale),var(--gold)); box-shadow:0 6px 16px rgba(175,146,86,.3); }
+.combat-plan-installment { color:var(--text-muted); font:700 .61rem var(--font-ui); letter-spacing:.08em; text-transform:uppercase; }
+.combat-plan-cash { display:grid; gap:.2rem; margin-top:.55rem; padding-top:.6rem; border-top:1px dashed var(--border); }
+.combat-plan-cash del { color:var(--text-muted); font:600 .7rem var(--font-ui); }
+.combat-plan-cash b { color:var(--text); font:700 1.05rem var(--font-display); }
+.combat-plan-cash em { justify-self:center; margin-top:.15rem; padding:.2rem .6rem; border-radius:.35rem; color:#4ade80; background:rgba(74,222,128,.1); font:700 normal .7rem var(--font-ui); letter-spacing:.04em; text-transform:uppercase; }
+.combat-plan-card.featured .combat-plan-price { border-color:var(--gold-light); background:rgba(175,146,86,.08); }
+.combat-plan-card.featured .combat-plan-price strong { font-size:2.5rem; }
+
+@media (max-width:980px) { .combat-plan-card.featured { transform:none; } }
+/* no celular os planos viram carrossel: o Supremo abre a fila, senao so aparece no terceiro deslize */
+@media (max-width:720px) { .combat-plan-card.featured { order:-1; } }
+@media (prefers-reduced-motion:reduce) { .combat-plan-card.featured::before,.combat-plan-card.featured .combat-plan-inherit::after { animation:none; } }

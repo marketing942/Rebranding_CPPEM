@@ -2,9 +2,10 @@ import { SiteHeaderClient } from "@/components/layout/site-header-client";
 import { getCourseProducts } from "@/lib/data";
 import { getFreeMaterials } from "@/lib/notion/free-content";
 import { getEcosystemItems } from "@/lib/notion/ecosystem";
+import { getFaixaDestaque } from "@/components/layout/contest-strip";
 
 export async function SiteHeader() {
-  const [products, materials, ecosystemItems] = await Promise.all([getCourseProducts(), getFreeMaterials(), getEcosystemItems()]);
+  const [products, materials, ecosystemItems, faixa] = await Promise.all([getCourseProducts(), getFreeMaterials(), getEcosystemItems(), getFaixaDestaque()]);
   const featuredCourses = products
     .filter((product) => product.menuFeatured)
     .sort((a, b) => (a.menuOrder ?? Number.MAX_SAFE_INTEGER) - (b.menuOrder ?? Number.MAX_SAFE_INTEGER))
@@ -20,5 +21,5 @@ export async function SiteHeader() {
     return contagem;
   }, {});
 
-  return <SiteHeaderClient featuredCourses={featuredCourses} featuredMaterials={featuredMaterials} ecosystemItems={ecosystemItems} storeCounts={storeCounts} storeTotal={products.length} />;
+  return <SiteHeaderClient featuredCourses={featuredCourses} featuredMaterials={featuredMaterials} ecosystemItems={ecosystemItems} storeCounts={storeCounts} storeTotal={products.length} faixa={faixa} />;
 }

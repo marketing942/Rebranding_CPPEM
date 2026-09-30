@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Oxanium, Rajdhani } from "next/font/google";
 import "./globals.css";
-import { ContestStrip } from "@/components/layout/contest-strip";
 import { WhatsappFloat } from "@/components/layout/whatsapp-float";
 
 const inter = Inter({ variable: "--font-body", subsets: ["latin"] });
@@ -29,5 +28,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
-  return <html lang="pt-BR" className={`${inter.variable} ${oxanium.variable} ${rajdhani.variable}`}><body><ContestStrip />{children}<WhatsappFloat /></body></html>;
+  return <html lang="pt-BR" className={`${inter.variable} ${oxanium.variable} ${rajdhani.variable}`}><body>{children}<WhatsappFloat /></body></html>;
 }

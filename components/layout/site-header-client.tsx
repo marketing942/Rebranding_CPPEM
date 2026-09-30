@@ -9,6 +9,8 @@ import { courseCategories } from "@/lib/course-categories";
 import type { Product } from "@/types/content";
 import type { FreeMaterial } from "@/types/free-content";
 import type { EcosystemItem } from "@/types/ecosystem";
+import type { FaixaDestaque } from "@/components/layout/contest-strip";
+import { ContestStripClient } from "@/components/layout/contest-strip-client";
 
 const primaryAfterCourses = [
   ["Concursos", "/concursos"], ["Notícias", "/noticias"], ["Parceiros", "/parceiros"], ["Indique", "https://indica.cppem.com.br"],
@@ -41,7 +43,7 @@ const storeColumns: Array<{ titulo: string; icon: typeof BookOpen; itens: Array<
   ] },
 ];
 
-export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystemItems, storeCounts, storeTotal }: { featuredCourses: Product[]; featuredMaterials: FreeMaterial[]; ecosystemItems: EcosystemItem[]; storeCounts: Record<string, number>; storeTotal: number }) {
+export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystemItems, storeCounts, storeTotal, faixa }: { featuredCourses: Product[]; featuredMaterials: FreeMaterial[]; ecosystemItems: EcosystemItem[]; storeCounts: Record<string, number>; storeTotal: number; faixa: FaixaDestaque | null }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileCoursesOpen, setMobileCoursesOpen] = useState(false);
   const [mobileFreeOpen, setMobileFreeOpen] = useState(false);
@@ -108,6 +110,7 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
       <div className="header-actions"><Link className="header-action" href="https://plataforma.cppem.com.br">Login</Link><Link className="gold-button" href="/plano-de-combate">Plano de combate</Link></div>
       <button className="mobile-toggle" type="button" aria-label={mobileOpen ? "Fechar menu" : "Abrir menu"} aria-expanded={mobileOpen} onClick={() => setMobileOpen((value) => !value)}>{mobileOpen ? <X size={22} /> : <Menu size={22} />}</button>
     </div>
+    {faixa && <ContestStripClient etiqueta={faixa.etiqueta} texto={faixa.texto} href={faixa.href} />}
 
     <div className="courses-mega" id="courses-mega-menu" data-open={coursesOpen} aria-hidden={!coursesOpen}>
       <div className="container courses-mega-grid">
