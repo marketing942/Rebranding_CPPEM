@@ -14,7 +14,8 @@ import { AboutTicker } from "@/components/about/about-ticker";
 import { getBanners, getContests, getNews, getProducts } from "@/lib/data";
 import { approvedStudentImages } from "@/lib/mock-data";
 
-export const metadata: Metadata = { title: "Preparação para concursos policiais", alternates: { canonical: "/" } };
+// a aba da home mostra so a marca
+export const metadata: Metadata = { title: { absolute: "CPPEM CONCURSOS" }, alternates: { canonical: "/" } };
 export const revalidate = 300;
 
 export default async function HomePage() {

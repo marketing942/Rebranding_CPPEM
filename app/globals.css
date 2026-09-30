@@ -498,7 +498,7 @@ button,input,select,textarea { font: inherit; }
 .crono-scene.is-visible .crono-ipad { opacity:1; transform:translate3d(0,0,0) rotate(-2.5deg) scale(1); animation:crono-ipad-float 7.5s ease-in-out 1.05s infinite; }
 .crono-ipad-frame,.crono-phone-frame { position:relative; z-index:1; display:block; width:100%; height:auto; pointer-events:none; filter:drop-shadow(0 34px 34px rgba(0,0,0,.7)); }
 .crono-ipad-display { position:absolute; z-index:2; top:10.35%; right:12.35%; bottom:12.25%; left:12.9%; overflow:hidden; border-radius:3.2%/4.8%; background:#070709; clip-path:polygon(.6% 2.6%,98.7% 0,99.5% 98.2%,0 96.4%); box-shadow:inset 0 0 0 1px rgba(255,255,255,.08),0 0 30px rgba(175,146,86,.11); }
-.crono-ipad-display>img { width:100%!important; height:100%!important; object-fit:cover; object-position:50% 46%; transform:none; }
+.crono-ipad-display>img { width:100%!important; height:100%!important; object-fit:fill; object-position:center; transform:none; }
 .crono-glass-reflection { position:absolute; inset:0; z-index:3; pointer-events:none; background:linear-gradient(116deg,rgba(255,255,255,.16),rgba(255,255,255,.025) 17%,transparent 39%),linear-gradient(180deg,transparent 68%,rgba(175,146,86,.055)); mix-blend-mode:screen; }
 .crono-glass-reflection::after { content:""; position:absolute; top:-18%; left:-45%; width:28%; height:145%; background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent); transform:skewX(-14deg); animation:crono-screen-sheen 7s ease-in-out 2s infinite; }
 

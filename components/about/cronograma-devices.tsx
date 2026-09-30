@@ -70,7 +70,7 @@ export function CronogramaDevices() {
         />
         <div className="crono-ipad-display">
           <Image
-            src="/images/cronograma.png"
+            src="/images/cronograma-ipad-screen-v2.png"
             alt="Cronograma CPPEM com missões, horas estudadas, feedback e plano de ação"
             fill
             sizes="(max-width: 900px) 78vw, 39vw"

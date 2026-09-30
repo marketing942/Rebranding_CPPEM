@@ -105,7 +105,7 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
         <Link className="nav-link" href="/glossario">Glossário</Link>
         <button className="nav-link nav-dropdown-trigger" type="button" aria-expanded={freeOpen} aria-controls="free-mega-menu" onClick={() => freeOpen ? setFreeOpen(false) : openFree()} onMouseEnter={openFree} onFocus={openFree}>Gratuitos <ChevronDown size={14} aria-hidden="true" /></button>
       </nav>
-      <div className="header-actions"><Link className="header-action" href="https://mentoriaexito.tutory.com.br/login.php">Login</Link><Link className="gold-button" href="/plano-de-combate">Plano de combate</Link></div>
+      <div className="header-actions"><Link className="header-action" href="https://plataforma.cppem.com.br">Login</Link><Link className="gold-button" href="/plano-de-combate">Plano de combate</Link></div>
       <button className="mobile-toggle" type="button" aria-label={mobileOpen ? "Fechar menu" : "Abrir menu"} aria-expanded={mobileOpen} onClick={() => setMobileOpen((value) => !value)}>{mobileOpen ? <X size={22} /> : <Menu size={22} />}</button>
     </div>
 
@@ -196,7 +196,7 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
       <Link href="/glossario" onClick={closeMobile}>Glossário</Link>
       <button className="mobile-course-trigger" type="button" aria-expanded={mobileFreeOpen} onClick={() => setMobileFreeOpen((value) => !value)}>Gratuitos <ChevronDown size={16} /></button>
       <div className="mobile-course-links" data-open={mobileFreeOpen}>{free.map(({ label, href }) => <Link href={href} key={label} onClick={closeMobile}>{label}</Link>)}</div>
-      <Link href="https://mentoriaexito.tutory.com.br/login.php">Login</Link><Link className="gold-button" href="/plano-de-combate">Plano de combate</Link>
+      <Link href="https://plataforma.cppem.com.br">Login</Link><Link className="gold-button" href="/plano-de-combate">Plano de combate</Link>
     </nav>
   </header>;
 }

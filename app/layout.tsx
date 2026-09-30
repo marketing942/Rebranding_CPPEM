@@ -10,10 +10,22 @@ const rajdhani = Rajdhani({ variable: "--font-ui", subsets: ["latin"], weight: [
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://cppem.com.br"),
-  title: { default: "CPPEM Concursos", template: "%s | CPPEM" },
+  // a home mostra so a marca; as internas levam o nome da pagina antes dela
+  title: { default: "CPPEM CONCURSOS", template: "%s | CPPEM CONCURSOS" },
   description: "Preparação estratégica para concursos policiais, com direção, constância e acompanhamento.",
-  applicationName: "CPPEM Concursos",
-  openGraph: { title: "CPPEM Concursos", description: "A preparação começa antes do edital.", type: "website", locale: "pt_BR" },
+  applicationName: "CPPEM CONCURSOS",
+  openGraph: {
+    title: "CPPEM CONCURSOS",
+    siteName: "CPPEM CONCURSOS",
+    description: "Preparação estratégica para concursos policiais. A preparação começa antes do edital.",
+    type: "website",
+    locale: "pt_BR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CPPEM CONCURSOS",
+    description: "Preparação estratégica para concursos policiais. A preparação começa antes do edital.",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
