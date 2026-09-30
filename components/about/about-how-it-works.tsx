@@ -1,17 +1,13 @@
 import Image from "next/image";
 import { CronogramaDevices } from "@/components/about/cronograma-devices";
+import { MdtMethod } from "@/components/about/mdt-method";
 import Link from "next/link";
-import { ArrowRight, BrainCircuit, CalendarCheck2, Crosshair, ShieldCheck, Star, Users } from "lucide-react";
+import { ArrowRight, CalendarCheck2, Crosshair, Star, Users } from "lucide-react";
 
 // busca pelo nome, que cai na ficha do CPPEM no Maps; trocar pelo link curto do
 // perfil quando ele estiver em mãos
 const mapsUrl = "https://www.google.com/maps/search/?api=1&query=CPPEM+Caruaru+PE";
 
-const mdtPillars = [
-  { icon: BrainCircuit, tag: "MDT · 01", title: "Mentalidade", copy: "Antes do conteúdo vem a cabeça no lugar. Você entende o tamanho da disputa, aprende a lidar com a oscilação da motivação e passa a decidir pelo plano, não pelo humor do dia." },
-  { icon: ShieldCheck, tag: "MDT · 02", title: "Disciplina", copy: "Meta possível vira constância. O cronograma cobra o que cabe na sua semana real, e a plataforma registra o que foi cumprido para o esforço não depender de memória nem de promessa." },
-  { icon: Crosshair, tag: "MDT · 03", title: "Técnica", copy: "Conteúdo, questão e revisão na ordem certa, do jeito que a banca cobra. Aula para aprender, questão para fixar e revisão programada para não perder o que já foi conquistado." },
-] as const;
 
 export function AboutHowItWorks() {
   return <section className="about-how-section">
@@ -72,21 +68,8 @@ export function AboutHowItWorks() {
         </div>
       </article>
 
-      <article className="about-how-row about-how-row-method" data-side="right">
-        <div className="about-how-copy">
-          <span className="about-how-step">03 · O método</span>
-          <h3>Método <span className="gold">MDT:</span> mentalidade, disciplina e técnica.</h3>
-          <p>O MDT é a forma como o CPPEM ensina. Ele parte de uma constatação simples: quem não passa raramente parou por falta de conteúdo — parou por falta de cabeça, de constância ou de direção. As três frentes são trabalhadas na mesma semana, e não uma depois da outra.</p>
-          <p>Na prática, cada pilar tem entrega própria dentro da plataforma, e o painel de desempenho mostra qual deles está travando a sua evolução.</p>
-        </div>
-        <div className="about-how-visual">
-          <div className="about-mdt-stack">
-            {mdtPillars.map(({ icon: Icon, tag, title, copy }) => <article className="about-mdt-card" key={tag}>
-              <span className="about-mdt-icon"><Icon size={19} /></span>
-              <div><small>{tag}</small><h4>{title}</h4><p>{copy}</p></div>
-            </article>)}
-          </div>
-        </div>
+      <article className="about-how-row about-how-row-method" data-side="right" data-mdt="true">
+        <MdtMethod />
       </article>
     </div>
   </section>;
