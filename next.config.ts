@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // imagem Docker enxuta: o build gera um servidor Node autocontido
-  output: "standalone",
+  // imagem Docker enxuta: o build gera um servidor Node autocontido. Na Vercel
+  // (site de teste) o standalone quebra o build, e ela ja empacota sozinha.
+  output: process.env.VERCEL ? undefined : "standalone",
   async redirects() {
     return [
       { source: "/gratuito", destination: "/materiais-gratuitos", permanent: true },
