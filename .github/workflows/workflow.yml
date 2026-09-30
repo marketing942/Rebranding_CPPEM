@@ -11,9 +11,11 @@ env:
 
 jobs:
   build:
-    # so publica a partir do repositorio de producao: o mesmo codigo tambem vive
-    # no repositorio de teste (Vercel), onde nao ha imagem nem Portainer
-    if: github.repository == 'cppemsistemas/site-cppem'
+    # o mesmo codigo tambem vive no repositorio de teste (Vercel), onde nao ha
+    # imagem nem Portainer. A trava exclui o teste em vez de exigir o nome de
+    # producao: o repositorio de producao ja foi renomeado uma vez
+    # (cppemsistemas/site-cppem -> MV8Dev/MV8_SiteCppemConcursos)
+    if: github.repository != 'marketing942/Rebranding_CPPEM'
     runs-on: ubuntu-latest
     permissions:
       contents: read
