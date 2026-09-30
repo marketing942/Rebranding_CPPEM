@@ -3,7 +3,7 @@ import { unstable_cache } from "next/cache";
 import { createSupabasePublicClient } from "@/lib/supabase/public";
 
 const NEWS_TABLE = "noticias";
-const FALLBACK_IMAGE = "/images/bgnews.webp";
+const FALLBACK_IMAGE = "/images/noticias/cppem-news.webp";
 export const NEWS_PAGE_SIZE = 14;
 
 type RawNewsRow = Record<string, unknown>;
