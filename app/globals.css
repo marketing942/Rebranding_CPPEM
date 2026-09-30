@@ -1151,3 +1151,47 @@ button,input,select,textarea { font: inherit; }
 /* no celular os planos viram carrossel: o Supremo abre a fila, senao so aparece no terceiro deslize */
 @media (max-width:720px) { .combat-plan-card.featured { order:-1; } }
 @media (prefers-reduced-motion:reduce) { .combat-plan-card.featured::before,.combat-plan-card.featured .combat-plan-inherit::after { animation:none; } }
+
+/* ===== Eventos no menu: nome piscando + menu suspenso ===== */
+.nav-events { position:relative; gap:.4rem; color:#ffd9a0; animation:navEventsGlow 1.6s ease-in-out infinite; }
+.nav-events-dot { position:relative; display:inline-block; width:8px; height:8px; flex:0 0 auto; border-radius:50%; background:#ff3b3b; box-shadow:0 0 0 0 rgba(255,59,59,.7); animation:navEventsDot 1.6s ease-out infinite; }
+@keyframes navEventsGlow { 0%,100% { color:#ffd9a0; text-shadow:0 0 0 transparent; } 50% { color:#fff4de; text-shadow:0 0 14px rgba(255,190,110,.75); } }
+@keyframes navEventsDot { 0% { box-shadow:0 0 0 0 rgba(255,59,59,.7); } 70% { box-shadow:0 0 0 8px rgba(255,59,59,0); } 100% { box-shadow:0 0 0 0 rgba(255,59,59,0); } }
+.nav-events[aria-expanded="true"] { animation:none; color:var(--gold-pale); background:rgba(255,59,59,.1); }
+.mobile-course-trigger.nav-events>span { display:inline-flex; align-items:center; gap:.5rem; }
+@media (prefers-reduced-motion:reduce) { .nav-events,.nav-events-dot { animation:none; } }
+.events-mega[data-open="true"] { max-height:560px; }
+.events-mega-grid { display:grid; grid-template-columns:minmax(230px,.34fr) minmax(0,1fr); gap:1.5rem; padding-block:2.1rem; }
+.events-mega-intro { display:flex; flex-direction:column; justify-content:flex-end; gap:.8rem; padding:1.4rem; border:1px solid rgba(255,59,59,.35); border-radius:.8rem; background:radial-gradient(120% 90% at 0% 0%,rgba(198,40,40,.22),transparent 60%),linear-gradient(160deg,var(--surface-2),var(--surface)); }
+.events-mega-intro h2 { margin:0; font:700 1.8rem/1.02 var(--font-display); text-transform:uppercase; }
+.events-mega-intro p { margin:0; color:var(--text-soft); font-size:.85rem; line-height:1.5; }
+.events-mega-intro>a { display:inline-flex; align-items:center; gap:.4rem; margin-top:.3rem; color:var(--gold-light); font:700 .72rem var(--font-ui); letter-spacing:.08em; text-transform:uppercase; }
+.events-mega-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.8rem; }
+.events-mega-card { display:grid; grid-template-columns:150px minmax(0,1fr); overflow:hidden; border:1px solid var(--border); border-radius:.75rem; background:var(--surface); transition:border-color .2s ease,transform .2s ease; }
+.events-mega-card:hover { border-color:var(--border-active); transform:translateY(-2px); }
+.events-mega-card[data-featured="true"] { border-color:rgba(255,59,59,.45); }
+.events-mega-media { position:relative; display:grid; min-height:128px; place-items:center; overflow:hidden; background:#0b0b0e; }
+.events-mega-media img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.events-mega-date { position:absolute; top:.5rem; left:.5rem; display:grid; place-items:center; min-width:44px; padding:.3rem .4rem; border-radius:.4rem; color:#16130c; background:linear-gradient(150deg,var(--gold-pale),var(--gold)); font:700 .6rem/1 var(--font-ui); letter-spacing:.06em; text-transform:uppercase; }
+.events-mega-date strong { font:700 1.15rem/1 var(--font-display); }
+.events-mega-copy { display:grid; align-content:center; gap:.35rem; min-width:0; padding:.9rem 1rem; }
+.events-mega-copy small { justify-self:start; padding:.2rem .45rem; border-radius:.25rem; color:#bfe8c6; background:rgba(46,125,50,.25); font:700 .56rem var(--font-ui); letter-spacing:.1em; text-transform:uppercase; }
+.events-mega-copy small[data-status="Lista de espera"] { color:#ffd8a8; background:rgba(230,126,34,.2); }
+.events-mega-copy small[data-status="Em breve"] { color:#fff1b8; background:rgba(212,172,13,.18); }
+.events-mega-copy small[data-status="Ao vivo"] { color:#fff; background:#c62828; }
+.events-mega-copy small[data-status="Encerrado"] { color:var(--text-muted); background:rgba(255,255,255,.06); }
+.events-mega-copy strong { font:700 1rem/1.15 var(--font-display); text-transform:uppercase; }
+.events-mega-copy>span { display:flex; align-items:center; gap:.35rem; color:var(--text-muted); font-size:.74rem; }
+.events-mega-empty { grid-column:1/-1; margin:0; padding:1.5rem; border:1px dashed var(--border); border-radius:.75rem; color:var(--text-soft); }
+/* barra com Eventos: nada quebra linha; entre 1241 e 1440 fica compacta; abaixo disso vira o menu do celular */
+.nav-link,.nav-summary,.header-actions .gold-button,.header-action { white-space:nowrap; }
+@media (max-width:1440px) { .site-header-inner{gap:.9rem}.desktop-nav{margin-left:.25rem}.nav-link,.nav-summary{padding:.6rem .48rem;font-size:.74rem;letter-spacing:.03em}.header-actions .gold-button{padding-inline:.9rem;font-size:.74rem} }
+@media (max-width:1240px) { .desktop-nav,.header-actions,.courses-mega{display:none}.mobile-toggle{display:inline-flex}.mobile-panel[data-open="true"]{display:grid;gap:.35rem;padding:1rem;border-top:1px solid var(--border);background:#0c0c0e}.mobile-panel a{min-height:44px;display:flex;align-items:center;padding:.6rem .8rem;color:var(--text-soft);font:700 .88rem var(--font-ui);text-transform:uppercase} }
+/* cartoes do menu de eventos: imagem inteira em cima */
+.events-mega-list { grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); }
+.events-mega-card { grid-template-columns:1fr; grid-template-rows:auto 1fr; }
+.events-mega-media { min-height:0; aspect-ratio:16/9; }
+.events-mega-copy { align-content:start; }
+.events-mega[data-open="true"] { max-height:640px; }
+/* ecossistema com o QG: seis itens numa linha so */
+.ecosystem-mega .ecosystem-mega-links { grid-template-columns:repeat(6,minmax(0,1fr)); }

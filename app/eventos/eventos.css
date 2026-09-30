@@ -1,0 +1,62 @@
+/* ===== Eventos (/eventos) ===== */
+
+/* 1. topo */
+.events-hero { position:relative; overflow:hidden; padding:clamp(4.5rem,8vw,7rem) 0 clamp(3rem,5vw,4.5rem); border-bottom:1px solid var(--border); background:radial-gradient(55% 90% at 85% 0%,rgba(198,40,40,.2),transparent 65%),radial-gradient(50% 80% at 10% 100%,rgba(175,146,86,.1),transparent 70%),#09090a; }
+.events-hero-inner h1 { max-width:880px; margin:1rem 0 0; font:700 clamp(2.6rem,6vw,5.4rem)/.94 var(--font-display); letter-spacing:-.04em; text-transform:uppercase; }
+.events-hero-inner h1 span { color:var(--gold-light); }
+.events-hero-inner>p { max-width:640px; margin:1.3rem 0 0; color:var(--text-soft); font-size:1.05rem; line-height:1.65; }
+.events-hero-stats { display:flex; flex-wrap:wrap; align-items:center; gap:.7rem; margin-top:1.8rem; }
+.events-hero-stats>span { display:inline-flex; align-items:center; gap:.5rem; padding:.6rem .95rem; border:1px solid var(--border); border-radius:999px; background:rgba(17,17,21,.7); font-size:.88rem; }
+.events-hero-stats strong { color:var(--gold-light); font:700 1.1rem var(--font-display); }
+.events-live-chip { border-color:rgba(255,59,59,.45) !important; color:#ffd9a0; }
+
+/* etiquetas comuns */
+.events-tags { display:flex; flex-wrap:wrap; gap:.45rem; }
+.events-status,.events-label { padding:.3rem .6rem; border-radius:.3rem; font:700 .62rem var(--font-ui); letter-spacing:.1em; text-transform:uppercase; }
+.events-status { color:#bfe8c6; background:rgba(46,125,50,.28); }
+.events-status[data-status="Lista de espera"] { color:#ffd8a8; background:rgba(230,126,34,.22); }
+.events-status[data-status="Em breve"] { color:#fff1b8; background:rgba(212,172,13,.2); }
+.events-status[data-status="Ao vivo"] { color:#fff; background:#c62828; }
+.events-status[data-status="Encerrado"] { color:var(--text-muted); background:rgba(255,255,255,.06); }
+.events-label { color:var(--gold-light); border:1px solid var(--border-active); }
+.events-date-badge { position:absolute; top:.9rem; left:.9rem; display:grid; place-items:center; min-width:64px; padding:.45rem .55rem; border-radius:.5rem; color:#16130c; background:linear-gradient(150deg,var(--gold-pale),var(--gold) 60%,var(--gold-dark)); box-shadow:0 10px 30px rgba(0,0,0,.45); font:700 .7rem/1 var(--font-ui); letter-spacing:.08em; text-transform:uppercase; }
+.events-date-badge strong { font:700 1.7rem/1 var(--font-display); }
+.events-meta { display:grid; gap:.5rem; margin:0; padding:0; list-style:none; }
+.events-meta li { display:flex; align-items:center; gap:.55rem; color:var(--text-soft); font-size:.9rem; }
+.events-meta svg { flex:0 0 auto; color:var(--gold-light); }
+
+/* 2. destaque */
+.events-highlight-section { padding:clamp(3rem,6vw,5rem) 0; background:#09090a; }
+.events-highlight { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); overflow:hidden; border:1px solid rgba(255,59,59,.4); border-radius:1.1rem; background:linear-gradient(150deg,var(--surface-2),var(--surface)); box-shadow:0 40px 100px rgba(0,0,0,.5); }
+.events-highlight[data-status="Lista de espera"],.events-highlight[data-status="Encerrado"] { border-color:var(--border-active); }
+.events-highlight-media { position:relative; display:grid; min-height:360px; place-items:center; overflow:hidden; background:#0b0b0e; }
+.events-highlight-media img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .5s ease; }
+.events-highlight-media:hover img { transform:scale(1.03); }
+.events-highlight-copy { display:grid; align-content:center; gap:1.1rem; padding:clamp(1.5rem,3.5vw,2.8rem); }
+.events-highlight-copy h2 { margin:0; font:700 clamp(2rem,3.6vw,3rem)/1 var(--font-display); letter-spacing:-.02em; text-transform:uppercase; }
+.events-highlight-copy>p { margin:0; color:var(--text-soft); line-height:1.65; }
+.events-highlight-copy .gold-button { justify-self:start; margin-top:.4rem; }
+
+/* 3. agenda */
+.events-list-section { padding:clamp(3.5rem,6vw,5.5rem) 0; border-top:1px solid var(--border); background:linear-gradient(180deg,#0d0d10,#0a0a0b); }
+.events-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:1.1rem; margin-top:2.4rem; }
+.events-card { display:flex; flex-direction:column; overflow:hidden; border:1px solid var(--border); border-radius:.95rem; background:var(--surface); transition:border-color .25s ease,transform .25s ease; }
+.events-card:hover { border-color:var(--border-active); transform:translateY(-3px); }
+.events-card-media { position:relative; display:grid; aspect-ratio:16/9; place-items:center; overflow:hidden; background:#0b0b0e; }
+.events-card-media img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.events-card-body { display:grid; flex:1; align-content:start; gap:.85rem; padding:1.3rem; }
+.events-card-body h3 { margin:0; font:700 1.4rem/1.05 var(--font-display); text-transform:uppercase; }
+.events-card-body>p { margin:0; color:var(--text-soft); font-size:.92rem; line-height:1.6; }
+.events-card-cta { display:inline-flex; align-items:center; gap:.4rem; margin-top:.3rem; color:var(--gold-light); font:700 .76rem var(--font-ui); letter-spacing:.08em; text-transform:uppercase; }
+.events-empty { display:grid; justify-items:center; gap:1rem; max-width:560px; text-align:center; }
+.events-empty h2 { margin:0; font:700 clamp(1.6rem,3vw,2.2rem)/1.05 var(--font-display); text-transform:uppercase; }
+.events-empty p { margin:0; color:var(--text-soft); }
+
+/* 4. chamada para o QG */
+.events-qg-section { padding:clamp(3.5rem,6vw,5rem) 0; border-top:1px solid var(--border); background:radial-gradient(60% 120% at 50% 100%,rgba(175,146,86,.14),transparent 70%),#09090a; }
+.events-qg { display:flex; align-items:center; justify-content:space-between; gap:2rem; }
+.events-qg p { max-width:620px; margin:1rem 0 0; color:var(--text-soft); line-height:1.6; }
+.events-qg .display-title { font-size:clamp(1.8rem,4vw,3.2rem); }
+
+@media (max-width:900px) { .events-highlight{grid-template-columns:1fr}.events-highlight-media{min-height:0;aspect-ratio:16/9}.events-qg{flex-direction:column;align-items:flex-start} }
+@media (max-width:520px) { .events-grid{grid-template-columns:1fr}.events-hero-inner h1{font-size:clamp(2.2rem,11vw,3rem)} }

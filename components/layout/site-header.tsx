@@ -3,6 +3,7 @@ import { SiteHeaderClient } from "@/components/layout/site-header-client";
 import { getCourseProducts } from "@/lib/data";
 import { getFreeMaterials } from "@/lib/notion/free-content";
 import { getEcosystemItems } from "@/lib/notion/ecosystem";
+import { getEvents } from "@/lib/notion/events";
 import { getFaixaDestaque } from "@/components/layout/contest-strip";
 
 export async function SiteHeader() {
@@ -11,7 +12,7 @@ export async function SiteHeader() {
   // credenciais do Notion e congelaria o menu, a faixa e as vitrines vazios ate
   // o primeiro recalculo. Os dados seguem em cache de 5 minutos.
   await connection();
-  const [products, materials, ecosystemItems, faixa] = await Promise.all([getCourseProducts(), getFreeMaterials(), getEcosystemItems(), getFaixaDestaque()]);
+  const [products, materials, ecosystemItems, faixa, events] = await Promise.all([getCourseProducts(), getFreeMaterials(), getEcosystemItems(), getFaixaDestaque(), getEvents()]);
   const featuredCourses = products
     .filter((product) => product.menuFeatured)
     .sort((a, b) => (a.menuOrder ?? Number.MAX_SAFE_INTEGER) - (b.menuOrder ?? Number.MAX_SAFE_INTEGER))
@@ -27,5 +28,5 @@ export async function SiteHeader() {
     return contagem;
   }, {});
 
-  return <SiteHeaderClient featuredCourses={featuredCourses} featuredMaterials={featuredMaterials} ecosystemItems={ecosystemItems} storeCounts={storeCounts} storeTotal={products.length} faixa={faixa} />;
+  return <SiteHeaderClient featuredCourses={featuredCourses} featuredMaterials={featuredMaterials} ecosystemItems={ecosystemItems} storeCounts={storeCounts} storeTotal={products.length} faixa={faixa} events={events.slice(0, 4)} eventsTotal={events.length} />;
 }
