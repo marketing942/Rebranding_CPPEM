@@ -45,7 +45,7 @@ const storeColumns: Array<{ titulo: string; icon: typeof BookOpen; itens: Array<
   ] },
 ];
 
-export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystemItems, storeCounts, storeTotal, faixa, events, eventsTotal }: { featuredCourses: Product[]; featuredMaterials: FreeMaterial[]; ecosystemItems: EcosystemItem[]; storeCounts: Record<string, number>; storeTotal: number; faixa: FaixaDestaque | null; events: EventItem[]; eventsTotal: number }) {
+export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystemItems, storeCounts, storeTotal, faixas, events, eventsTotal }: { featuredCourses: Product[]; featuredMaterials: FreeMaterial[]; ecosystemItems: EcosystemItem[]; storeCounts: Record<string, number>; storeTotal: number; faixas: FaixaDestaque[]; events: EventItem[]; eventsTotal: number }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileCoursesOpen, setMobileCoursesOpen] = useState(false);
   const [mobileFreeOpen, setMobileFreeOpen] = useState(false);
@@ -124,7 +124,7 @@ export function SiteHeaderClient({ featuredCourses, featuredMaterials, ecosystem
       <div className="header-actions"><Link className="header-action" href="https://plataforma.cppem.com.br">Login</Link><Link className="gold-button" href="/plano-de-combate">Plano de combate</Link></div>
       <button className="mobile-toggle" type="button" aria-label={mobileOpen ? "Fechar menu" : "Abrir menu"} aria-expanded={mobileOpen} onClick={() => setMobileOpen((value) => !value)}>{mobileOpen ? <X size={22} /> : <Menu size={22} />}</button>
     </div>
-    {faixa && <ContestStripClient etiqueta={faixa.etiqueta} texto={faixa.texto} href={faixa.href} />}
+    {faixas.map((faixa) => <ContestStripClient etiqueta={faixa.etiqueta} texto={faixa.texto} href={faixa.href} tom={faixa.tom} key={faixa.texto} />)}
 
     <div className="courses-mega" id="courses-mega-menu" data-open={coursesOpen} aria-hidden={!coursesOpen}>
       <div className="container courses-mega-grid">

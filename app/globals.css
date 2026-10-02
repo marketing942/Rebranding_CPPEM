@@ -1204,3 +1204,12 @@ button,input,select,textarea { font: inherit; }
 .footer-social-link svg { flex:0 0 auto; color:var(--gold-light); }
 .footer-social-link:hover { transform:translateY(-2px); border-color:var(--gold-light); color:var(--gold-pale); background:rgba(175,146,86,.12); }
 @media (max-width:720px) { .footer-social{padding:1.2rem}.footer-social ul{gap:.4rem}.footer-social-link span{display:none}.footer-social-link{width:40px;height:40px;min-height:40px;justify-content:center;padding:0} }
+
+/* faixa azul (Policia Civil): mesmo comportamento da vermelha, no azul da corporacao */
+.contest-strip[data-tom="azul"] { background:linear-gradient(90deg,#0b2a6f,#1d4ed8 50%,#0b2a6f); background-size:200% 100%; animation:faixa-fundo 6s ease-in-out infinite,faixa-pulso-azul 1.6s ease-in-out infinite; }
+.contest-strip[data-tom="azul"] .contest-strip-tag { color:#1d4ed8; }
+.contest-strip[data-tom="azul"] .contest-strip-tag::before { background:#2563eb; }
+.contest-strip[data-tom="azul"] .contest-strip-link:hover .contest-strip-cta { color:#1d4ed8; }
+.contest-strip + .contest-strip { border-top:1px solid rgba(255,255,255,.14); }
+@keyframes faixa-pulso-azul { 0%,100% { box-shadow:inset 0 0 0 rgba(80,140,255,0),0 6px 18px rgba(29,78,216,.25); } 50% { box-shadow:inset 0 0 22px rgba(120,170,255,.35),0 6px 26px rgba(37,99,235,.55); } }
+@media (prefers-reduced-motion:reduce) { .contest-strip[data-tom="azul"] { animation:none; } }
